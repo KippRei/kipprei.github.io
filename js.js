@@ -15,7 +15,7 @@ function PlayJingle() {
 
 function OpenMenu() {
     menu.style.visibility = "visible";
-    menu.style.backgroundColor = "rgba(0, 0, 0, .4)";
+    menu.style.backgroundColor = "rgba(0, 0, 0, .6)";
     //menu.style.backdropFilter = "blur(8px)";
 }
 

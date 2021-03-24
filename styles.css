@@ -3,6 +3,12 @@ p {
     text-align: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
 #menu {
     height: 100%;
     width: 100%;
@@ -16,8 +22,24 @@ p {
     transition: background-color .5s;
 }
 
+#menuList {
+    padding-top: 10%;
+}
+
+.liPos {
+    padding-bottom: 50px;
+}
+
 .menuItems {
-    margin-top: 100px;
+    text-decoration: none;
+    font-family: 'Metal Head', sans-serif;
+    font-size: 22pt;
+    color: rgb(9, 255, 0);
+    transition: color .5s;
+}
+
+.menuItems:hover {
+    color:rgb(0, 78, 180);
 }
 
 .contentText {
@@ -49,18 +71,6 @@ p {
     width: 12%;
     height: auto;
     border: none;
-}
-
-.nav-link {
-    padding: 20px;
-    font-family: 'Metal Head', sans-serif;
-    font-size: 22pt;
-    color: rgb(9, 255, 0);
-    transition: color .5s;
-}
-
-.nav-link:hover {
-    color:rgb(0, 78, 180)
 }
 
 .socialBar {
