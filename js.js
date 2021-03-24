@@ -14,12 +14,14 @@ function PlayJingle() {
 }
 
 function OpenMenu() {
+    document.getElementById("openButton").style.visibility="hidden";
     menu.style.visibility = "visible";
     menu.style.backgroundColor = "rgba(0, 0, 0, .6)";
     //menu.style.backdropFilter = "blur(8px)";
 }
 
 function CloseMenu() {
+    document.getElementById("openButton").style.visibility="visible";
     menu.style.visibility = "hidden";
     menu.style.backgroundColor = "rgba(0,0,0,0)";
 }

@@ -12,8 +12,17 @@
     </head>
 
     <body class="home">
-      <button type="button" onclick="OpenMenu()">Menu</button>
+      <div class="menuButtonPos">
+        <button class="buttonMod" type="button" onclick="OpenMenu()">
+          <img id="openButton" class="menuButton" src="./menuButton.png">
+        </button>
+      </div>
       <nav id="menu">
+        <div class="menuButtonPos">
+          <button class="buttonMod" type="button" onclick="CloseMenu()">
+            <img class="menuButton" src="./menuButtonClose.png">
+          </button>
+        </div>
         <div id="menuList" class="centered">
           <ul>
             <li class="liPos">
@@ -30,7 +39,6 @@
             </li>
           </ul>
         </div>
-        <button type="button" onclick="CloseMenu()">Close</button>
       </nav>
      <!-- 
       <nav class="sticky-top">

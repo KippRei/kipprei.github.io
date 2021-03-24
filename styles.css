@@ -17,13 +17,28 @@ ul {
     left: 0;
     z-index: 100;
     visibility: hidden;
-    text-align: center;
     backdrop-filter: blur(8px);
     transition: background-color .5s;
 }
 
+.menuButtonPos {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.menuButton {
+    height: 50px;
+    width: 50px;
+}
+
+.buttonMod {
+    border: none;
+    outline: none;
+    background: none;
+}
+
 #menuList {
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .liPos {
@@ -63,14 +78,6 @@ ul {
 
 .padding {
     padding: 10px;
-}
-
-#menuButton {
-    padding-top: 3%;
-    display: block;
-    width: 12%;
-    height: auto;
-    border: none;
 }
 
 .socialBar {
