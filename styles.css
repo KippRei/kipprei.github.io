@@ -183,6 +183,10 @@ ul {
     
     .merch {
         background-image: linear-gradient(to top, red , yellow);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     
     .media {
@@ -194,7 +198,11 @@ ul {
     }
     
     .contact {
-        background-color: salmon;
+        background-image: linear-gradient(to top, rgb(255, 17, 0) , rgb(10, 199, 4));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
