@@ -83,19 +83,28 @@
           Your Browser Does Not Support The Audio Element.
         </audio>
 
-        <!--
         <div class="contentStartBuffer"></div>
         <div class="contentStartBuffer"></div>
         <div class="contentStartBuffer"></div>
-        <div>
-          <button onclick="PlayJingle()">Jingle Bells</button>
-        </div>
-
-        <audio id="jinglemp3">
-          <source src="/jingle.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-    -->
+          <div class="contentText">
+            Merry Christmas everyone!
+          </div>
+          <div class="contentText">
+            "Jingle Bells"
+          </div>
+          <div class="contentStartBuffer"></div>
+          <div>
+            <button class="buttonMod" onclick="PlayJingle()">
+              <div class="imgParent">
+                <img id="jPP" class="playPauseButton" src="/playButton.png">
+                <img class="albumThumb" src="/wwwJingle.jpg">
+              </div>
+            </button>
+          </div>
+          <audio id="jinglemp3">
+            <source src="/jingle.mp3" type="audio/mpeg">
+              Your Browser Does Not Support The Audio Element.
+          </audio>
     </body>
     <script src="/js.js"></script>
 </html>

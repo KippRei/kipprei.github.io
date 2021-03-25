@@ -3,7 +3,7 @@ var jingle = document.getElementById("jinglemp3");
 var menu = document.getElementById("menu");
 var body = document.getElementsByTagName("body")[0];
 var mdPP = document.getElementById("mdPP"); //play/pause button for mom and dad
-
+var jPP = document.getElementById("jPP"); //play/pause button for jingle bells
 function PlayMomDad() {
     if (momdad.paused) 
     {
@@ -18,8 +18,16 @@ function PlayMomDad() {
 }
 
 function PlayJingle() {
-    if (jingle.paused) jingle.play();
-    else jingle.pause();
+    if (jingle.paused) 
+    {
+        jingle.play();
+        jPP.src = "/pauseButton.png";
+    }
+    else 
+    {
+        jingle.pause();
+        jPP.src = "/playButton.png";
+    }
 }
 
 function OpenMenu() {
