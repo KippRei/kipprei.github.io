@@ -24,10 +24,13 @@ ul {
 }
 
 .menuButtonPos {
-    padding-top: 10px;
     padding-left: 10px;
+    padding-right: 10px;
 }
 
+#openButton {
+    padding-top: 10px;
+}
 .menuButton {
     position: fixed;
     height: 50px;
@@ -61,10 +64,11 @@ ul {
 }
 /* END Menu Stuff */
 
-
+.contentStartBuffer {
+    padding: 10px;
+}
 .contentText {
     font-size: 24pt;
-    text-align: center;
     font-family: 'Metal Head', sans-serif;
     color: rgb(255, 0, 47);
 }
@@ -74,6 +78,22 @@ ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.titleText {
+    font-size: 24pt;
+    font-family: 'Metal Head', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.smallLogo {
+    position: absolute;
+    padding-top: 5px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
 }
 
 .socialButtons {
@@ -124,12 +144,12 @@ ul {
     }
 
     .home {
-        background-image: url("./waves.jpg");
+        background-image: url("/waves.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-color:rgb(255, 253, 122);
+        background-color:rgb(122, 164, 255);
     }
     
     .merch {
@@ -137,7 +157,7 @@ ul {
     }
     
     .media {
-        background-image: url("./wwwLetters.png");
+        background-image: url("/wwwLetters.png");
         background-position: center;
         background-size: contain;
         background-attachment: fixed;
@@ -167,7 +187,7 @@ ul {
     }
 
     .home {
-        background-image: url("./waves.jpg");
+        background-image: url("/waves.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -180,7 +200,7 @@ ul {
     }
     
     .media {
-        background-image: url("./wwwLetters.png");
+        background-image: url("/wwwLetters.png");
         background-position: center;
         background-size: contain;
         background-attachment: fixed;
