@@ -64,13 +64,23 @@ ul {
 }
 /* END Menu Stuff */
 
-.contentStartBuffer {
-    padding: 10px;
-}
-.contentText {
+
+#bandnameTitle {
     font-size: 24pt;
     font-family: 'Metal Head', sans-serif;
     color: rgb(255, 0, 47);
+    text-shadow: 3px 2px rgba(255, 255, 255, 0.842);
+}
+
+.contentText {
+    font-size: 30pt;
+    font-family: 'rolina', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+}
+
+.contentStartBuffer {
+    padding: 10px;
 }
 
 .centered {
@@ -94,6 +104,25 @@ ul {
     right: 20px;
     width: 45px;
     height: 45px;
+}
+
+.imgParent {
+    position: relative;
+}
+
+.albumThumb {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.playPauseButton {
+    position: absolute;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 130px;
+    height: 130px;
+    z-index: 1;
 }
 
 .socialButtons {
