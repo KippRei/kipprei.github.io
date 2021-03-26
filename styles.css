@@ -19,6 +19,7 @@ ul {
     left: 0;
     z-index: 100;
     visibility: hidden;
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     transition: background-color .5s;
 }
