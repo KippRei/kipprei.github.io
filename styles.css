@@ -65,6 +65,14 @@ ul {
 }
 /* END Menu Stuff */
 
+/* Merch stuff */
+form {
+    display: inline-block;
+}
+.merchItem {
+    width: 70%;
+    height: auto;
+}
 
 #bandnameTitle {
     font-size: 24pt;
