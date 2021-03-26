@@ -41,3 +41,7 @@ function CloseMenu() {
     menu.style.visibility = "hidden";
     menu.style.backgroundColor = "rgba(0,0,0,0)";
 }
+
+function AddToCart() {
+    console.log("added to cart");
+}

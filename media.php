@@ -13,6 +13,7 @@
       </head>
 
     <body class="media">
+      <?php require 'sitemenu.html';?>
       <div class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/menuButton.png">
@@ -21,29 +22,7 @@
           Media<a href="/index.html"><img class="smallLogo" src="/wwwInvert.png"></a>
         </span>
       </div>
-      <nav id="menu">
-        <div class="menuButtonPos">
-          <button class="buttonMod" type="button" onclick="CloseMenu()">
-            <img class="menuButton" src="/menuButtonClose.png">
-          </button>
-        </div>
-        <div id="menuList" class="centered">
-          <ul>
-            <li class="liPos">
-              <a class="menuItems" href="/index.html">Home</a>
-            </li>
-            <li class="liPos">
-              <a class="menuItems" href="/media.html">Media</a>
-            </li>
-            <li class="liPos">
-              <a class="menuItems" href="/merch.html">Merch</a>
-            </li>
-            <li class="liPos">
-              <a class="menuItems" href="/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <div class="contentStartBuffer"></div>
       <div class="centered">
           <div><iframe class="videos" src="https://www.youtube.com/embed/ZUKWkLRJ6L4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>

@@ -13,6 +13,7 @@
     </head>
 
     <body class="contact">
+      <?php require 'sitemenu.html';?>
       <div class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/menuButton.png">
@@ -21,29 +22,7 @@
           Contact<a href="/index.html"><img class="smallLogo" src="/wwwInvert.png"></a>
         </span>
       </div>
-      <nav id="menu">
-        <div class="menuButtonPos">
-          <button class="buttonMod" type="button" onclick="CloseMenu()">
-            <img class="menuButton" src="/menuButtonClose.png">
-          </button>
-        </div>
-        <div id="menuList" class="centered">
-          <ul>
-            <li class="liPos">
-              <a class="menuItems" href="/index.html">Home</a>
-            </li>
-            <li class="liPos">
-              <a class="menuItems" href="/media.html">Media</a>
-            </li>
-            <li class="liPos">
-              <a class="menuItems" href="/merch.html">Merch</a>
-            </li>
-            <li class="liPos">
-              <a class="menuItems" href="/contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+
       <div class="contentStartBuffer"></div>
       <div class="centered">
         <div class="padding"></div>
