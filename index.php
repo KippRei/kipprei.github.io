@@ -1,3 +1,10 @@
+<?php
+  session_start();
+  if (!$_SESSION["cart"]){
+    $_SESSION["cart"] = array();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -13,7 +20,7 @@
       </div>
 
       <div>
-        <a href="/index.html"><img class="logo" src="/wwwLrg.png" alt="When Whales Walked"></a>
+        <a href="/index.php"><img class="logo" src="/wwwLrg.png" alt="When Whales Walked"></a>
       </div>
       <div class="centered">
         <p></p>

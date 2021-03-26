@@ -4,6 +4,9 @@ var menu = document.getElementById("menu");
 var body = document.getElementsByTagName("body")[0];
 var mdPP = document.getElementById("mdPP"); //play/pause button for mom and dad
 var jPP = document.getElementById("jPP"); //play/pause button for jingle bells
+var cartBg = document.getElementById("shoppingCartBg");
+var cart = document.getElementById("shoppingCart");
+
 function PlayMomDad() {
     if (momdad.paused) 
     {
@@ -42,6 +45,16 @@ function CloseMenu() {
     menu.style.backgroundColor = "rgba(0,0,0,0)";
 }
 
-function AddToCart() {
-    console.log("added to cart");
+function ViewCart() {
+    cartBg.style.visibility = "visible";
+    cartBg.style.backgroundColor = "rgba(0, 0, 0, .6)";
+    cart.style.visibility = "visible";
+    cart.style.backgroundColor = "white";
+}
+
+function CloseCart() {
+    cartBg.style.visibility = "hidden";
+    cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
+    cart.style.visibility = "hidden";
+    cart.style.backgroundColor = "black";
 }

@@ -85,6 +85,39 @@ p {
     text-decoration: underline;
     padding-bottom: 10px;
 }
+
+#shoppingCartBg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    visibility: hidden;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color .5s;
+}
+
+#shoppingCart {
+    position: relative;
+    height: 90%;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 95;
+    visibility: hidden;
+    transition: background-color .5s;
+}
+
+#closeCartBtn {
+    position: fixed;
+    margin-right: 5%;
+    margin-bottom: 4%;
+    bottom: 0;
+    right: 0;
+}
 /* END Merch Stuff */
 
 
