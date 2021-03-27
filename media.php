@@ -12,10 +12,10 @@
       <?php require 'sitemenu.html';?>
       <div class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
-          <img id="openButton" class="menuButton" src="/menuButton.png">
+          <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>
         <span class="titleText centered">
-          Media<a href="/index.html"><img class="smallLogo" src="/wwwInvert.png"></a>
+          Media<a href="/index.html"><img class="smallLogo" src="/BandImages/wwwInvert.png"></a>
         </span>
       </div>
 

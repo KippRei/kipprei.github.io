@@ -20,10 +20,10 @@
 
         <div class="menuButtonPos">
             <button class="buttonMod" type="button" onclick="OpenMenu()">
-            <img id="openButton" class="menuButton" src="/menuButton.png">
+            <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
             </button>
             <span class="titleText centered">
-            Merch<a href="/index.php"><img class="smallLogo" src="/wwwInvert.png"></a>
+            Merch<a href="/index.php"><img class="smallLogo" src="/BandImages/wwwInvert.png"></a>
             </span>
         </div>
 
@@ -31,9 +31,9 @@
         <div class="centered">
             <div class="merchTitle">Buttons</div>
             <div>
-                <img class="merchItem" src="/merchButton1.png" alt="Button style WWW">
+                <img class="merchItem" src="/MerchImages/merchButton1.png" alt="Button style WWW">
                 <p>Style 1: WWW</p>
-                <img class="merchItem" src="/merchButton2.png" alt="Button style Whale">
+                <img class="merchItem" src="/MerchImages/merchButton2.png" alt="Button style Whale">
                 <p>Style 2: Whale Hug</p>
             </div>
 

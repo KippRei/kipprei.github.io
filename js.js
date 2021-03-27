@@ -11,12 +11,12 @@ function PlayMomDad() {
     if (momdad.paused) 
     {
         momdad.play();
-        mdPP.src = "/pauseButton.png";
+        mdPP.src = "/SiteImages/pauseButton.png";
     }
     else 
     {
         momdad.pause();
-        mdPP.src = "/playButton.png";
+        mdPP.src = "/SiteImages/playButton.png";
     }
 }
 
@@ -24,12 +24,12 @@ function PlayJingle() {
     if (jingle.paused) 
     {
         jingle.play();
-        jPP.src = "/pauseButton.png";
+        jPP.src = "/SiteImages/pauseButton.png";
     }
     else 
     {
         jingle.pause();
-        jPP.src = "/playButton.png";
+        jPP.src = "/SiteImages/playButton.png";
     }
 }
 

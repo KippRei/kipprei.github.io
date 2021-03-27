@@ -229,7 +229,7 @@ p {
     }
 
     .home {
-        background-image: url("/waves.jpg");
+        background-image: url("/SiteImages/waves.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -246,7 +246,7 @@ p {
     }
     
     .media {
-        background-image: url("/wwwLetters.png");
+        background-image: url("/BandImages/wwwLetters.png");
         background-position: center;
         background-size: contain;
         background-attachment: fixed;
@@ -280,7 +280,7 @@ p {
     }
 
     .home {
-        background-image: url("/waves.jpg");
+        background-image: url("/SiteImages/waves.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -293,7 +293,7 @@ p {
     }
     
     .media {
-        background-image: url("/wwwLetters.png");
+        background-image: url("/BandImages/wwwLetters.png");
         background-position: center;
         background-size: contain;
         background-attachment: fixed;
