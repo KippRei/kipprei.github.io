@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,6 +9,18 @@
     </head>
 
     <body class="contact">
+      <?php //phpinfo(); ?>
+      <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST")
+        {
+            $msg = $_REQUEST["message"];
+            echo $msg;
+            $msg = wordwrap($msg, 70);
+            $headers = "From: kippsta0@gmail.com";
+            mail("kippsta0@gmail.com", "Message", $msg, $headers);
+        }
+      ?>
+
       <?php require 'sitemenu.html';?>
       <div class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
@@ -18,6 +34,9 @@
       <div class="contentStartBuffer"></div>
       <div class="centered">
         <div class="padding"></div>
+        <form action="/contact.php" method="post">
+          <textarea placeholder="Message (500 character max)" maxlength="500" cols= "30" rows="4" name="message"></textarea><br>
+          <input type="submit" value="Send Message">
         <div>
             <a href="https://www.instagram.com/whenwhaleswalked/"><img class="socialButtons" src="/ig.png" alt="When Whales Walked on Instagram"></a>
         </div>
