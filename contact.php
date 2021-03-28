@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>When Whales Walked</title>
+        <meta name="description" content="Send us a message or reach us at the socials!">
         <?php require "sitehead.html";?>    
     </head>
 

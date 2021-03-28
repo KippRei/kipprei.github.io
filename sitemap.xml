@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+
+        <loc>https://www.whenwhaleswalked.com/index.php</loc>
+        
+        <priority>.9</priority>
+
+    </url>
+
+    <url>
+
+        <loc>https://www.whenwhaleswalked.com/media.php</loc>
+
+    </url>
+
+    <url>
+
+        <loc>https://www.whenwhaleswalked.com/merch.php</loc>
+
+    </url>
+
+    <url>
+
+        <loc>https://www.whenwhaleswalked.com/contact.php</loc>
+
+    </url>
+
+</urlset>

@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>When Whales Walked</title>
+        <meta name="description" content="When Whales Walked! We are a 3 piece Pop-Punk band from Central California.">
         <?php require "sitehead.html";?>
     </head>
 
