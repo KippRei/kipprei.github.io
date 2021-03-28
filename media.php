@@ -1,6 +1,4 @@
-<?php
-  session_start();
-?>
+<?php require "sessionBegin.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -24,6 +22,7 @@
           <div><iframe class="videos" src="https://www.youtube.com/embed/ZUKWkLRJ6L4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
           <div><iframe class="videos" src="https://www.youtube.com/embed/_eNnXSCglh4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       </div>
-    </body>
+
     <script src="/js.js"></script>
+    </body>
 </html>

@@ -1,6 +1,4 @@
-<?php
-  session_start();
-?>
+<?php require "sessionBegin.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,26 +31,28 @@
 
       <div class="contentStartBuffer"></div>
       <div class="centered">
-        <div class="padding"></div>
+        <div class="contentStartBuffer"></div>  
+        <div class="contentText">Send Us a Message:</div>
         <form action="/contact.php" method="post">
-          <textarea placeholder="Message (500 character max)" maxlength="500" cols= "30" rows="4" name="message"></textarea><br>
-          <input type="submit" value="Send Message">
-        <div>
-            <a href="https://www.instagram.com/whenwhaleswalked/"><img class="socialButtons" src="/SiteImages/ig.png" alt="When Whales Walked on Instagram"></a>
+          <textarea placeholder="Hi!" maxlength="500" cols= "30" rows="4" name="message"></textarea><br>
+          <button id="sendBtn" class="contentText" type="submit">Send</button>
+        </form>
+        <div class="contentStartBuffer"></div>
+        <div class="contentText">Or Reach Us At:<br>
+          <address>
+            <a class= "addressText" href="mailto:whenwhaleswalked@gmail.com">
+              WhenWhalesWalked<br>@gmail.com</a>
+          </address>
         </div>
-        <div class="padding"></div>
-        <div>
-            <a href="https://www.youtube.com/channel/UCbXM0IVVqiWH8CziVgCgv-w"><img class="socialButtons" src="/SiteImages/yt.png" alt="When Whales Walked on YouTube"></a>
-        </div>
-        <div class="padding"></div>
-        <div>
-            <a href="https://www.facebook.com/Whenwhaleswalked"><img class="socialButtons" src="/SiteImages/fb.png" alt="When Whales Walked on Facebook"></a>
-        </div>
-        <div class="padding"></div>
-        <div>
-            <a href="https://twitter.com/whaleswalked"><img class="socialButtons" src="/SiteImages/twtr.png" alt="When Whales Walked on Twitter"></a>
-        </div> 
       </div>
-    </body>
+      <div class="contentStartBuffer"></div>
+      <div class="centered">
+            <a href="https://www.instagram.com/whenwhaleswalked/"><img class="socialButtons" src="/SiteImages/ig.png" alt="When Whales Walked on Instagram"></a>
+            <a href="https://www.youtube.com/channel/UCbXM0IVVqiWH8CziVgCgv-w"><img class="socialButtons" src="/SiteImages/yt.png" alt="When Whales Walked on YouTube"></a>
+            <a href="https://www.facebook.com/Whenwhaleswalked"><img class="socialButtons" src="/SiteImages/fb.png" alt="When Whales Walked on Facebook"></a>
+            <a href="https://twitter.com/whaleswalked"><img class="socialButtons" src="/SiteImages/twtr.png" alt="When Whales Walked on Twitter"></a>
+        </div>
+    
     <script src="/js.js"></script>
+    </body>
 </html>

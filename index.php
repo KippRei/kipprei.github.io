@@ -1,9 +1,4 @@
-<?php
-  session_start();
-  if (!$_SESSION["cart"]){
-    $_SESSION["cart"] = array();
-  }
-?>
+<?php require "sessionBegin.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -83,6 +78,7 @@
             <source src="/Media/jingle.mp3" type="audio/mpeg">
               Your Browser Does Not Support The Audio Element.
           </audio>
-    </body>
+
     <script src="/js.js"></script>
+    </body>
 </html>
