@@ -13,10 +13,11 @@
             if ($_SERVER["REQUEST_METHOD"] == "POST")
             {
                 $item = $_REQUEST["itemName"];
-
-                array_push($_SESSION["cart"], $item);
+                $_SESSION["cart"][$item] += 1;
             }
+            var_dump($_SESSION["cart"]);
         ?>
+
         <?php require 'sitemenu.html';?>
 
         <div class="menuButtonPos">
@@ -70,25 +71,49 @@
             </div>
         </div>
 
+        <div class="contentStartBuffer"></div>
+        <div class="centered">
+            <div class="merchTitle">Magnets</div>
+            <div>
+                <img class="merchItem" src="/MerchImages/merchMagnet1.png" alt="Merch Magnet">
+                <p>Magnet (3")</p>
+            </div>
+            <div>
+                <form action="/merch.php" method="post">
+                    <input type="hidden" name="itemName" value="smlMagnet">
+                    <button type="submit">Add To Cart</button>
+                </form>
+            </div>
+        </div>
+
         <div id="viewCartBtn">
             <button type="button" onclick="ViewCart()">Cart</button>
         </div>
         <div id="shoppingCartBg">
             <div id="shoppingCart">
                 <?php
+                    // Uncomment this to empty cart //
                     //$_SESSION["cart"] = "";
+
                     $_SESSION["total"] = 0;
-                    $merchLi = $_SESSION["merchList"][0];
+                    $merchLi = $_SESSION["merchPriceList"][0];
                     if (sizeof($_SESSION["cart"]) == 0 || $_SESSION["cart"] == "") 
                     {
                         echo "<div class=\"cartItem\">Cart is empty</div>";
                     }
-                    foreach ($_SESSION["cart"] as $value)
+                    foreach ($_SESSION["cart"] as $item => $quantity)
                     {
-                        $_SESSION["total"] += $merchLi[$value];
-                        echo "<p class=\"cartItem\">$value
-                            <span class=\"cartPrice\">\$$merchLi[$value]</span>
-                            </p>";
+                        $itemTotal = $merchLi[$item] * $quantity;
+                        echo "<p class=\"cartItem\">$item.....
+                              <span>
+                                <form action=\"/merch.php\" method=\"POST\">
+                                    <input type=\"number\" name=\"quant\" value=\"$quantity\" size=\"2\"/>
+                                    <input type=\"submit\" value=\"Update\"/>
+                                </form>
+                              </span>
+                              <span class=\"cartPrice\">\$$itemTotal</span>
+                              </p>";
+                        $_SESSION["total"] += $itemTotal;
                     }
                     echo "<br><br><br><br><br><br><br>";
                 ?>
@@ -102,7 +127,8 @@
                     <p>Total: $
                     <?php
                         echo $_SESSION["total"];
-                    ?></p>
+                    ?>
+                    </p>
                 </div>
                 <div id="paypalBtn" style="text-align: center;"></div>
             </div>
@@ -114,6 +140,7 @@
     <div class="contentStartBuffer"></div>
     <div class="contentStartBuffer"></div>
     <div class="contentStartBuffer"></div>
+
     <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
     <script src="/js.js"></script>
     <script> price = <?php echo $_SESSION["total"];?></script>
