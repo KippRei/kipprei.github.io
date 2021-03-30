@@ -6,17 +6,11 @@
         <title>When Whales Walked</title>
         <meta name="description" content="Get your When Whales Walked merch here!">
         <?php require "sitehead.html";?>
+        <?php require "Includes/merchInclude.php";?>
     </head>
 
     <body class="merch">
-        <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST")
-            {
-                $item = $_REQUEST["itemName"];
-                $_SESSION["cart"][$item] += 1;
-            }
-            var_dump($_SESSION["cart"]);
-        ?>
+        <?php var_dump($_SESSION["cart"]);?>
 
         <?php require 'sitemenu.html';?>
 
@@ -79,10 +73,8 @@
                 <p>Magnet (3")</p>
             </div>
             <div>
-                <form action="/merch.php" method="post">
-                    <input type="hidden" name="itemName" value="smlMagnet">
-                    <button type="submit">Add To Cart</button>
-                </form>
+                <input type="hidden" name="itemName" value="smlMagnet">
+                <button type="button" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
             </div>
         </div>
 
@@ -91,32 +83,6 @@
         </div>
         <div id="shoppingCartBg">
             <div id="shoppingCart">
-                <?php
-                    // Uncomment this to empty cart //
-                    //$_SESSION["cart"] = "";
-
-                    $_SESSION["total"] = 0;
-                    $merchLi = $_SESSION["merchPriceList"][0];
-                    if (sizeof($_SESSION["cart"]) == 0 || $_SESSION["cart"] == "") 
-                    {
-                        echo "<div class=\"cartItem\">Cart is empty</div>";
-                    }
-                    foreach ($_SESSION["cart"] as $item => $quantity)
-                    {
-                        $itemTotal = $merchLi[$item] * $quantity;
-                        echo "<p class=\"cartItem\">$item.....
-                              <span>
-                                <form action=\"/merch.php\" method=\"POST\">
-                                    <input type=\"number\" name=\"quant\" value=\"$quantity\" size=\"2\"/>
-                                    <input type=\"submit\" value=\"Update\"/>
-                                </form>
-                              </span>
-                              <span class=\"cartPrice\">\$$itemTotal</span>
-                              </p>";
-                        $_SESSION["total"] += $itemTotal;
-                    }
-                    echo "<br><br><br><br><br><br><br>";
-                ?>
             </div>
 
             <button id="closeCartBtn" class="buttonMod" type="button" onclick="CloseCart()">
@@ -125,9 +91,7 @@
             <div id="paypalBtnLoc">
                 <div id="cartTotal" class="centered">
                     <p>Total: $
-                    <?php
-                        echo $_SESSION["total"];
-                    ?>
+                        <span id="cartTotalPrice"></span>
                     </p>
                 </div>
                 <div id="paypalBtn" style="text-align: center;"></div>
@@ -143,6 +107,5 @@
 
     <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
     <script src="/js.js"></script>
-    <script> price = <?php echo $_SESSION["total"];?></script>
     </body>
 </html>

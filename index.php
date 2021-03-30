@@ -10,6 +10,7 @@
 
     <body class="home">
       <?php require "sitemenu.html";?>
+      <?php $_SESSION["cart"] = '';?>
       <div class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">

@@ -6,6 +6,7 @@ var mdPP = document.getElementById("mdPP"); //play/pause button for mom and dad
 var jPP = document.getElementById("jPP"); //play/pause button for jingle bells
 var cartBg = document.getElementById("shoppingCartBg");
 var cart = document.getElementById("shoppingCart");
+var price = 0;
 
 function PlayMomDad() {
     if (momdad.paused) 
@@ -45,23 +46,78 @@ function CloseMenu() {
     menu.style.backgroundColor = "rgba(0,0,0,0)";
 }
 
+// Cart Stuff
+function AddToCart(itemName) {
+  console.log(itemName);
+  console.log("adding");
+  $.ajax({
+      type: "POST",
+      url: '/Includes/addtocart.php',
+      data: {item: itemName},
+      success: function(response)
+      {
+        ViewCart();
+      }
+  });
+}
+
+function UpdateCart(itemToUpdate) {
+    console.log('update cart');
+    let itemQuant = itemToUpdate.concat("Quant");
+    console.log(itemQuant);
+    let quantity = document.getElementById(itemQuant).value;
+    $.ajax({
+      type: "POST",
+      url: 'Includes/updatecart.php',
+      data: {item: itemToUpdate, quant: quantity},
+      success: function(response)
+      {
+        ViewCart();
+      }
+    })
+}
+
 function ViewCart() {
-    let elem = document.createElement("div");
-    elem.setAttribute("id", "paypal-button-container");
-    let paypalPNode = document.getElementById("paypalBtn");
-    paypalPNode.appendChild(elem);
+    if (!document.getElementById("paypal-button-container"))
+    {
+        let elem = document.createElement("div");
+        elem.setAttribute("id", "paypal-button-container");
+        let paypalPNode = document.getElementById("paypalBtn");
+        paypalPNode.appendChild(elem);
+        initPayPalButton();
+    }
     cartBg.style.visibility = "visible";
     cartBg.style.backgroundColor = "rgba(0, 0, 0, .6)";
     cart.style.visibility = "visible";
-    cart.style.backgroundColor = "white";
-    initPayPalButton();
+    cart.style.backgroundColor = "rgba(255, 255, 255, 1)";
+    $.ajax({
+      type: "GET",
+      url: "/Includes/viewcart.php",
+      success: function(response) {
+        document.getElementById("shoppingCart").innerHTML = response;
+      }
+    });
+    CartTotal();
+}
+
+// TODO: Right now CartTotal requires ViewCart to run first to be accurate
+//       may cause issues?!
+function CartTotal() {
+    $.ajax({
+      type: "GET",
+      url: "/Includes/carttotal.php",
+      success: function(response) {
+        document.getElementById("cartTotalPrice").innerHTML = response;
+        price = response;
+      }
+    })
 }
 
 function CloseCart() {
     cartBg.style.visibility = "hidden";
     cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
     cart.style.visibility = "hidden";
-    cart.style.backgroundColor = "black";
+    cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
     let paypalBtn = document.getElementById("paypal-button-container");
     if (paypalBtn.parentNode)
     {
