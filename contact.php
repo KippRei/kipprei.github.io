@@ -16,7 +16,6 @@
             $msg = $_REQUEST["message"];
             echo $msg;
             $msg = wordwrap($msg, 70);
-            $headers = "From: kippsta0@gmail.com";
             mail("kippsta0@gmail.com", "Message", $msg, $headers);
         }
       ?>
