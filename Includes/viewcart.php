@@ -17,6 +17,11 @@
                     <button type=\"button\" 
                     onclick=\"UpdateCart('$item')\">Update</button>
                 </span>
+                <span>
+                    <button type=\"button\" 
+                    onclick=\"UpdateCart('$item', 'true')\">Remove</button>
+                </span>
+                
                 <span class=\"cartPrice\">\$$itemTotal</span>
                 </p>";
         $_SESSION["total"] += $itemTotal;

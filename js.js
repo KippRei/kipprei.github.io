@@ -48,8 +48,6 @@ function CloseMenu() {
 
 // Cart Stuff
 function AddToCart(itemName) {
-  console.log(itemName);
-  console.log("adding");
   $.ajax({
       type: "POST",
       url: '/Includes/addtocart.php',
@@ -61,11 +59,17 @@ function AddToCart(itemName) {
   });
 }
 
-function UpdateCart(itemToUpdate) {
-    console.log('update cart');
-    let itemQuant = itemToUpdate.concat("Quant");
-    console.log(itemQuant);
-    let quantity = document.getElementById(itemQuant).value;
+function UpdateCart(itemToUpdate, remove = false) {
+    // When viewcart.php propagates cart it id's item quantity by 
+    // concatenating the item name with "Quant"
+    var quantity = 0; // Holds updated quantity
+
+    if (!remove)
+    {
+        let itemQuant = itemToUpdate.concat("Quant"); // Get item name and concat Quant to create id for item quantity
+        quantity = document.getElementById(itemQuant).value;
+    }
+
     $.ajax({
       type: "POST",
       url: 'Includes/updatecart.php',
@@ -78,6 +82,9 @@ function UpdateCart(itemToUpdate) {
 }
 
 function ViewCart() {
+    // Check to see if PayPal button has already been generated for
+    // Cart. This is needed so when UpdateCart calls ViewCart it won't
+    // create an additional PayPal button
     if (!document.getElementById("paypal-button-container"))
     {
         let elem = document.createElement("div");
@@ -103,6 +110,8 @@ function ViewCart() {
 // TODO: Right now CartTotal requires ViewCart to run first to be accurate
 //       may cause issues?!
 function CartTotal() {
+    // This is so the price total ["total"] php session variable updates and
+    // displays correctly when cart is viewed and updated
     $.ajax({
       type: "GET",
       url: "/Includes/carttotal.php",
