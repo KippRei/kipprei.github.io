@@ -95,6 +95,16 @@ p {
     text-shadow:2px 1px rgba(242, 215, 133, 0.938); 
 }
 
+#cartTitle {
+    text-align: center;
+    font-size: 30pt;
+    font-family: 'rolina', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
 .merchTitle {
     font-size: 30pt;
     font-family: 'rolina', sans-serif;

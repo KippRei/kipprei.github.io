@@ -68,6 +68,10 @@ function UpdateCart(itemToUpdate, remove = false) {
     {
         let itemQuant = itemToUpdate.concat("Quant"); // Get item name and concat Quant to create id for item quantity
         quantity = document.getElementById(itemQuant).value;
+        if (!Number.isInteger(quantity))
+        {
+          quantity = (Math.floor(quantity));
+        }
     }
 
     $.ajax({
@@ -148,7 +152,9 @@ function initPayPalButton() {
       createOrder: function(data, actions) {
         let items = "button";
         return actions.order.create({
-          purchase_units: [{"description": items,"amount":{"currency_code":"USD","value":price}}]
+          purchase_units: [
+            {"description": items,"amount":{"currency_code":"USD","value":price}}
+          ]
         });
       },
 

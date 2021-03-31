@@ -1,5 +1,7 @@
 <?php
     require "../sessionBegin.php";
+    echo    "<div id=\"cartTitle\">Cart</div>",
+            "<div class=\"contentStartBuffer\"></div>";
     $_SESSION["total"] = 0;
     $merchLi = $_SESSION["merchPriceList"][0];
     if (sizeof($_SESSION["cart"]) == 0 || $_SESSION["cart"] == "") 
@@ -13,7 +15,7 @@
         echo   "<p class=\"cartItem\">$item.....
                 <span>
                     <input type=\"hidden\" value=\"$item\"/>
-                    <input type=\"number\" id=\"$itemQuant\" name=\"quant\" value=\"$quantity\" size=\"2\"/>
+                    <input type=\"number\" min=\"0\" step=\"1\" id=\"$itemQuant\" name=\"quant\" value=\"$quantity\" size=\"2\"/>
                     <button type=\"button\" 
                     onclick=\"UpdateCart('$item')\">Update</button>
                 </span>

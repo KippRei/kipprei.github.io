@@ -6,7 +6,6 @@
         <title>When Whales Walked</title>
         <meta name="description" content="Get your When Whales Walked merch here!">
         <?php require "sitehead.html";?>
-        <?php require "Includes/merchInclude.php";?>
     </head>
 
     <body class="merch">
