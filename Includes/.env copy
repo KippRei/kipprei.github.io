@@ -1,0 +1,14 @@
+
+# Acceptable values are sandbox, production or custom. 
+ENVIRONMENT=sandbox
+
+# Production credentials
+PRODUCTION_ACCESS_TOKEN=production-access-token
+PRODUCTION_APP_ID=production-app-id
+PRODUCTION_LOCATION_ID=production-location-id
+
+# Sandbox credentials
+SANDBOX_ACCESS_TOKEN=
+SANDBOX_APP_ID=
+SANDBOX_LOCATION_ID=
+

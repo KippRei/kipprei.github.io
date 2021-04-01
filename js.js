@@ -6,7 +6,6 @@ var mdPP = document.getElementById("mdPP"); //play/pause button for mom and dad
 var jPP = document.getElementById("jPP"); //play/pause button for jingle bells
 var cartBg = document.getElementById("shoppingCartBg");
 var cart = document.getElementById("shoppingCart");
-var price = 0;
 
 function PlayMomDad() {
     if (momdad.paused) 
@@ -86,17 +85,6 @@ function UpdateCart(itemToUpdate, remove = false) {
 }
 
 function ViewCart() {
-    // Check to see if PayPal button has already been generated for
-    // Cart. This is needed so when UpdateCart calls ViewCart it won't
-    // create an additional PayPal button
-    if (!document.getElementById("paypal-button-container"))
-    {
-        let elem = document.createElement("div");
-        elem.setAttribute("id", "paypal-button-container");
-        let paypalPNode = document.getElementById("paypalBtn");
-        paypalPNode.appendChild(elem);
-        initPayPalButton();
-    }
     cartBg.style.visibility = "visible";
     cartBg.style.backgroundColor = "rgba(0, 0, 0, .6)";
     cart.style.visibility = "visible";
@@ -120,8 +108,16 @@ function CartTotal() {
       type: "GET",
       url: "/Includes/carttotal.php",
       success: function(response) {
-        document.getElementById("cartTotalPrice").innerHTML = response;
-        price = response;
+        document.getElementById("cartTotalPrice").innerHTML = response; // Displays total in cart
+        document.getElementById("totalPrice").value = response * 100; // For POSTing totalPrice to Square
+        if (response <= 0)
+        {
+            document.getElementById("buyBtn").disabled = true;
+        }
+        else
+        {
+            document.getElementById("buyBtn").disabled = false;
+        }
       }
     })
 }
@@ -131,41 +127,4 @@ function CloseCart() {
     cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
     cart.style.visibility = "hidden";
     cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
-    let paypalBtn = document.getElementById("paypal-button-container");
-    if (paypalBtn.parentNode)
-    {
-        paypalBtn.parentNode.removeChild(paypalBtn);
-    }
 }
-
-// PayPal Buy Button //
-function initPayPalButton() {
-    paypal.Buttons({
-      style: {
-        shape: 'rect',
-        color: 'gold',
-        layout: 'horizontal',
-        label: 'checkout',
-        height: 55,
-      },
-
-      createOrder: function(data, actions) {
-        let items = "button";
-        return actions.order.create({
-          purchase_units: [
-            {"description": items,"amount":{"currency_code":"USD","value":price}}
-          ]
-        });
-      },
-
-      onApprove: function(data, actions) {
-        return actions.order.capture().then(function(details) {
-          alert('Transaction completed by ' + details.payer.name.given_name + '!');
-        });
-      },
-
-      onError: function(err) {
-        console.log(err);
-      }
-    }).render('#paypal-button-container');
-  }

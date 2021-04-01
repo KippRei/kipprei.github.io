@@ -77,6 +77,7 @@
             </div>
         </div>
 
+        <!-- Shopping Cart -->
         <div id="viewCartBtn">
             <button type="button" onclick="ViewCart()">Cart</button>
         </div>
@@ -87,13 +88,21 @@
             <button id="closeCartBtn" class="buttonMod" type="button" onclick="CloseCart()">
                 <img id="closeBtnImg" src="/SiteImages/cartClose.png" alt="Close Cart">
             </button>
-            <div id="paypalBtnLoc">
+            <div id="buyBtnLoc">
                 <div id="cartTotal" class="centered">
                     <p>Total: $
                         <span id="cartTotalPrice"></span>
                     </p>
+                    <div style="text-align: center;">
+                        <form action="/Includes/checkout.php" method="post">
+                            <input type="hidden" id="totalPrice" name="totalPrice" value="0">
+                            <button id="buyBtn" type="submit">
+                                <p>Pay Now</p>
+                            </button>
+                        </form>
+                    </div>
+                    <div class="smallPrint">Secure Checkout With Square</div>
                 </div>
-                <div id="paypalBtn" style="text-align: center;"></div>
             </div>
         </div>
             
@@ -104,7 +113,6 @@
     <div class="contentStartBuffer"></div>
     <div class="contentStartBuffer"></div>
 
-    <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
     <script src="/js.js"></script>
     </body>
 </html>

@@ -126,7 +126,10 @@ p {
     backdrop-filter: blur(8px);
     transition: background-color .5s;
 }
+/* END Merch Stuff */
 
+
+/* Cart Stuff */
 #shoppingCart {
     position: relative;
     overflow-y: auto;
@@ -165,7 +168,7 @@ p {
     z-index: 96;
 }
 
-#paypalBtnLoc {
+#buyBtnLoc {
     position: absolute;
     background-color: rgba(45, 224, 0, .7);
     width: 80%;
@@ -175,6 +178,13 @@ p {
     left: 50%;
     z-index: 96;
     transform: translate(-50%, 0%);
+}
+
+#buyBtn {
+    position: relative;
+    margin: 10px;
+    height: 70px;
+    width: 50vw;
 }
 
 #closeCartBtn {
@@ -194,7 +204,7 @@ p {
     bottom: 10px;
     right: 10px;
 }
-/* END Merch Stuff */
+/* END Cart Stuff */
 
 
 #bandnameTitle {
@@ -280,6 +290,12 @@ p {
     width: auto;
     height: 50px;
 }
+
+/* Text Mods */
+.smallPrint {
+    font-size: 10pt;
+}
+/* END Text Mods */
 
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
