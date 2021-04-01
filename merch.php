@@ -97,11 +97,14 @@
                         <form action="/Includes/checkout.php" method="post">
                             <input type="hidden" id="totalPrice" name="totalPrice" value="0">
                             <button id="buyBtn" type="submit">
-                                <p>Pay Now</p>
+                                Pay Now
                             </button>
                         </form>
                     </div>
-                    <div class="smallPrint">Secure Checkout With Square</div>
+                    <div class="smallPrint">
+                        Secure Checkout with
+                        <img class="smallPrintImg" src="/SiteImages/squareLogo.png">
+                    </div>
                 </div>
             </div>
         </div>

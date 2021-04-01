@@ -66,9 +66,9 @@ try {
 
   // Similar to payments you must have a unique idempotency key.
   $checkout_request = new CreateCheckoutRequest(uniqid(), $create_order_request);
-  //$checkout_request->setAskForShippingAddress(true);
+  $checkout_request->setAskForShippingAddress(true);
   $checkout_request->setMerchantSupportEmail('WhenWhalesWalked@gmail.com');
-  //$checkout_request->setRedirectUrl('https://kipprei.github.io');
+  //$checkout_request->setRedirectUrl('<url/for/confirmation/page>');
   
   $response = $checkout_api->createCheckout($location_id, $checkout_request);
 } catch (ApiException $e) {

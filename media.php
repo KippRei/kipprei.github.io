@@ -15,7 +15,7 @@
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>
         <span class="titleText centered">
-          Media<a href="/index.html"><img class="smallLogo" src="/BandImages/wwwInvert.png"></a>
+          Media<a href="/index.php"><img class="smallLogo" src="/BandImages/wwwInvert.png"></a>
         </span>
       </div>
 

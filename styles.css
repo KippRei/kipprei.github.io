@@ -181,10 +181,16 @@ p {
 }
 
 #buyBtn {
-    position: relative;
+    font-family: 'rolina', sans-serif;
+    font-size: 26pt;
+    text-shadow: 2px 1px rgb(242, 215, 133);
+    color: rgba(0,0,0, 0.938);
+    background-color: rgb(0, 38, 255);
+    border-radius: 10px;
     margin: 10px;
+    position: relative;
     height: 70px;
-    width: 50vw;
+    width: 60vw;
 }
 
 #closeCartBtn {
@@ -291,11 +297,19 @@ p {
     height: 50px;
 }
 
-/* Text Mods */
+/* Secure Checkout Text and Image */
 .smallPrint {
     font-size: 10pt;
+    font-style: italic;
 }
-/* END Text Mods */
+
+.smallPrintImg {
+    height: 12pt;
+    width: auto;
+    margin-bottom: 3px;;
+}
+
+/* END Secure Checkout Text and Image */
 
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
