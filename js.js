@@ -49,6 +49,14 @@ function CloseMenu() {
 // Cart Stuff
 function AddToCart(itemName) {
     DisableCartButtons();
+    console.log(itemName);
+    if (itemName == 'tshirt')
+    {
+        let a = document.getElementById("getsize").value;
+        itemName = itemName.concat("_",a)
+        
+    }
+    console.log(itemName)
     $.ajax({
         type: "POST",
         url: '/Includes/addtocart.php',

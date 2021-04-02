@@ -20,30 +20,165 @@
             </span>
         </div>
 
+        <!-- Featured Item -->
         <div class="contentStartBuffer"></div>
-        <div class="myRow">
-        <div class="centered myCol">
+        <div class="contentStartBuffer"></div>
+        <div class="centered">
             <div>
-                <img class="merchItem" src="/MerchImages/merchKeychain.png" alt="Merch Keychain">
-                <p>Keychain (2")</p>
+                <div class="merchTitle">Featured Item</div>
+                <img class="featuredItem" src="/MerchImages/merchTshirt.png" alt="Merch T-Shirt">
+                <div class="merchName">When Whales Walked T-Shirt</div>
             </div>
             <div>
-                <input type="hidden" name="itemName" value="keychain">
-                <button type="button" class="addToCart" onclick="AddToCart('keychain')">Add To Cart</button>                
+                <select id="getsize" name="sizes" class="sizes">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                    <option value="2xl">XXL</option>
+                </select>
+            </div>
+            <div>
+                <input type="hidden" name="itemName" value="tshirt">
+                <button type="button" class="addToCart" onclick="AddToCart('tshirt')">Add To Cart</button>                
             </div>
         </div>
 
-        <div class="centered myCol">
-            <div>
-                <img class="merchItem" src="/MerchImages/merchMagnet1.png" alt="Merch Magnet">
-                <p>Magnet (3")</p>
+        <!-- First Row of Merch -->
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="myRow">
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchKeychain.png" alt="Merch Keychain">
+                    <div class="merchName">Keychain (2")</div>
+                </div>
+                <div>
+                    <input type="hidden" name="itemName" value="keychain">
+                    <button type="button" class="addToCart" onclick="AddToCart('keychain')">Add To Cart</button>                
+                </div>
             </div>
-            <div>
-                <input type="hidden" name="itemName" value="smlMagnet">
-                <button type="button" class="addToCart" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
+
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchMagnet1.png" alt="Merch Magnet">
+                    <div class="merchName">Magnet (3")</div>
+                </div>
+                <div>
+                    <input type="hidden" name="itemName" value="smlMagnet">
+                    <button type="button" class="addToCart" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
+                </div>
             </div>
         </div>
+
+        <!-- Second Row of Merch -->
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="myRow">
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchBigMagnet1.png" alt="Merch Magnet">
+                    <div class="merchName">Magnet (4")</div>
+                </div>
+                <div>
+                    <input type="hidden" name="itemName" value="bigMagnet1">
+                    <button type="button" class="addToCart" onclick="AddToCart('bigMagnet1')">Add To Cart</button>                
+                </div>
+            </div>
+
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchBigMagnet2.png" alt="Merch Magnet">
+                    <div class="merchName">Magnet (4")</div>
+                </div>
+                <di>
+                    <input type="hidden" name="itemName" value="bigMagnet2">
+                    <button type="button" class="addToCart" onclick="AddToCart('bigMagnet2')">Add To Cart</button>                
+                </div>
+            </div>
         </div>
+
+        <!-- Third Row of Merch -->
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="myRow">
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchSticker1.png" alt="Merch Sticker">
+                    <div class="merchName">Sticker (4")</div>
+                </div>
+                <div>
+                    <input type="hidden" name="itemName" value="sticker1">
+                    <button type="button" class="addToCart" onclick="AddToCart('sticker1')">Add To Cart</button>                
+                </div>
+            </div>
+
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchSticker2.png" alt="Merch Sticker">
+                    <div class="merchName">Sticker (4")</div>
+                </div>
+                <di>
+                    <input type="hidden" name="itemName" value="sticker2">
+                    <button type="button" class="addToCart" onclick="AddToCart('sticker2')">Add To Cart</button>                
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth Row of Merch -->
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="myRow">
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchSticker3.png" alt="Merch Sticker">
+                    <div class="merchName">Sticker (4")</div>
+                </div>
+                <div>
+                    <input type="hidden" name="itemName" value="sticker3">
+                    <button type="button" class="addToCart" onclick="AddToCart('sticker3')">Add To Cart</button>                
+                </div>
+            </div>
+
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchBigSticker.png" alt="Merch Big Sticker">
+                    <div class="merchName">Big Sticker (4")</div>
+                </div>
+                <di>
+                    <input type="hidden" name="itemName" value="bigSticker">
+                    <button type="button" class="addToCart" onclick="AddToCart('bigSticker')">Add To Cart</button>                
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth Row of Merch -->
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="myRow">
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchButton1.png" alt="Merch Button">
+                    <div class="merchName">Button (2")</div>
+                </div>
+                <div>
+                    <input type="hidden" name="itemName" value="button1">
+                    <button type="button" class="addToCart" onclick="AddToCart('button1')">Add To Cart</button>                
+                </div>
+            </div>
+
+            <div class="centered myCol">
+                <div>
+                    <img class="merchItem" src="/MerchImages/merchButton2.png" alt="Merch Button">
+                    <div class="merchName">Button (2")</div>
+                </div>
+                <di>
+                    <input type="hidden" name="itemName" value="button2">
+                    <button type="button" class="addToCart" onclick="AddToCart('button2')">Add To Cart</button>                
+                </div>
+            </div>
+        </div>
+
 
         <!-- Shopping Cart -->
         <div id="viewCartBtn">
