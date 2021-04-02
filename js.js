@@ -53,7 +53,7 @@ function AddToCart(itemName) {
     if (itemName == 'tshirt')
     {
         let a = document.getElementById("getsize").value;
-        itemName = itemName.concat("_",a)
+        itemName = itemName.concat("_",a);
         
     }
     console.log(itemName)

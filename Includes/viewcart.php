@@ -1,11 +1,11 @@
 <?php
-    require "../sessionBegin.php";
+    session_start();
     $merchLi = $_SESSION["merchPriceList"][0];
     $merchImg = $_SESSION["merchPriceList"][1];
 
     echo    "<div id=\"cartTitle\">Cart</div>";
 
-    if (sizeof($_SESSION["cart"]) == 0 || $_SESSION["cart"] == "") 
+    if ($_SESSION["cart"] == null) 
     {
         echo "<div class=\"cartItem\">Cart is empty</div>";
     }

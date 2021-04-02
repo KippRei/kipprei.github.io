@@ -11,6 +11,7 @@
     <body class="merch">
         <?php require 'sitemenu.html';?>
 
+        <?php var_dump($_SESSION["cart"]);?>
         <div class="menuButtonPos">
             <button class="buttonMod" type="button" onclick="OpenMenu()">
             <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
