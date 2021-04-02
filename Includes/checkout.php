@@ -1,9 +1,8 @@
 <?php
-
+session_start();
 // Note this line needs to change if you don't use Composer:
 // require('square-php-sdk/autoload.php');
 require 'vendor/autoload.php';
-require "../sessionBegin.php";
 
 use Dotenv\Dotenv;
 use Square\Models\CreateOrderRequest;

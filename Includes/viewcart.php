@@ -1,5 +1,5 @@
 <?php
-    require "../sessionBegin.php";
+    session_start();
     $merchLi = $_SESSION["merchPriceList"][0];
     $merchImg = $_SESSION["merchPriceList"][1];
 

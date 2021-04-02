@@ -1,5 +1,5 @@
 <?php
-    require "../sessionBegin.php";
+    session_start();
     $item = $_REQUEST["item"];
     $quant = $_REQUEST["quant"];
     $_SESSION["cart"][$item] = $quant;
