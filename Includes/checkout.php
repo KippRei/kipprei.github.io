@@ -3,6 +3,7 @@
 // Note this line needs to change if you don't use Composer:
 // require('square-php-sdk/autoload.php');
 require 'vendor/autoload.php';
+require "../sessionBegin.php";
 
 use Dotenv\Dotenv;
 use Square\Models\CreateOrderRequest;
@@ -41,25 +42,40 @@ try {
 
   // Monetary amounts are specified in the smallest unit of the applicable currency.
   // This amount is in cents. It's also hard-coded for $1.00, which isn't very useful.
-  $money_A = new Money();
-  $money_A->setCurrency('USD');
-  $money_A->setAmount($cartTotal);
 
-  $item_A = new OrderLineItem(1);
-  $item_A->setName('Cart Total');
-  $item_A->setBasePriceMoney($money_A);
+  $order_line_items = array();
+  $merchLi = $_SESSION["merchPriceList"][0]; // gets the merch price list to calculate line item price
+  $i = 0; // iterator for naming line item variables
+  foreach ($_SESSION["cart"] as $item=>$quant)
+  {
+      $line_money = 'm'.$i;
+      $line_item = 'i'.$i;
+      $price = $merchLi[$item] * $quant * 100;
 
-  $money_B = new Money();
-  $money_B->setCurrency('USD');
-  $money_B->setAmount(495);
+      $$line_money = new Money();
+      $$line_money->setCurrency('USD');
+      $$line_money->setAmount($price); // TODO: get line total, just used quantity as placeholder for now
+
+      $$line_item= new OrderLineItem(1);
+      $$line_item->setName($item);
+      $$line_item->setBasePriceMoney($$line_money);
+
+      array_push($order_line_items, $$line_item);
+      $i++;
+  }
+  $money_ship = new Money();
+  $money_ship->setCurrency('USD');
+  $money_ship->setAmount(495);
   
-  $item_B = new OrderLineItem(1);
-  $item_B->setName('Flat Rate Shipping');
-  $item_B->setBasePriceMoney($money_B);
+  $item_ship = new OrderLineItem(1);
+  $item_ship->setName('Flat Rate Shipping');
+  $item_ship->setBasePriceMoney($money_ship);
+
+  array_push($order_line_items, $item_ship);
 
   // Create a new order and add the line items as necessary.
   $order = new Order($location_id);
-  $order->setLineItems([$item_A, $item_B]);
+  $order->setLineItems($order_line_items);
 
   $create_order_request = new CreateOrderRequest();
   $create_order_request->setOrder($order);
@@ -67,8 +83,8 @@ try {
   // Similar to payments you must have a unique idempotency key.
   $checkout_request = new CreateCheckoutRequest(uniqid(), $create_order_request);
   $checkout_request->setAskForShippingAddress(true);
-  $checkout_request->setMerchantSupportEmail('WhenWhalesWalked@gmail.com');
-  //$checkout_request->setRedirectUrl('<url/for/confirmation/page>');
+  //$checkout_request->setMerchantSupportEmail('WhenWhalesWalked@gmail.com');
+  $checkout_request->setRedirectUrl('https://kippreitzel.com');
   
   $response = $checkout_api->createCheckout($location_id, $checkout_request);
 } catch (ApiException $e) {
