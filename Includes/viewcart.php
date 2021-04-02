@@ -1,32 +1,32 @@
 <?php
     require "../sessionBegin.php";
-    echo    "<div id=\"cartTitle\">Cart</div>",
-            "<div class=\"contentStartBuffer\"></div>";
-    $_SESSION["total"] = 0;
     $merchLi = $_SESSION["merchPriceList"][0];
+    $merchImg = $_SESSION["merchPriceList"][1];
+
+    echo    "<div id=\"cartTitle\">Cart</div>";
+    
     if (sizeof($_SESSION["cart"]) == 0 || $_SESSION["cart"] == "") 
     {
         echo "<div class=\"cartItem\">Cart is empty</div>";
     }
-    foreach ($_SESSION["cart"] as $item => $quantity)
+    else 
     {
-        $itemQuant = $item . "Quant";
-        $itemTotal = $merchLi[$item] * $quantity;
-        echo   "<p class=\"cartItem\">$item.....
-                <span>
-                    <input type=\"hidden\" value=\"$item\"/>
-                    <input type=\"number\" min=\"0\" step=\"1\" id=\"$itemQuant\" name=\"quant\" value=\"$quantity\" size=\"2\"/>
-                    <button type=\"button\" 
-                    onclick=\"UpdateCart('$item')\">Update</button>
-                </span>
-                <span>
-                    <button type=\"button\" 
-                    onclick=\"UpdateCart('$item', 'true')\">Remove</button>
-                </span>
-                
-                <span class=\"cartPrice\">\$$itemTotal</span>
-                </p>";
-        $_SESSION["total"] += $itemTotal;
+        foreach ($_SESSION["cart"] as $item => $quantity)
+        {
+            $itemQuant = $item . "Quant";
+            $itemTotal = $merchLi[$item] * $quantity;
+            $itemImg = $merchImg[$item];
+            echo   "<div class=\"contentStartBuffer\"></div>
+                    <img class=\"cartImg\" src='$itemImg'>
+                    <p class=\"cartItem\">$item</p>
+                    <ul class=\"centered itemQuantAdjUl\">
+                        <li class=\"itemQuantAdjLi\"><button class=\"minusBtn\" onclick=\"RemoveFromCart('$item')\">-</button></li><!--
+                        --><li class=\"itemQuantAdjLi\"><input class=\"quantText\" type=\"text\" readonly=\"readonly\" maxlength=\"2\" size=\"2\" id=\"$itemQuant\" name=\"quant\" value=\"$quantity\"/></li><!--
+                        --><li class=\"itemQuantAdjLi\"><button class= \"plusBtn\" onclick=\"AddToCart('$item')\">+</button></li>
+                        <li class=\"cartPrice itemQuantAdjLi\">\$$itemTotal</li>
+                    </ul>";
+        }
+        echo "<br><br><br><br><br><br><br>";
     }
-    echo "<br><br><br><br><br><br><br>";
+    echo "<script>EnableCartButtons();</script>";
 ?>

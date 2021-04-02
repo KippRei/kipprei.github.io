@@ -9,8 +9,6 @@
     </head>
 
     <body class="merch">
-        <?php var_dump($_SESSION["cart"]);?>
-
         <?php require 'sitemenu.html';?>
 
         <div class="menuButtonPos">
@@ -23,63 +21,35 @@
         </div>
 
         <div class="contentStartBuffer"></div>
-        <div class="centered">
-            <div class="merchTitle">Buttons</div>
-            <div>
-                <img class="merchItem" src="/MerchImages/merchButton1.png" alt="Button style WWW">
-                <p>Style 1: WWW</p>
-                <img class="merchItem" src="/MerchImages/merchButton2.png" alt="Button style Whale">
-                <p>Style 2: Whale Hug</p>
-            </div>
-
-            <div>
-                <form action="/merch.php" method="post">
-                    <table>
-                        <tr><td>Options</td></tr>
-                        <tr><td>
-                            <select>
-                            <option>1 for $2.00 USD</option>
-                            <option>2 for $3.00 USD</option>
-                            </select>
-                        </td></tr>
-                        <tr><td>Let us know which style(s):</td></tr><tr><td><input type="text" name="itemName" maxlength="200"></td></tr>
-                    </table>
-                    <button type="submit">Add To Cart</div>
-                </form>
-            </div>
-        </div>
-
-        <div class="contentStartBuffer"></div>
-        <div class="centered">
-            <div class="merchTitle">Keychain</div>
+        <div class="myRow">
+        <div class="centered myCol">
             <div>
                 <img class="merchItem" src="/MerchImages/merchKeychain.png" alt="Merch Keychain">
                 <p>Keychain (2")</p>
             </div>
             <div>
-                <form action="/merch.php" method="post">
-                    <input type="hidden" name="itemName" value="keychain">
-                    <button type="submit">Add To Cart</button>
-                </form>
+                <input type="hidden" name="itemName" value="keychain">
+                <button type="button" class="addToCart" onclick="AddToCart('keychain')">Add To Cart</button>                
             </div>
         </div>
 
-        <div class="contentStartBuffer"></div>
-        <div class="centered">
-            <div class="merchTitle">Magnets</div>
+        <div class="centered myCol">
             <div>
                 <img class="merchItem" src="/MerchImages/merchMagnet1.png" alt="Merch Magnet">
                 <p>Magnet (3")</p>
             </div>
             <div>
                 <input type="hidden" name="itemName" value="smlMagnet">
-                <button type="button" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
+                <button type="button" class="addToCart" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
             </div>
+        </div>
         </div>
 
         <!-- Shopping Cart -->
         <div id="viewCartBtn">
-            <button type="button" onclick="ViewCart()">Cart</button>
+            <button class="buttonMod" type="button" onclick="ViewCart()">
+                <img class="menuButton" src="/SiteImages/cart.png">
+            </button>
         </div>
         <div id="shoppingCartBg">
             <div id="shoppingCart">
@@ -90,9 +60,12 @@
             </button>
             <div id="buyBtnLoc">
                 <div id="cartTotal" class="centered">
-                    <p>Total: $
-                        <span id="cartTotalPrice"></span>
+                    <p>
+                        Total: $<span id="cartTotalPrice"></span>
                     </p>
+                    <div>
+                        (+$4.95 Flat-Rate Shipping)
+                    </div>
                     <div style="text-align: center;">
                         <form action="/Includes/checkout.php" method="post">
                             <input type="hidden" id="totalPrice" name="totalPrice" value="0">

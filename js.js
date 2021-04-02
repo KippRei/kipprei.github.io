@@ -6,6 +6,7 @@ var mdPP = document.getElementById("mdPP"); //play/pause button for mom and dad
 var jPP = document.getElementById("jPP"); //play/pause button for jingle bells
 var cartBg = document.getElementById("shoppingCartBg");
 var cart = document.getElementById("shoppingCart");
+var total = 0;
 
 function PlayMomDad() {
     if (momdad.paused) 
@@ -47,9 +48,23 @@ function CloseMenu() {
 
 // Cart Stuff
 function AddToCart(itemName) {
-  $.ajax({
+    DisableCartButtons();
+    $.ajax({
+        type: "POST",
+        url: '/Includes/addtocart.php',
+        data: {item: itemName},
+        success: function(response)
+        {
+          ViewCart();
+        }
+    });
+}
+
+function RemoveFromCart(itemName) {
+    DisableCartButtons();
+    $.ajax({
       type: "POST",
-      url: '/Includes/addtocart.php',
+      url: '/Includes/removefromcart.php',
       data: {item: itemName},
       success: function(response)
       {
@@ -57,32 +72,67 @@ function AddToCart(itemName) {
       }
   });
 }
+// TODO: Remove this code (PlusMinus and Update) after testing
+// function PlusMinusCart(itemName, addTo) {
+//     var toRemove = false;
 
-function UpdateCart(itemToUpdate, remove = false) {
-    // When viewcart.php propagates cart it id's item quantity by 
-    // concatenating the item name with "Quant"
-    var quantity = 0; // Holds updated quantity
+//     if (addTo)
+//     {
+//         let itemQuant = itemName.concat("Quant"); // Get item name and concat Quant to create id for item quantity
+//         document.getElementById(itemQuant).value++;
+//     }
+//     else
+//     {
+//         let itemQuant = itemName.concat("Quant"); // Get item name and concat Quant to create id for item quantity
+//         document.getElementById(itemQuant).value--;
+//         if (document.getElementById(itemQuant).value <= 0)
+//         {
+//             toRemove = true;
+//         }
+//     }
+//     DisableCartButtons();
+//     UpdateCart(itemName, toRemove); // toRemove is true if quantity of item is adjusted to zero or below
+// }
 
-    if (!remove)
-    {
-        let itemQuant = itemToUpdate.concat("Quant"); // Get item name and concat Quant to create id for item quantity
-        quantity = document.getElementById(itemQuant).value;
-        if (!Number.isInteger(quantity))
-        {
-          quantity = (Math.floor(quantity));
-        }
-    }
+// function UpdateCart(itemToUpdate, remove = false) {
+//     // When viewcart.php propagates cart, it id's item quantity by 
+//     // concatenating the item name with "Quant"
+//     var quantity = 0; // Holds updated quantity
 
-    $.ajax({
-      type: "POST",
-      url: 'Includes/updatecart.php',
-      data: {item: itemToUpdate, quant: quantity},
-      success: function(response)
-      {
-        ViewCart();
-      }
-    })
-}
+//     if (remove)
+//     {
+//         $.ajax({
+//           type: "POST",
+//           url: 'Includes/updatecart.php',
+//           data: {item: itemToUpdate, quant: quantity},
+//           success: function(response)
+//           {
+//             ViewCart();
+//           }
+//         });
+//     }
+//     else
+//     {
+//         let itemQuant = itemToUpdate.concat("Quant"); // Get item name and concat Quant to create id for item quantity
+//         quantity = document.getElementById(itemQuant).value;
+//         if (!isNaN(quantity))
+//         {
+//           if (!Number.isInteger(quantity))
+//           {
+//             quantity = (Math.floor(quantity));
+//           }
+//           $.ajax({
+//             type: "POST",
+//             url: 'Includes/updatecart.php',
+//             data: {item: itemToUpdate, quant: quantity},
+//             success: function(response)
+//             {
+//               ViewCart();
+//             }
+//           });
+//         }
+//     }
+// }
 
 function ViewCart() {
     cartBg.style.visibility = "visible";
@@ -127,4 +177,26 @@ function CloseCart() {
     cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
     cart.style.visibility = "hidden";
     cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
+}
+
+function EnableCartButtons() {
+    document.getElementById("buyBtn").disabled = false;
+    let plus = document.getElementsByClassName("plusBtn");
+    let minus = document.getElementsByClassName("minusBtn");
+    for (var i = 0; i < plus.length; i++)
+    {
+        plus[i].disabled = false;
+        minus[i].disabled = false;
+    }
+}
+
+function DisableCartButtons() {
+    document.getElementById("buyBtn").disabled = true;
+    let plus = document.getElementsByClassName("plusBtn");
+    let minus = document.getElementsByClassName("minusBtn");
+    for (var i = 0; i < plus.length; i++)
+    {
+        plus[i].disabled = true;
+        minus[i].disabled = true;
+    }
 }

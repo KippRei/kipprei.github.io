@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'rolina';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/Fonts/Rolina.woff);
+}
+
+@font-face {
+    font-family: 'Metal Head';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/Fonts/MetalHead.woff);
+}
 
 /* Contact Page */
 .addressText {
@@ -44,6 +57,7 @@ ul {
 #openButton {
     padding-top: 10px;
 }
+
 .menuButton {
     position: fixed;
     height: 50px;
@@ -85,7 +99,7 @@ form {
 
 .merchItem {
     width: 70%;
-    height: auto;
+    height: 150px;
 }
 
 p {
@@ -95,16 +109,7 @@ p {
     text-shadow:2px 1px rgba(242, 215, 133, 0.938); 
 }
 
-#cartTitle {
-    text-align: center;
-    font-size: 30pt;
-    font-family: 'rolina', sans-serif;
-    color: rgb(0, 0, 0);
-    text-shadow:2px 1px rgba(242, 215, 133, 0.938);
-    text-decoration: underline;
-    padding-bottom: 10px;
-}
-
+/* TODO: Removed merch titles, delete this later if not needed */
 .merchTitle {
     font-size: 30pt;
     font-family: 'rolina', sans-serif;
@@ -114,18 +119,26 @@ p {
     padding-bottom: 10px;
 }
 
-#shoppingCartBg {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 90;
-    visibility: hidden;
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    transition: background-color .5s;
+.addToCart {
+    border-radius: 5px;
+    border: none;
+    background-color: yellow;
+    color: rgb(0, 0, 0);
+    font-size: 16pt;
+    font-family: 'rolina', sans-serif;
 }
+
+.myCol {
+    float: left;
+    width:50%;
+}
+
+.myRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* END Merch Stuff */
 
 
@@ -143,15 +156,105 @@ p {
     transition: background-color .5s;
 }
 
+#shoppingCartBg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    visibility: hidden;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color .5s;
+}
+
+#cartTitle {
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'rolina', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    text-decoration: underline;
+}
+
 #cartContents {
     position: relative;
     /* overflow: scroll; */
+}
+
+.cartImg {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 10px;
+    float: left;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
 }
 
 .cartItem {
     font-size: 16pt;
     position: relative;
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.itemQuantAdjUl {
+    list-style: none;
+}
+
+.itemQuantAdjLi {
+    display: inline-block;
+    font-size: 16pt;
+    font-family: 'rolina', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 1px rgba(242, 215, 133, 0.938); 
+}
+
+.minusBtn {
+    padding: 0px;
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 5px 0px 0px 5px;
+    border-width: 2px;
+    border-style: solid none solid solid;
+    border-color: black;
+    text-decoration: none;
+}
+
+.minusBtn:active {
+    background-color: rgb(190, 190, 190);
+}
+
+.quantText {
+    padding: 0px;
+    font-size: 14pt;
+    padding-left: 5px;
+    padding-right: 5px;;
+    text-align: center;
+    border-radius: 0px;
+    border: 2px solid black;
+}
+
+.plusBtn {
+    padding: 0px;
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+    border-width: 2px;
+    border-style: solid solid solid none;
+    border-color: black;
+    text-decoration: none;
+}
+
+.plusBtn:active {
+    background-color: rgb(190, 190, 190);
 }
 
 .cartPrice {
@@ -159,18 +262,14 @@ p {
     right: 20px;
 }
 
-#cartBuffer {
-    padding: 150px;
-}
-
 #cartTotal {
-    padding-top: 10px;
+    margin-top: 10px;
     z-index: 96;
 }
 
 #buyBtnLoc {
     position: absolute;
-    background-color: rgba(45, 224, 0, .7);
+    background-color: rgb(90, 243, 52);
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -182,15 +281,15 @@ p {
 
 #buyBtn {
     font-family: 'rolina', sans-serif;
-    font-size: 26pt;
+    font-size: 22pt;
     text-shadow: 2px 1px rgb(242, 215, 133);
     color: rgba(0,0,0, 0.938);
     background-color: rgb(0, 38, 255);
     border-radius: 10px;
     margin: 10px;
     position: relative;
-    height: 70px;
-    width: 60vw;
+    height: 50px;
+    width: 65vw;
 }
 
 #closeCartBtn {
@@ -207,8 +306,20 @@ p {
 
 #viewCartBtn {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 60px;
+    right: 60px;
+}
+
+/* Secure Checkout Text and Image */
+.smallPrint {
+    font-size: 10pt;
+    font-style: italic;
+}
+
+.smallPrintImg {
+    height: 12pt;
+    width: auto;
+    margin-bottom: 3px;;
 }
 /* END Cart Stuff */
 
@@ -296,20 +407,6 @@ p {
     width: auto;
     height: 50px;
 }
-
-/* Secure Checkout Text and Image */
-.smallPrint {
-    font-size: 10pt;
-    font-style: italic;
-}
-
-.smallPrintImg {
-    height: 12pt;
-    width: auto;
-    margin-bottom: 3px;;
-}
-
-/* END Secure Checkout Text and Image */
 
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {

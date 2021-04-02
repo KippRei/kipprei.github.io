@@ -3,5 +3,10 @@
         "keychain": 3, 
         "button": 2,
         "smlMagnet": 3
+    },
+    {
+        "keychain": "/MerchImages/merchKeychain.png",
+        "button": "/MerchImages/merchButton1.png",
+        "smlMagnet": "/MerchImages/merchMagnet1.png"
     }
 ]
