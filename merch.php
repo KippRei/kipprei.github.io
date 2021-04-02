@@ -35,7 +35,7 @@
                     <option value="m">M</option>
                     <option value="l">L</option>
                     <option value="xl">XL</option>
-                    <option value="2xl">XXL</option>
+                    <option value="xxl">XXL</option>
                 </select>
             </div>
             <div>
@@ -65,7 +65,7 @@
                     <div class="merchName">Magnet (3")</div>
                 </div>
                 <div>
-                    <input type="hidden" name="itemName" value="smlMagnet">
+                    <input type="hidden" name="itemName" value="magnet1">
                     <button type="button" class="addToCart" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
                 </div>
             </div>
@@ -195,7 +195,7 @@
             </button>
             <div id="buyBtnLoc">
                 <div id="cartTotal" class="centered">
-                    <p>
+                    <p class="noBuffer">
                         Total: $<span id="cartTotalPrice"></span>
                     </p>
                     <div>

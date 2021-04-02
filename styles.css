@@ -137,6 +137,7 @@ p {
 }
 
 .addToCart {
+    font-family:sans-serif;
     border-radius: 5px;
     border: none;
     background-color: rgb(77, 165, 33);
@@ -160,7 +161,6 @@ p {
     display: table;
     clear: both;
 }
-
 /* END Merch Stuff */
 
 

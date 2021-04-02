@@ -1,12 +1,36 @@
 [
     {
         "keychain": 3, 
-        "button": 2,
-        "smlMagnet": 3
+        "button1": 2,
+        "button2": 2,
+        "magnet1": 3,
+        "bigMagnet1": 4,
+        "bigMagnet2": 4,
+        "bigSticker": 5,
+        "sticker1": 4,
+        "sticker2": 4,
+        "sticker3": 4,
+        "tshirt_s": 15,
+        "tshirt_m": 15,
+        "tshirt_l": 15,
+        "tshirt_xl": 15,
+        "tshirt_xxl": 15
     },
     {
         "keychain": "/MerchImages/merchKeychain.png",
-        "button": "/MerchImages/merchButton1.png",
-        "smlMagnet": "/MerchImages/merchMagnet1.png"
+        "button1": "/MerchImages/merchButton1.png",
+        "button2": "/MerchImages/merchButton2.png",
+        "magnet1": "/MerchImages/merchMagnet1.png",
+        "bigMagnet1": "/MerchImages/merchBigMagnet1.png",
+        "bigMagnet2": "/MerchImages/merchBigMagnet2.png",
+        "bigSticker": "/MerchImages/merchBigSticker.png",
+        "sticker1": "/MerchImages/merchSticker1.png",
+        "sticker2": "/MerchImages/merchSticker2.png",
+        "sticker3": "/MerchImages/merchSticker3.png",
+        "tshirt_s": "/MerchImages/merchTshirt.png",
+        "tshirt_m": "/MerchImages/merchTshirt.png",
+        "tshirt_l": "/MerchImages/merchTshirt.png",
+        "tshirt_xl": "/MerchImages/merchTshirt.png",
+        "tshirt_xxl": "/MerchImages/merchTshirt.png"
     }
 ]

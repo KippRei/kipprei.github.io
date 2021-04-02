@@ -4,7 +4,7 @@
     $merchImg = $_SESSION["merchPriceList"][1];
 
     echo    "<div id=\"cartTitle\">Cart</div>";
-    
+
     if (sizeof($_SESSION["cart"]) == 0 || $_SESSION["cart"] == "") 
     {
         echo "<div class=\"cartItem\">Cart is empty</div>";
@@ -26,7 +26,7 @@
                         <li class=\"cartPrice itemQuantAdjLi\">\$$itemTotal</li>
                     </ul>";
         }
-        echo "<br><br><br><br><br><br><br>";
+        echo "<div style=\"margin-bottom: 200px;\"</div>";
     }
     echo "<script>EnableCartButtons();</script>";
 ?>
