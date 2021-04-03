@@ -59,6 +59,7 @@ ul {
 }
 
 .menuButton {
+    z-index: 99;
     position: fixed;
     height: 50px;
     width: 50px;
@@ -113,6 +114,15 @@ form {
     transform: translate(-50%);
 }
 
+.featuredTitle {
+    font-size: 26pt;
+    font-family: 'rolina', sans-serif;
+    color: rgb(0, 0, 0);
+    text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+
 .featuredItemImg {
     position: relative;
     width: auto;
@@ -150,30 +160,37 @@ p {
 }
 
 .merchName {
-    font-size: 16pt;
+    font-size: 18pt;
     font-family: 'rolina', sans-serif;
     color: rgb(0, 0, 0);
-    text-shadow:2px 1px rgba(242, 215, 133, 0.938); 
 }
 
 /* TODO: Removed merch titles, delete this later if not needed */
-.merchTitle {
+.itemPrice {
+    margin-top: -12px;
     font-size: 26pt;
     font-family: 'rolina', sans-serif;
     color: rgb(0, 0, 0);
-    text-shadow:2px 1px rgba(242, 215, 133, 0.938);
-    text-decoration: underline;
-    padding-bottom: 10px;
 }
 
 .addToCart {
-    font-family:sans-serif;
+    font-size: 18pt;
+    padding: 5px;
+    font-family: 'rolina', sans-serif;
     border-radius: 5px;
     border: none;
-    background-color: rgb(77, 165, 33);
+    background-color: rgb(9, 255, 0);
+    box-shadow: 2px 3px rgba(0,0,0,.5);
     color: rgb(0, 0, 0);
-    font-style: italic;
-    font-size: 14pt;
+}
+
+.addToCart:active {
+    font-family: 'rolina', sans-serif;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(135, 255, 133);
+    box-shadow: 0px 0px rgba(0,0,0,.5);
+    color: rgb(0, 0, 0);
 }
 
 /* For t-shirts */
@@ -186,13 +203,45 @@ p {
     width:50%;
 }
 
-.myRow:after {
+.myRow::after {
     content: "";
     display: table;
     clear: both;
 }
 /* END Merch Stuff */
 
+/* Item Popup Stuff */
+#itemPopupBg {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 290;
+    visibility: hidden;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color .5s;
+}
+/* This is the div where the popup image is inserted */
+#itemPopup {
+    position: fixed;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    z-index: 295;
+    transition: background-color .5s;
+}
+
+#popupImg {
+    position: relative;
+    width: 75%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* END Item Popup Stuff */
 
 /* Cart Stuff */
 #shoppingCart {
@@ -203,7 +252,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 95;
+    z-index: 295;
     visibility: hidden;
     transition: background-color .5s;
 }
@@ -214,7 +263,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 90;
+    z-index: 290;
     visibility: hidden;
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -235,14 +284,25 @@ p {
     /* overflow: scroll; */
 }
 
-.cartImg {
+.cartImgContain {
     position: absolute;
+    border: 1px solid rgb(116, 116, 116);
     margin-top: 12px;
     margin-left: 10px;
     float: left;
     height: 50px;
     width: 50px;
     border-radius: 5px;
+    overflow: hidden;
+}
+
+.cartImg {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
 }
 
 .cartItem {
@@ -316,7 +376,7 @@ p {
 
 #cartTotal {
     margin-top: 10px;
-    z-index: 96;
+    z-index: 296;
 }
 
 #buyBtnLoc {
@@ -327,18 +387,33 @@ p {
     margin-right: auto;
     bottom: 5%;
     left: 50%;
-    z-index: 96;
+    z-index: 296;
     transform: translate(-50%, 0%);
 }
 
 #buyBtn {
     font-family: 'rolina', sans-serif;
     font-size: 22pt;
-    text-shadow: 2px 1px rgb(242, 215, 133);
     color: rgba(0,0,0, 0.938);
     background-color: rgb(0, 38, 255);
     border-radius: 10px;
     margin: 10px;
+    border: none;
+    box-shadow: 2px 3px rgba(0,0,0,.5);
+    position: relative;
+    height: 50px;
+    width: 65vw;
+}
+
+#buyBtn:active {
+    font-family: 'rolina', sans-serif;
+    font-size: 22pt;
+    color: rgba(0,0,0, 0.938);
+    background-color: rgb(0, 140, 255);
+    border-radius: 10px;
+    margin: 10px;
+    border: none;
+    box-shadow: 0px 0px rgba(0,0,0,.5);
     position: relative;
     height: 50px;
     width: 65vw;
@@ -348,7 +423,7 @@ p {
     top: 2%;
     left: 2%;
     position: absolute;
-    z-index: 96;
+    z-index: 296;
 }
 
 #closeBtnImg {

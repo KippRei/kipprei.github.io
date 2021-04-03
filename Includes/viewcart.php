@@ -17,7 +17,9 @@
             $itemTotal = $merchLi[$item] * $quantity;
             $itemImg = $merchImg[$item];
             echo   "<div class=\"contentStartBuffer\"></div>
+                    <div class=\"cartImgContain\">
                     <img class=\"cartImg\" src='$itemImg'>
+                    </div>
                     <p class=\"cartItem\">$item</p>
                     <ul class=\"centered itemQuantAdjUl\">
                         <li class=\"itemQuantAdjLi\"><button class=\"minusBtn\" onclick=\"RemoveFromCart('$item')\">-</button></li><!--
