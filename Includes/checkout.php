@@ -64,7 +64,7 @@ try {
   }
   $money_ship = new Money();
   $money_ship->setCurrency('USD');
-  $money_ship->setAmount(495);
+  $money_ship->setAmount(420);
   
   $item_ship = new OrderLineItem(1);
   $item_ship->setName('Flat Rate Shipping');

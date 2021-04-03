@@ -199,7 +199,7 @@
                         Total: $<span id="cartTotalPrice"></span>
                     </p>
                     <div>
-                        (+$4.95 Flat-Rate Shipping)
+                        (+$4.20 Flat-Rate Shipping)
                     </div>
                     <div style="text-align: center;">
                         <form action="/Includes/checkout.php" method="post">
