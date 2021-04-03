@@ -66,7 +66,7 @@
                 </div>
                 <div>
                     <input type="hidden" name="itemName" value="magnet1">
-                    <button type="button" class="addToCart" onclick="AddToCart('smlMagnet')">Add To Cart</button>                
+                    <button type="button" class="addToCart" onclick="AddToCart('magnet1')">Add To Cart</button>                
                 </div>
             </div>
         </div>
