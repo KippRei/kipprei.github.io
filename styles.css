@@ -103,13 +103,43 @@ form {
 }
 
 .featuredItem {
-    width: 70%;
-    height: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    position: relative;
+    width: 95%;
+    height: 300px;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.featuredItemImg {
+    position: relative;
+    width: auto;
+    height: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .merchItem {
-    width: 70%;
+    background-color:  rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    position: relative;
+    width: 95%;
     height: 150px;
+    overflow: hidden;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.merchItemImg {
+    position: relative;
+    max-width: 95%;
+    max-height: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 p {
