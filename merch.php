@@ -53,7 +53,9 @@
 
         <!-- Item Popup Window -->
         <div id="itemPopupBg">
+
             <div id="itemPopup"></div>
+            
             <button id="closeCartBtn" class="buttonMod" type="button" onclick="ClosePopupImg()">
                 <img id="closeBtnImg" src="/SiteImages/cartClose.png" alt="Close Popup Image"/>
             </button>

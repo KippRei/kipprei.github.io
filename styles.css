@@ -230,16 +230,34 @@ p {
     height: 100%;
     width: 100%;
     z-index: 295;
-    transition: background-color .5s;
+    transition: background-color .6s;
+}
+
+#popupLoc {
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #popupImg {
     position: relative;
-    width: 75%;
+    width: 83%;
     height: auto;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
+}
+
+#popupDescript {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+    width: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'rolina', sans-serif;
+    font-size: 20pt;
+    color: white;
 }
 /* END Item Popup Stuff */
 
