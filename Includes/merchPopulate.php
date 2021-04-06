@@ -1,9 +1,8 @@
 <?php
     session_start();
-    $merchLi = $_SESSION["merchPriceList"][0];
-    $merchImg = $_SESSION["merchPriceList"][1];
+    $merch = $_SESSION["merchPriceList"][0];
     $i = 1;
-    foreach ($merchImg as $item=>$img)
+    foreach ($merch as $item=>$value)
     {
         if (preg_match("/^tshirt/", $item))
         {
@@ -18,12 +17,12 @@
                         <div class='myCol'>  
                             <a href='javascript: ViewItem(\"$item\");'>              
                                 <div class='merchItem'>
-                                    <img class='merchItemImg' src='$img' alt='Merch '$item''/>
+                                    <img class='merchItemImg' src='$value[image]' alt='Merch $value[name]'/>
                                 </div>
                             </a>
                             <div class='centered'>
-                                <div class='merchName'>$item</div>
-                                <div class='itemPrice'>$$merchLi[$item]</div>
+                                <div class='merchName'>$value[name]</div>
+                                <div class='itemPrice'>$$value[price]</div>
                                 <div>
                                     <button type='button' class='addToCart' onclick='AddToCart(\"$item\")'>Add To Cart</button>                
                                 </div>
@@ -36,12 +35,12 @@
             echo       "<div class='myCol'>
                         <a href='javascript: ViewItem(\"$item\");'>
                             <div class='merchItem'>
-                                <img class='merchItemImg' src='$img' alt='Merch '$item''/>
+                                <img class='merchItemImg' src='$value[image]' alt='Merch '$value[name]''/>
                             </div>
                         </a>
                         <div class='centered'>
-                            <div class='merchName'>$item</div>
-                            <div class='itemPrice'>$$merchLi[$item]</div>
+                            <div class='merchName'>$value[name]</div>
+                            <div class='itemPrice'>$$value[price]</div>
                             <div>
                                 <button type='button' class='addToCart' onclick='AddToCart(\"$item\")'>Add To Cart</button>                
                             </div>

@@ -54,8 +54,7 @@ function AddToCart(itemName) {
     {
         // Concat size of tshirt
         let a = document.getElementById("getsize").value;
-        itemName = itemName.concat("_",a)
-        
+        itemName = itemName.concat("_", a);
     }
 
     $.ajax({

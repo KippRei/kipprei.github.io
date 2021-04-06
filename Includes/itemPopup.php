@@ -1,7 +1,7 @@
 <?php
     session_start();
-    $merchImg = $_SESSION["merchPriceList"][1];
+    $merch = $_SESSION["merchPriceList"][0];
     $item = $_REQUEST["item"];
-    $popupImg = $merchImg[$item];
-    echo "<img id='popupImg' src='$popupImg' alt='$item'/>";
+    $popupImg = $merch[$item][image];
+    echo "<img id='popupImg' src='$popupImg' alt='$merch[$item][name]'/>";
 ?>

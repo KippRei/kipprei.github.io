@@ -43,20 +43,20 @@ try {
   // This amount is in cents. It's also hard-coded for $1.00, which isn't very useful.
 
   $order_line_items = array();
-  $merchLi = $_SESSION["merchPriceList"][0]; // gets the merch price list to calculate line item price
+  $merch = $_SESSION["merchPriceList"][0]; // gets the merch price list to calculate line item price
   $i = 0; // iterator for naming line item variables
   foreach ($_SESSION["cart"] as $item=>$quant)
   {
       $line_money = 'm'.$i;
       $line_item = 'i'.$i;
-      $price = $merchLi[$item] * $quant * 100;
+      $price = $merch[$item]['price'] * 100;
 
       $$line_money = new Money();
       $$line_money->setCurrency('USD');
       $$line_money->setAmount($price); // TODO: get line total, just used quantity as placeholder for now
 
-      $$line_item= new OrderLineItem(1);
-      $$line_item->setName($item);
+      $$line_item= new OrderLineItem($quant);
+      $$line_item->setName($merch[$item]['name']);
       $$line_item->setBasePriceMoney($$line_money);
 
       array_push($order_line_items, $$line_item);
@@ -67,7 +67,7 @@ try {
   $money_ship->setAmount(420);
   
   $item_ship = new OrderLineItem(1);
-  $item_ship->setName('Flat Rate Shipping');
+  $item_ship->setName('Flat-Rate Shipping');
   $item_ship->setBasePriceMoney($money_ship);
 
   array_push($order_line_items, $item_ship);

@@ -1,5 +1,5 @@
 <?php
     session_start();
-    $itemToAdd = $_REQUEST["item"];
-    $_SESSION["cart"][$itemToAdd] += 1;
+    $item = $_REQUEST["item"];
+    $_SESSION["cart"][$item] += 1;
 ?>

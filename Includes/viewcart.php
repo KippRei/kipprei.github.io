@@ -1,7 +1,6 @@
 <?php
     session_start();
-    $merchLi = $_SESSION["merchPriceList"][0];
-    $merchImg = $_SESSION["merchPriceList"][1];
+    $merch = $_SESSION["merchPriceList"][0];
 
     echo    "<div id=\"cartTitle\">Cart</div>";
 
@@ -13,14 +12,15 @@
     {
         foreach ($_SESSION["cart"] as $item => $quantity)
         {
+            $itemName =  $merch[$item]['name'];
             $itemQuant = $item . "Quant";
-            $itemTotal = $merchLi[$item] * $quantity;
-            $itemImg = $merchImg[$item];
+            $itemTotal = $merch[$item]['price'] * $quantity;
+            $itemImg = $merch[$item]['image'];
             echo   "<div class=\"contentStartBuffer\"></div>
                     <div class=\"cartImgContain\">
                     <img class=\"cartImg\" src='$itemImg'>
                     </div>
-                    <p class=\"cartItem\">$item</p>
+                    <p class=\"cartItem\">$itemName</p>
                     <ul class=\"centered itemQuantAdjUl\">
                         <li class=\"itemQuantAdjLi\"><button class=\"minusBtn\" onclick=\"RemoveFromCart('$item')\">-</button></li><!--
                         --><li class=\"itemQuantAdjLi\"><input class=\"quantText\" type=\"text\" readonly=\"readonly\" maxlength=\"2\" size=\"2\" id=\"$itemQuant\" name=\"quant\" value=\"$quantity\"/></li><!--
