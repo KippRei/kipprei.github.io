@@ -11,11 +11,18 @@
     <body class="home">
       <?php require "sitemenu.html";?>
       
-      <div id="menuButtonPos" class="menuButtonPos">
+      <div id="menuButtonPos" class="menuButtonPos hideOnDesk">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>
       </div>
+
+      <!-- Wave Animation
+      <div class="bgDiv hideOnMobile">
+        <img class="bgDivImg" src="/SiteImages/wave1.png"/>
+        <img class="bgDivImg" src="/SiteImages/wave1.png"/>
+        <img class="bgDivImg" src="/SiteImages/wave1.png"/>
+      </div> -->
 
       <div>
         <img id="mainLogo" src="/BandImages/wwwLrg.png" alt="When Whales Walked">
@@ -59,28 +66,43 @@
           Your Browser Does Not Support The Audio Element.
         </audio>
 
+        <!-- Post Seperator -->
         <div class="contentStartBuffer"></div>
         <div class="contentStartBuffer"></div>
         <div class="contentStartBuffer"></div>
-          <div class="contentText">
-            Merry Christmas Everyone!
-          </div>
-          <div class="contentText">
-            "Jingle Bells"
-          </div>
-          <div class="contentStartBuffer"></div>
-          <div>
-            <button class="buttonMod" onclick="PlayJingle()">
-              <div class="imgParent">
-                <img id="jPP" class="playPauseButton" src="/SiteImages/playButton.png">
-                <img class="albumThumb" src="/BandImages/wwwJingle.jpg">
-              </div>
-            </button>
-          </div>
-          <audio id="jinglemp3">
-            <source src="/Media/jingle.mp3" type="audio/mpeg">
-              Your Browser Does Not Support The Audio Element.
-          </audio>
+        <div class="postSepAnim centered"><img class="postSepImg" src="/BandImages/wwwLetters.png"/></div>
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+
+        <div class="contentText">
+          Merry Christmas Everyone!
+        </div>
+        <div class="contentText">
+          "Jingle Bells"
+        </div>
+        <div class="contentStartBuffer"></div>
+        <div>
+          <button class="buttonMod" onclick="PlayJingle()">
+            <div class="imgParent">
+              <img id="jPP" class="playPauseButton" src="/SiteImages/playButton.png">
+              <img class="albumThumb" src="/BandImages/wwwJingle.jpg">
+            </div>
+          </button>
+        </div>
+        <audio id="jinglemp3">
+          <source src="/Media/jingle.mp3" type="audio/mpeg">
+            Your Browser Does Not Support The Audio Element.
+        </audio>
+
+        <!-- Post Seperator -->
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="postSepAnim centered"><img class="postSepImg" src="/BandImages/wwwLetters.png"/></div>
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
+        <div class="contentStartBuffer"></div>
 
     <script src="/js.js"></script>
     </body>

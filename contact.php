@@ -20,7 +20,7 @@
       ?>
 
       <?php require 'sitemenu.html';?>
-      <div id="menuButtonPos" class="menuButtonPos">
+      <div id="menuButtonPos" class="menuButtonPos hideOnDesk">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>

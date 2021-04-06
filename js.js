@@ -10,11 +10,12 @@ var itemPopupBg = document.getElementById("itemPopupBg")
 var total = 0;
 var id; //Used to setInterval for Whale logo shake animation. Declared here so animation can be stopped on mouseleave event by calling LogoNormal()
 
-if (window.innerWidth > 600)
+if (window.innerWidth > 768)
 {
     var mainLogo = document.getElementById("mainLogo");
     mainLogo.addEventListener("mouseover", LogoShake);
     mainLogo.addEventListener("mouseleave", LogoNormal);
+    mainLogo.addEventListener("mousedown", LogoSoundHit);
 }
 
 function PlayMomDad() {
@@ -181,25 +182,16 @@ function ClosePopupImg() {
 function LogoShake() {
     var logo = document.getElementById("mainLogo");
     var toShake = true;
-    var counter = 0;
     id = setInterval(() => {
-        console.log('shake');
-        if (counter > 150)
+        if (toShake)
         {
-            clearInterval(id);
-            LogoNormal();
-        }
-        else if (toShake)
-        {
-            logo.style.translate = '-.35%';
+            logo.style.translate = '-.45%';
             toShake = false
-            counter++;
         }
         else
         {
             logo.style.translate = '0%';
             toShake = true;
-            counter++;
         }
     }, 50);
 }
@@ -213,4 +205,11 @@ function LogoNormal() {
     transform: translate(-50%);\
     width: 400px;\
     height: auto;";
+}
+
+var audio;
+
+function LogoSoundHit() {
+    audio = new Audio("/Media/beer.mp3");
+    audio.play();
 }
