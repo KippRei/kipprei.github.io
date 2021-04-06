@@ -10,7 +10,7 @@
 
     <body class="media">
       <?php require 'sitemenu.html';?>
-      <div class="menuButtonPos">
+      <div id="menuButtonPos" class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>

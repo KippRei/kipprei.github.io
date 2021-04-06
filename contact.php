@@ -9,7 +9,6 @@
     </head>
 
     <body class="contact">
-      <?php //phpinfo(); ?>
       <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST")
         {
@@ -21,7 +20,7 @@
       ?>
 
       <?php require 'sitemenu.html';?>
-      <div class="menuButtonPos">
+      <div id="menuButtonPos" class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>

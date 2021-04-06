@@ -11,7 +11,7 @@
     <body class="merch">
         <?php require 'sitemenu.html';?>
 
-        <div class="menuButtonPos">
+        <div id="menuButtonPos" class="menuButtonPos">
             <button class="buttonMod" type="button" onclick="OpenMenu()">
                 <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
             </button>
@@ -55,7 +55,7 @@
         <div id="itemPopupBg">
 
             <div id="itemPopup"></div>
-            
+
             <button id="closeCartBtn" class="buttonMod" type="button" onclick="ClosePopupImg()">
                 <img id="closeBtnImg" src="/SiteImages/cartClose.png" alt="Close Popup Image"/>
             </button>

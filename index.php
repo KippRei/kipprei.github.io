@@ -11,14 +11,14 @@
     <body class="home">
       <?php require "sitemenu.html";?>
       
-      <div class="menuButtonPos">
+      <div id="menuButtonPos" class="menuButtonPos">
         <button class="buttonMod" type="button" onclick="OpenMenu()">
           <img id="openButton" class="menuButton" src="/SiteImages/menuButton.png">
         </button>
       </div>
 
       <div>
-        <a href="/index.php"><img class="logo" src="/BandImages/wwwLrg.png" alt="When Whales Walked"></a>
+        <img id="mainLogo" src="/BandImages/wwwLrg.png" alt="When Whales Walked">
       </div>
       <div class="centered">
         <p></p>
@@ -40,7 +40,7 @@
       <div class="contentStartBuffer"></div>
       <div class="centered">
         <div class="contentText">
-          Check out our first single!
+          Check Out Our Debut Single!
         </div>
         <div class="contentText">
           "Mom and Dad"
@@ -63,7 +63,7 @@
         <div class="contentStartBuffer"></div>
         <div class="contentStartBuffer"></div>
           <div class="contentText">
-            Merry Christmas everyone!
+            Merry Christmas Everyone!
           </div>
           <div class="contentText">
             "Jingle Bells"

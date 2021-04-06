@@ -468,14 +468,6 @@ p {
 }
 /* END Cart Stuff */
 
-
-#bandnameTitle {
-    font-size: 24pt;
-    font-family: 'Metal Head', sans-serif;
-    color: rgb(255, 0, 47);
-    text-shadow: 3px 2px rgba(255, 255, 255, 0.842);
-}
-
 .contentText {
     font-size: 30pt;
     font-family: 'rolina', sans-serif;
@@ -510,60 +502,33 @@ p {
     height: 45px;
 }
 
-.imgParent {
-    position: relative;
-}
-
-.albumThumb {
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-
-.playPauseButton {
-    position: absolute;
-    padding-top: 20px;
-    padding-left: 20px;
-    width: 130px;
-    height: 130px;
-    z-index: 1;
-}
-
-.socialButtons {
-    width: 20%;
-    height: auto;
-}
-
-.socialBar {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgba(0,0,0,.5);
-    width: 276px;
-    height: 55px;
-    border-radius: 15px;
-}
-
-.socialBarButton {
-    position: relative;
-    margin-left: 7px;
-    margin-top: 2px;
-    padding: 4px;
-    width: auto;
-    height: 50px;
-}
-
 /* Mobile CSS */
 @media only screen and (max-width: 600px) {
     .nav-link:hover {
         color:rgb(0, 78, 180)
     }
+
     .logo {
         display: block;
         margin-left: auto;
         margin-right: auto;
         width: 50%;
         height: auto;
+    }
+
+    #mainLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: auto;
+    }
+
+    #bandnameTitle {
+        font-size: 24pt;
+        font-family: 'Metal Head', sans-serif;
+        color: rgb(255, 0, 47);
+        text-shadow: 3px 2px rgba(255, 255, 255, 0.842);
     }
 
     .videos {
@@ -604,11 +569,62 @@ p {
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
+
+    .imgParent {
+        position: relative;
+    }
+    
+        
+    .albumThumb {
+        position: relative;
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    .playPauseButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 70%;
+        z-index: 1;
+    }
+
+    .socialButtons {
+        width: 20%;
+        height: auto;
+    }
+    
+    .socialBar {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(0,0,0,.5);
+        width: 276px;
+        height: 55px;
+        border-radius: 15px;
+    }
+    
+    .socialBarButton {
+        position: relative;
+        margin-left: 7px;
+        margin-top: 2px;
+        padding: 4px;
+        width: auto;
+        height: 50px;
+    }
+
+    #deskMenu {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 
 /* Larger Display CSS */
 @media only screen and (min-width: 600.1px) {
+    /* TODO: See if .logo applies to anything besides index logo, if not delete this */
     .logo {
         display: block;
         margin-left: auto;
@@ -617,9 +633,25 @@ p {
         height: auto;
     }
 
-    .videos {
-        width: 75%;
+    #bandnameTitle {
+        font-size: 36pt;
+        font-family: 'Metal Head', sans-serif;
+        color: rgb(255, 0, 47);
+        text-shadow: 3px 2px rgba(255, 255, 255, 0.842);
+    }
+
+    #mainLogo {
+        position: relative;
+        margin-top: 30px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        width: 400px;
         height: auto;
+    }
+
+    .videos {
+        min-width: 75%;
+        height: 450px;
         padding: 10px;
     }
 
@@ -629,11 +661,15 @@ p {
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-color:rgb(255, 253, 122);
+        background-color:rgb(122, 164, 255);
     }
     
     .merch {
-        background-color: indigo;
+        background-image: linear-gradient(to top, red , yellow);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
     
     .media {
@@ -641,10 +677,91 @@ p {
         background-position: center;
         background-size: contain;
         background-attachment: fixed;
-        background-color: rgb(197, 74, 85);
+        background-color: rgb(207, 42, 56);
     }
     
     .contact {
-        background-color: salmon;
+        background-image: linear-gradient(to right,rgb(0, 0, 0) ,rgb(255, 255, 255), rgb(0,0,0));
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .imgParent {
+        position: relative;
+        transition: box-shadow .5s, transform .5s;
+    }
+
+    .imgParent:hover {
+        transform: translate(-6px, -6px);
+        box-shadow: 9px 9px rgba(0, 0, 0, 0.486);
+    }
+        
+    .albumThumb {
+        position: relative;
+        width: 350px;
+        height: 350px;
+    }
+    
+    .playPauseButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        height: 40%;
+        z-index: 1;
+        opacity: .5;
+    }
+
+    /* These are for the social buttons on the Contact page */
+    .socialButtons {
+        width: 20%;
+        height: auto;
+    }
+    
+    .socialBar {
+        position: fixed;
+        top: 130px;
+        right: 0;
+        background-color: rgba(28, 118, 253, 0.5);
+        width: 55px;
+        height: 250px;
+    }
+    
+    .socialBarButton {
+        position: relative;
+        margin-top: 23px;
+        width: 35px;
+        height: auto;
+    }
+
+    #menuButtonPos {
+        display: none;
+        visibility: hidden;
+    }
+
+    #deskMenu {
+        display: block;
+        text-align: center;
+    }
+
+    .deskMenuBtnLoc {
+        display: inline-block;
+        margin-top: 10px;
+        margin-right: 30px;
+    }
+
+    .deskMenuBtn {
+        text-decoration: none;
+        font-family: 'Metal Head', sans-serif;
+        font-size: 14pt;
+        color: rgb(0, 119, 255);
+        transition: color .5s;
+    }
+
+    .deskMenuBtn:hover {
+        color: rgb(0, 62, 133);
     }
 }
