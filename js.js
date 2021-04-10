@@ -6,11 +6,12 @@ var mdPP = document.getElementById("mdPP"); //play/pause button for mom and dad
 var jPP = document.getElementById("jPP"); //play/pause button for jingle bells
 var cartBg = document.getElementById("shoppingCartBg");
 var cart = document.getElementById("shoppingCart");
+var buyBtn = document.getElementById("buyBtnLoc");
 var itemPopupBg = document.getElementById("itemPopupBg")
 var total = 0;
 var id; //Used to setInterval for Whale logo shake animation. Declared here so animation can be stopped on mouseleave event by calling LogoNormal()
 
-if (window.innerWidth > 768)
+if (window.innerWidth > 769)
 {
     var mainLogo = document.getElementById("mainLogo");
     mainLogo.addEventListener("mouseover", LogoShake);
@@ -61,7 +62,7 @@ function AddToCart(itemName) {
     DisableCartButtons();
     if (itemName == 'tshirt')
     {
-        // Concat size of tshirt
+        // Concat size of tshirt to get proper size from json and for itemizing for Square Checkout
         let a = document.getElementById("getsize").value;
         itemName = itemName.concat("_", a);
     }
@@ -99,6 +100,10 @@ function ViewCart() {
     cartBg.style.backgroundColor = "rgba(0, 0, 0, .6)";
     cart.style.visibility = "visible";
     cart.style.backgroundColor = "rgba(255, 255, 255, 1)";
+    buyBtn.style.visibility = "visible";
+    buyBtn.style.backgroundColor = "rgb(90, 243, 52)";
+    cart.style.left = "50%";
+    buyBtn.style.left = "50%";
     $.ajax({
       type: "GET",
       url: "/Includes/viewcart.php",
@@ -133,8 +138,23 @@ function CartTotal() {
 function CloseCart() {
     cartBg.style.visibility = "hidden";
     cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
-    cart.style.visibility = "hidden";
-    cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
+    cart.style.left = "-40%";
+    buyBtn.style.left = "-40%";
+    var menuLocation = cart.getBoundingClientRect();
+    let closing = setInterval(() => {
+        if ((menuLocation.x + menuLocation.width) < 0)
+        {
+            cart.style.visibility = "hidden";
+            cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            buyBtn.style.visibility = "hidden";
+            buyBtn.style.backgroundColor = "rgba(255, 255, 255, 0)";
+            clearInterval(closing);
+        }
+        else
+        {
+            menuLocation = cart.getBoundingClientRect();
+        }
+    }, 100);
 }
 
 function EnableCartButtons() {

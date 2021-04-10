@@ -29,6 +29,10 @@
         </span>
       </div>
 
+      <div id="deskTitle" class="hideOnMobile centered">
+        Contact
+      </div>
+
       <div class="contentStartBuffer"></div>
       <div class="centered">
         <div class="contentStartBuffer"></div>  

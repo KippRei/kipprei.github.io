@@ -20,7 +20,10 @@
             </span>
         </div>
 
-        
+        <div id="deskTitle" class="hideOnMobile centered">
+            Merch
+        </div>
+
         <!-- Featured Item -->
         <div class="contentStartBuffer"></div>
         <div class="contentStartBuffer"></div>

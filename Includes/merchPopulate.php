@@ -11,10 +11,12 @@
         }
         else if ($i % 2 == 1)
         {
-            echo   "<div class='contentStartBuffer'></div>
-                    <div class='contentStartBuffer'></div>
+            echo   "<div class='contentStartBuffer hideOnDesk'></div>
+                    <div class='contentStartBuffer hideOnDesk'></div>
                     <div class='myRow'>
-                        <div class='myCol'>  
+                        <div class='myCol'> 
+                        <div class='contentStartBuffer hideOnMobile'></div>
+                        <div class='contentStartBuffer hideOnMobile'></div>
                             <a href='javascript: ViewItem(\"$item\");'>              
                                 <div class='merchItem'>
                                     <img class='merchItemImg' src='$value[image]' alt='Merch $value[name]'/>
@@ -33,6 +35,8 @@
         {
 
             echo       "<div class='myCol'>
+                        <div class='contentStartBuffer hideOnMobile'></div>
+                        <div class='contentStartBuffer hideOnMobile'></div>
                         <a href='javascript: ViewItem(\"$item\");'>
                             <div class='merchItem'>
                                 <img class='merchItemImg' src='$value[image]' alt='Merch '$value[name]''/>
