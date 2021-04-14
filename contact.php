@@ -38,7 +38,7 @@
         <div class="contentStartBuffer"></div>  
         <div class="contentText">Send Us a Message:</div>
         <form action="/contact.php" method="post">
-          <textarea placeholder="Hi!" maxlength="500" cols= "30" rows="4" name="message"></textarea><br>
+          <textarea id="contactTextArea" placeholder="Hi!" maxlength="500" cols= "30" rows="4" name="message"></textarea><br>
           <button id="sendBtn" class="contentText" type="submit">Send</button>
         </form>
         <div class="contentStartBuffer"></div>

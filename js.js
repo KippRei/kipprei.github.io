@@ -10,13 +10,13 @@ var buyBtn = document.getElementById("buyBtnLoc");
 var itemPopupBg = document.getElementById("itemPopupBg")
 var total = 0;
 var id; //Used to setInterval for Whale logo shake animation. Declared here so animation can be stopped on mouseleave event by calling LogoNormal()
+var mainLogo = document.getElementById("mainLogo");
+mainLogo.addEventListener("mousedown", LogoSoundHit);
 
 if (window.innerWidth > 769)
 {
-    var mainLogo = document.getElementById("mainLogo");
     mainLogo.addEventListener("mouseover", LogoShake);
     mainLogo.addEventListener("mouseleave", LogoNormal);
-    mainLogo.addEventListener("mousedown", LogoSoundHit);
 }
 
 function PlayMomDad() {

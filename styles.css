@@ -114,6 +114,11 @@ ul {
 
 /* Mobile CSS */
 @media only screen and (max-width: 769px) {
+
+    .hideOnMobile {
+        display: none;
+    }
+
     /* Home Page */
     .home {
         background-image: url("/SiteImages/waves.jpg");
@@ -637,14 +642,52 @@ ul {
     }
     /* END Contact Page */
 
-    .hideOnMobile {
-        display: none;
+
+    /* Order Confirm Page */
+    .orderconfirm {
+        background-image: url("/SiteImages/orderWavesDesk.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: none;
+        background-size: cover;
     }
+
+    #orderConfirmedTitle {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 30pt;
+        font-family: 'rolina', sans-serif;
+        color: rgb(0, 0, 0);
+        text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    }
+
+    .orderConfirmText {
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        font-size: 20pt;
+        font-family: 'rolina', sans-serif;
+        color: rgb(0, 0, 0);
+        text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    }
+    /* END Order Confirm Page */
 }
 
-
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////*/
 /* Larger Display CSS */
 @media only screen and (min-width: 769.1px) {
+    
+    .hideOnDesk {
+        display: none;
+    }
+
     body {
         /* margin-left: 50px;
         margin-right: 50px; */
@@ -655,6 +698,7 @@ ul {
         background-color: rgba(255, 255, 255, 0.25);
         margin-top: 30px;
         font-size: 36pt;
+        border-radius: 5px;
         font-family: 'Metal Head', sans-serif;
         color: rgb(255, 0, 47);
         text-shadow: 3px 2px rgba(255, 255, 255, 0.842);
@@ -1159,17 +1203,8 @@ ul {
     }
 
     #buyBtn:active {
-        font-family: 'rolina', sans-serif;
-        font-size: 22pt;
-        color: rgba(0,0,0, 0.938);
         background-color: rgb(0, 140, 255);
-        border-radius: 10px;
-        margin: 10px;
-        border: none;
         box-shadow: 0px 0px rgba(0,0,0,.5);
-        position: relative;
-        height: 50px;
-        width: 65vw;
     }
 
     #closeCartBtn {
@@ -1237,9 +1272,32 @@ ul {
     }
     /* END Contact Page */
 
-    .hideOnDesk {
-        display: none;
+    
+    /* Order Confirm Page */
+    .orderconfirm {
+        background-image: url("/SiteImages/orderWavesDesk.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: none;
+        background-size: cover;
     }
+
+    #orderConfirmedTitle {
+        text-align: center;
+        font-size: 34pt;
+        font-family: 'rolina', sans-serif;
+        color: rgb(0, 0, 0);
+        text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    }
+
+    .orderConfirmText {
+        text-align: center;
+        font-size: 22pt;
+        font-family: 'rolina', sans-serif;
+        color: rgb(0, 0, 0);
+        text-shadow:2px 1px rgba(242, 215, 133, 0.938);
+    }
+    /* END Order Confirm Page */
 }
 
 @media only screen and (min-width: 1240px) {
