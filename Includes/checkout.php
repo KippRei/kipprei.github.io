@@ -83,7 +83,7 @@ try {
   $checkout_request = new CreateCheckoutRequest(uniqid(), $create_order_request);
   $checkout_request->setAskForShippingAddress(true);
   //$checkout_request->setMerchantSupportEmail('WhenWhalesWalked@gmail.com');
-  $checkout_request->setRedirectUrl('https://kippreitzel.com');
+  $checkout_request->setRedirectUrl('https://kippreitzel.com/orderconfirm.php');
   
   $response = $checkout_api->createCheckout($location_id, $checkout_request);
 } catch (ApiException $e) {

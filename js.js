@@ -136,25 +136,37 @@ function CartTotal() {
 }
 
 function CloseCart() {
-    cartBg.style.visibility = "hidden";
-    cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
-    cart.style.left = "-40%";
-    buyBtn.style.left = "-40%";
-    var menuLocation = cart.getBoundingClientRect();
-    let closing = setInterval(() => {
-        if ((menuLocation.x + menuLocation.width) < 0)
-        {
-            cart.style.visibility = "hidden";
-            cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            buyBtn.style.visibility = "hidden";
-            buyBtn.style.backgroundColor = "rgba(255, 255, 255, 0)";
-            clearInterval(closing);
-        }
-        else
-        {
-            menuLocation = cart.getBoundingClientRect();
-        }
-    }, 100);
+    if (window.innerWidth > 769)
+    {
+        cartBg.style.visibility = "hidden";
+        cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        cart.style.left = "-40%";
+        buyBtn.style.left = "-40%";
+        var menuLocation = cart.getBoundingClientRect();
+        let closing = setInterval(() => {
+            if ((menuLocation.x + menuLocation.width) < 0)
+            {
+                cart.style.visibility = "hidden";
+                cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
+                buyBtn.style.visibility = "hidden";
+                buyBtn.style.backgroundColor = "rgba(255, 255, 255, 0)";
+                clearInterval(closing);
+            }
+            else
+            {
+                menuLocation = cart.getBoundingClientRect();
+            }
+        }, 100);
+    }
+    else
+    {
+        cartBg.style.visibility = "hidden";
+        cartBg.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        cart.style.visibility = "hidden";
+        cart.style.backgroundColor = "rgba(255, 255, 255, 0)";
+        buyBtn.style.visibility = "hidden";
+        buyBtn.style.backgroundColor = "rgba(255, 255, 255, 0)";
+    }
 }
 
 function EnableCartButtons() {
