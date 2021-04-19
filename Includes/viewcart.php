@@ -13,7 +13,7 @@
         foreach ($_SESSION["cart"] as $item => $quantity)
         {
             $itemName =  $merch[$item]['name'];
-            $itemQuant = $item . "Quant";
+            $itemQuant = $item . "Quant"; // Concats quantity name
             $itemTotal = $merch[$item]['price'] * $quantity;
             $itemImg = $merch[$item]['image'];
             echo   "<div class=\"contentStartBuffer\"></div>

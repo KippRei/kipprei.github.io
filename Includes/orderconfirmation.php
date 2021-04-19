@@ -39,10 +39,10 @@
                     throw new Exception('Order retrieval error');
                 }
                 
-                foreach ($transData['order']['line_items'] as $i)
-                {
-                    echo "<div>$i[name]- $i[quantity]</div>";
-                }
+                // foreach ($transData['order']['line_items'] as $i)
+                // {
+                //     echo "<div>$i[name]- $i[quantity]</div>";
+                // }
                 
 
                 // Get customer id to look up customer in next step
