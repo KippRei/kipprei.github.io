@@ -194,6 +194,7 @@ function DisableCartButtons() {
 function ViewItem(itemName) {
     itemPopupBg.style.visibility = "visible";
     itemPopupBg.style.backgroundColor = "rgba(0, 0, 0, .6)";
+    itemPopupBg.addEventListener("mousedown", ClosePopupImg);
     $.ajax({
       type: "GET",
       url: "/Includes/itemPopup.php",
@@ -206,6 +207,7 @@ function ViewItem(itemName) {
 
 function ClosePopupImg() {
     let img = document.getElementById("popupImg");
+    itemPopupBg.removeEventListener("mousedown", ClosePopupImg);
     itemPopupBg.style.visibility = "hidden";
     itemPopupBg.style.backgroundColor = "rgba(255, 255, 255, 0)";
     img.remove();

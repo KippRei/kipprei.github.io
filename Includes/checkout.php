@@ -9,6 +9,7 @@ use Square\Models\CreateOrderRequest;
 use Square\Models\CreateCheckoutRequest;
 use Square\Models\Order;
 use Square\Models\OrderLineItem;
+use Square\Models\OrderLineItemDiscount;
 use Square\Models\Money;
 use Square\Exceptions\ApiException;
 use Square\SquareClient;
@@ -43,10 +44,24 @@ try {
   // This amount is in cents. It's also hard-coded for $1.00, which isn't very useful.
 
   $order_line_items = array();
+  $buttonDisc = 0; // Counts number of buttons to apply discount
+  $stickerDisc = 0; // Counts number of stickers to apply discount
+  $discounts = 0; // For holding discount dollar amount total
   $merch = $_SESSION["merchPriceList"][0]; // gets the merch price list to calculate line item price
   $i = 0; // iterator for naming line item variables
+
   foreach ($_SESSION["cart"] as $item=>$quant)
   {
+      // Calculate discount for multiples of buttons or stickers
+      if ($merch[$item]['category'] == 'button')
+      {
+          $buttonDisc += $quant;
+      }
+      if ($merch[$item]['category'] == 'smallsticker')
+      {
+          $stickerDisc += $quant;
+      }
+
       $line_money = 'm'.$i;
       $line_item = 'i'.$i;
       $price = $merch[$item]['price'] * 100;
@@ -60,8 +75,29 @@ try {
       $$line_item->setBasePriceMoney($$line_money);
 
       array_push($order_line_items, $$line_item);
+
       $i++;
   }
+
+  // Calculate discount
+  $discounts += intdiv($buttonDisc, 2) * 1;
+  $discounts += intdiv($stickerDisc, 3) * 1;
+
+  if ($discounts > 0)
+  {
+    $money_disc = new Money();
+    $money_disc->setCurrency('USD');
+    $money_disc->setAmount($discounts * 100);
+    
+    $item_disc = new OrderLineItemDiscount();
+    $item_disc->setAmountMoney($money_disc);
+    $item_disc->setName('Discount');
+    $item_disc->setType('FIXED_AMOUNT');
+    $item_disc->setScope('ORDER');
+
+    $add_discount = [$item_disc];
+  }
+
   $money_ship = new Money();
   $money_ship->setCurrency('USD');
   $money_ship->setAmount(420);
@@ -75,6 +111,7 @@ try {
   // Create a new order and add the line items as necessary.
   $order = new Order($location_id);
   $order->setLineItems($order_line_items);
+  $order->setDiscounts($add_discount);
 
   $create_order_request = new CreateOrderRequest();
   $create_order_request->setOrder($order);
@@ -106,6 +143,7 @@ if ($response->isError()) {
       echo '<li>❌ ' . $error->getDetail() . '</li>';
   }
   echo '</ul>';
+  echo '<div>Please contact us at orderhelp@whenwhaleswalked.com and will get this fixed!</div>';
   exit();
 }
 
