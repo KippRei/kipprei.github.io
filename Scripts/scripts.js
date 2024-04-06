@@ -48,7 +48,7 @@ function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
-    let imageURL = "";
+    let imageURL = "../Images/placeholder.png";
     
     for (let i = 0; i < games.length; i++) {
         let game = games[i];
@@ -92,11 +92,17 @@ function editCardContent(card, game, newImageURL) {
 document.addEventListener("DOMContentLoaded", populateGamesArray);
 
 function showGameDetails(game) {
-    console.log("Button Clicked!")
-    alert(game);
-}
+    let modal = document.getElementById("detailsModal");
+    modal.style.display = "block";
+    let closeBtn = document.getElementById("closeModalBtn");
 
-function removeLastCard() {
-    titles.pop(); // Remove last item in titles array
-    showCards(); // Call showCards again to refresh
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 }
