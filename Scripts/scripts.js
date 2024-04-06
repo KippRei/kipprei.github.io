@@ -23,61 +23,7 @@
  * 
  */
 
-class GameInfo {
-    #name;
-    #releaseDate;
-    #cover;
-    #rating;
-    #description;
-
-    constructor(name, releaseDate, cover, rating, description) {
-        this.#name = name;
-        this.#releaseDate = releaseDate;
-        this.#cover = cover;
-        this.#rating = rating;
-        this.#description = description;
-    }
-
-    setName(name) {
-        this.#name = name;
-    }
-
-    getName() {
-        return this.#name;
-    }
-
-    setReleaseDate(date) {
-        this.#releaseDate = date;
-    }
-
-    getReleaseDate() {
-        return this.#releaseDate;
-    }
-
-    setCover(cover) {
-        this.#cover = cover;
-    }
-
-    getCover() {
-        return this.#cover;
-    }
-
-    setRating(rating) {
-        this.#rating = rating;
-    }
-
-    getRating() {
-        return this.#rating;
-    }
-
-    setDescription(description) {
-        this.#description = description;
-    }
-
-    getDescription() {
-        return this.#description;
-    }
-}
+import {GameInfo} from "./GameInfo.js";
 
 // This is an array of GameInfo objects
 let games = [];
@@ -88,7 +34,7 @@ async function populateGamesArray() {
         .then((res) => res.json())
         .then((json) => {
             json.forEach(elem => {
-                newGame = new GameInfo(elem.name, new Date(elem.first_release_date * 1000), elem.cover, elem.aggregated_rating, elem.summary);
+                let newGame = new GameInfo(elem.name, elem.first_release_date, elem.cover, elem.aggregated_rating, elem.summary);
                 games.push(newGame);
             });
         });
@@ -110,30 +56,36 @@ function showCards() {
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, game, imageURL); // Edit title and image
         nextCard.addEventListener("click", (e) => showGameDetails(game));
-        nextCard.addEventListener("mouseover", (e) => {
-            e.target.style.backgroundColor = "black";
-        });
-        nextCard.addEventListener("mouseleave", (e) => {
-            e.target.style.backgroundColor = "white";
-        });
+        // nextCard.addEventListener("mouseover", (e) => {
+        //     e.target.style.backgroundColor = "black";
+        // });
+        // nextCard.addEventListener("mouseleave", (e) => {
+        //     e.target.style.backgroundColor = "white";
+        // });
         cardContainer.appendChild(nextCard); // Add new card to the container
     }
 }
 
-function editCardContent(card, newTitle, newImageURL) {
+function editCardContent(card, game, newImageURL) {
     card.style.display = "block";
 
-    // const cardHeader = card.querySelector("h2");
-    // cardHeader.textContent = newTitle;
+    const cardHeader = card.querySelector("h2");
+    cardHeader.textContent = game.getName();
+
+    const cardReleaseDate = card.querySelector(".release");
+    cardReleaseDate.textContent = game.getReleaseDate();
+
+    const cardGameRating = card.querySelector(".rating");
+    cardGameRating.textContent = game.getRating();
 
     const cardImage = card.querySelector("img");
     cardImage.src = newImageURL;
-    cardImage.alt = newTitle + " Poster";
+    cardImage.alt = game.getName() + " Cover";
 
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
     // select "Inspect", then click on the "Console" tab
-    console.log("new card:", newTitle, "- html: ", card);
+    console.log("new card:", game.getName(), "- html: ", card);
 }
 
 // This calls the addCards() function when the page is first loaded

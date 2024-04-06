@@ -2,23 +2,36 @@
 <html>
 
 <head>
-    <title>Kipp's Soulslike's Catalog</title>
+    <title>Kipp's Soulslikes Catalog</title>
     <meta name="description" content="A Catalog of Soulslike Video Games">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Style/style.css" />
-    <script type="text/javascript" src="./Scripts/scripts.js"></script>
+    <link rel="stylesheet" href="./Style/indexBG.css" />
+    <script type="module" src="./Scripts/scripts.js"></script>
+    <script type="module" src="./Scripts/GameInfo.js"></script>
+    <script src="./Scripts/about.js"></script>
 </head>
 
 <body>
     <header class="main-header">
-        <h1 class="title">Soulslike Catalog</h1>
+        <h1 class="title">Kipp's Soulslike Games Catalog</h1>
     </header>
+    <div class="navigation">
+        <div class="navItem" id="catalogNavBtn">Catalog</div>
+        <div class="navItem" id="aboutNavBtn">What Are Soulslikes?</div>
+    </div>
+    <div class="padding"></div>
     <div id="card-container">
-        
+        <img src="./Images/loading.gif" style="justify-content: center; width:100%; height: auto;">
     </div>
     
     <div class="card" style="display: none;">
-        <img src="" alt="TV Show Poster">
-        <h2>TV Show Title</h2>
+        <div class="cardContent">
+            <h2 class="gameTitle">Title</h2>
+            <p class="release">Release Date</p>
+            <p class="rating">Rating</p>
+        </div>
+        <img src="" alt="">
     </div>
 </body>
 

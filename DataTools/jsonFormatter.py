@@ -1,10 +1,11 @@
 # Custom formatter to format the gamesInfo.txt file created by getGamesInfo.sh (then remove txt file)
 # Called by getGamesInfo.sh
 
-import os
+import os, sys
 
-fileToFormat = open("../GameData/gamesInfo.txt", "r")
-newFile = open("../GameData/gamesInfo.json", "w")
+fileName = sys.argv[1]
+fileToFormat = open("../GameData/" + fileName + ".txt", "r")
+newFile = open("../GameData/" + fileName + ".json", "w")
 
 for line in fileToFormat.readlines():
     if line.strip() == "][":
@@ -15,4 +16,4 @@ for line in fileToFormat.readlines():
 fileToFormat.close()
 newFile.close()
 
-os.remove("../GameData/gamesInfo.txt")
+os.remove("../GameData/" + fileName + ".txt")
