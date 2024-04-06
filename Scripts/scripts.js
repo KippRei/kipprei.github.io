@@ -29,7 +29,7 @@ class GameInfo {
     #cover;
     #rating;
     #description;
-    
+
     constructor(name, releaseDate, cover, rating, description) {
         this.#name = name;
         this.#releaseDate = releaseDate;
@@ -82,6 +82,7 @@ class GameInfo {
 // This is an array of GameInfo objects
 let games = [];
 
+// TODO: check to see if then's can be removed/can be changed to clean this up
 async function populateGamesArray() {
     await fetch("https://kippslab.com/docs/gamesInfo.json")
         .then((res) => res.json())
