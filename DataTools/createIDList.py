@@ -1,7 +1,7 @@
 # Creates list of game ID's that are used to get cover art (via IGDB API)
 # Called by getGamesInfo.sh
 
-import os, sys, json
+import sys, json
 
 newFileName = sys.argv[1]
 jsonFileName = sys.argv[2]
@@ -13,6 +13,6 @@ parsedJSON = json.load(jsonFile)
 jsonFile.close()
 
 for game in parsedJSON:
-    newFile.write(str(game['game_localizations'][0])+"\n")
+    newFile.write(str(game['id'])+"\n")
 
 newFile.close()

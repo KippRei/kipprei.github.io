@@ -17,24 +17,31 @@
     <header class="main-header">
         <h1 class="title">Kipp's Soulslike Games Catalog</h1>
     </header>
+
     <div class="navigation">
         <div class="navItem" id="catalogNavBtn">Catalog</div>
         <div class="navItem" id="aboutNavBtn">What Are Soulslikes?</div>
     </div>
-    <button id="sortBtn">Sort</button>
-    <div class="padding"></div>
 
-    <div id="detailsModal" class="modal">
-        <div class="modal-content">
-            <span id="closeModalBtn">&times;</span>
-            <p>Some text in the Modal..</p>
-        </div>  
-    </div>
+    <select id="sortTypes">
+        <option value="NameAsc">Name</option>
+        <option value="RatingDesc">Rating</option>
+        <option value="RelDateDesc">Release Date</option>
+    </select>
+    <button id="sortBtn">Sort</button>
+
+    <div>
+        <input type="range" id="ratingSlider" min="0" max="100" />
+        <span id="ratingSliderText" style="color: white;">Rating</span>
+        <button id="filterBtn">Filter by Rating</button>
+      </div>
+    <div class="padding"></div>
 
     <div id="card-container">
         <img src="./Images/loading.gif" style="justify-content: center; width:100%; height: auto;">
     </div>
     
+    <!-- Card Template -->
     <div class="card" style="display: none;">
         <div class="cardContent">
             <h2 class="gameTitle">Title</h2>
@@ -42,6 +49,18 @@
             <p class="rating">Rating</p>
         </div>
         <img src="" alt="">
+    </div>
+
+    <!-- Modal -->
+    <div id="detailsModal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn">&times;</span>
+            <img id="m_img" src="" alt="">
+            <h2 id="m_gameTitle">Title</h2>
+            <p id="m_release">Release Date</p>
+            <p id="m_rating">Rating</p>
+            <p id="m_description">Description</p>
+        </div>  
     </div>
 </body>
 

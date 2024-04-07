@@ -1,17 +1,18 @@
 // Holds information for an individual game
 export class GameInfo {
     #name;
-    #releaseDate;
-    #unixRelDate;
+    #releaseDate; // Formatted date
+    #unixRelDate; // Unix timestamp of date (for sorting/filtering)
     #cover;
-    #rating;
+    #rating; // Text string of rating
+    #rawRating; // Integer value of rating (for filtering)
     #description;
 
     constructor(name, releaseDate, cover, rating, description) {
         this.#name = name;
         if (releaseDate != undefined) {
             let date = new Date(releaseDate * 1000);
-            let relDate = "Release Date: " + date.getDay() + "/" + date.getDate() + "/" + date.getFullYear();
+            let relDate = "Release Date: " + (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
             this.#releaseDate = relDate;
         }
         else {
@@ -19,6 +20,7 @@ export class GameInfo {
         }
         this.#cover = cover;
         rating != undefined ? this.#rating = "Rating: " + Math.round(rating) : this.#rating = "Rating: N/A";
+        this.#rawRating = Math.round(rating);
         this.#description = description;
         this.#unixRelDate = releaseDate;
     }
@@ -67,6 +69,11 @@ export class GameInfo {
         return this.#rating;
     }
 
+    // This is used for filtering by rating
+    getRawRating() {
+        return this.#rawRating;
+    }
+
     setDescription(description) {
         this.#description = description;
     }
@@ -76,7 +83,7 @@ export class GameInfo {
     }
 }
 
-// Container for all games
+// Container for games
 export class GameCatalog {
     #games = [];
 
@@ -86,6 +93,10 @@ export class GameCatalog {
 
     getGames() {
         return this.#games;
+    }
+
+    filterByRating(rating) {
+        
     }
 
     sortGames(compareVal) {
@@ -116,6 +127,11 @@ export class GameCatalog {
                 });
                 this.#quickSort(arr, 0, arr.length-1);
                 this.#games.reverse();
+                // Moves games with 'N/A' ratings to end of list
+                while (this.#games[0].getRating() == "Rating: N/A") {
+                    let temp = this.#games.shift();
+                    this.#games.push(temp);
+                }
                 break;
             case 'RelDateAsc':
                 this.#games.forEach(e => {
@@ -129,6 +145,11 @@ export class GameCatalog {
                 });
                 this.#quickSort(arr, 0, arr.length-1);
                 this.#games.reverse();
+                // Moves games with 'Release Date: Unknown' ratings to end of list
+                while (this.#games[0].getRating() == "Release Date: Unknown") {
+                    let temp = this.#games.shift();
+                    this.#games.push(temp);
+                }
                 break;
         }
     }
