@@ -298,15 +298,6 @@
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6y4h.jpg"
   },
   {
-    "id": 4847,
-    "aggregated_rating": 69.33333333333333,
-    "first_release_date": 1414454400,
-    "name": "Lords of the Fallen",
-    "summary": "Lords of the Fallen is a challenging fantasy action RPG set in a harsh world where humanity has defeated its God. When his army starts to re-emerge from its demonic realm, led by the formidable Lords, humanity turns to an unlikely defender for help.\n\nLords of the Fallen offers a deep and satisfying melee combat system with weapons, armour and skills influencing speed, power and agility. Every fight is both a challenge and a meaningful victory. Powerful and spectacular magic complete the arsenal. Embark on an epic journey of combat, exploration and discovery\nto become the world\u2019s salvation\u2026 or doom.\n\nDeveloped by CI Games of Warsaw, in collaboration with Deck 13, a developer based in Germany.",
-    "url": "https://www.igdb.com/games/lords-of-the-fallen",
-    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1nzt.jpg"
-  },
-  {
     "id": 21593,
     "aggregated_rating": 72.0,
     "first_release_date": 1697155200,
@@ -314,6 +305,15 @@
     "summary": "A vast world awaits in all-new, dark fantasy action-RPG, Lords of the Fallen. As one of the fabled Dark Crusaders, embark on an epic quest to overthrow Adyr, the demon God.",
     "url": "https://www.igdb.com/games/lords-of-the-fallen--2",
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co72u9.jpg"
+  },
+  {
+    "id": 4847,
+    "aggregated_rating": 69.33333333333333,
+    "first_release_date": 1414454400,
+    "name": "Lords of the Fallen",
+    "summary": "Lords of the Fallen is a challenging fantasy action RPG set in a harsh world where humanity has defeated its God. When his army starts to re-emerge from its demonic realm, led by the formidable Lords, humanity turns to an unlikely defender for help.\n\nLords of the Fallen offers a deep and satisfying melee combat system with weapons, armour and skills influencing speed, power and agility. Every fight is both a challenge and a meaningful victory. Powerful and spectacular magic complete the arsenal. Embark on an epic journey of combat, exploration and discovery\nto become the world\u2019s salvation\u2026 or doom.\n\nDeveloped by CI Games of Warsaw, in collaboration with Deck 13, a developer based in Germany.",
+    "url": "https://www.igdb.com/games/lords-of-the-fallen",
+    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1nzt.jpg"
   },
   {
     "id": 194987,
