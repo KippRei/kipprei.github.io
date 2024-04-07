@@ -71,12 +71,6 @@ a:active {
         background-color: rgba(0, 0, 0, .5);
     }
 
-    #card-container {
-        justify-content: center;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
     .navItem {
         display: inline-block;
         color: white;
@@ -110,12 +104,6 @@ a:active {
         background-color: rgba(0, 0, 0, .5);
     }
 
-    #card-container {
-        justify-content: center;
-        margin-left: 25%;
-        margin-right: 25%;
-    }
-
     .navItem {
         display: inline-block;
         color: white;
@@ -127,6 +115,31 @@ a:active {
         border: 1px solid #ccc;
         border-radius: 5px;
         cursor: pointer;
+    }
+ }
+
+ /* Need to adjust the card container margins at different screen sizes than other adjustments */
+ @media only screen and (max-width: 800px) {
+    #card-container {
+        justify-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+ }
+
+ @media only screen and (min-width: 801px) and (max-width: 1100px) {
+    #card-container {
+        justify-content: center;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+ }
+
+ @media only screen and (min-width: 1100px) {
+    #card-container {
+        justify-content: center;
+        margin-left: 25%;
+        margin-right: 25%;
     }
  }
 

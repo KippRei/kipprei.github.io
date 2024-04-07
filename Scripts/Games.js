@@ -7,8 +7,9 @@ export class GameInfo {
     #rating; // Text string of rating
     #rawRating; // Integer value of rating (for filtering)
     #description;
+    #website;
 
-    constructor(name, releaseDate, cover, rating, description) {
+    constructor(name, releaseDate, cover, rating, description, website) {
         this.#name = name;
         if (releaseDate != undefined) {
             let date = new Date(releaseDate * 1000);
@@ -18,11 +19,12 @@ export class GameInfo {
         else {
             this.#releaseDate = "Release Date: Unknown";
         }
-        this.#cover = cover;
+        this.#cover = "https://" + cover;
         rating != undefined ? this.#rating = "Rating: " + Math.round(rating) : this.#rating = "Rating: N/A";
         this.#rawRating = Math.round(rating);
         this.#description = description;
         this.#unixRelDate = releaseDate;
+        website != undefined ? this.#website = website : this.#website = "-"
     }
 
     setName(name) {
@@ -80,6 +82,14 @@ export class GameInfo {
 
     getDescription() {
         return this.#description;
+    }
+
+    setWebsite(website) {
+        this.#website = website;
+    }
+
+    getWebsite() {
+        return this.#website;
     }
 }
 

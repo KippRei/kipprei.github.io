@@ -1,6 +1,8 @@
 Games List: Wikipedia.com
-Games Data: IGDB.com
-Loading Gif: gifer.com
+Games Data: IGDB.com API
+Loading Gif (loading.gif): gifer.com
+Close Popup Image (x-sml.png): pngwing.com (resized with onlinepngtools.com)
 Index Page BG: textures4photoshop.com
 About Page BG: iStockPhoto.com
-About Page BG Small: vecteezy.com (cropped with iloveimg.com)
+About Page Mobile BG: vecteezy.com (cropped with iloveimg.com)
+Coding Resources: stackoverflow.com, w3schools.com, geeksforgeeks.com, zybooks.com

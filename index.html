@@ -38,7 +38,7 @@
     <div class="padding"></div>
 
     <div id="card-container">
-        <img src="./Images/loading.gif" style="justify-content: center; width:100%; height: auto;">
+        <img src="./Images/loading.gif" style="justify-content: center; width:100%; height: auto; z-index: 1">
     </div>
     
     <!-- Card Template -->
@@ -54,12 +54,13 @@
     <!-- Modal -->
     <div id="detailsModal" class="modal">
         <div class="modal-content">
-            <span id="closeModalBtn">&times;</span>
+            <span id="closeModalBtn"><img src="./Images/x-sml.png" alt="Close Popup"></span>
             <img id="m_img" src="" alt="">
             <h2 id="m_gameTitle">Title</h2>
             <p id="m_release">Release Date</p>
             <p id="m_rating">Rating</p>
             <p id="m_description">Description</p>
+            <p id="m_website">IGDB Link</p>
         </div>  
     </div>
 </body>
