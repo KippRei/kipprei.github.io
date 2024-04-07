@@ -23,18 +23,20 @@
         <div class="navItem" id="aboutNavBtn">What Are Soulslikes?</div>
     </div>
 
-    <select id="sortTypes">
-        <option value="NameAsc">Name</option>
-        <option value="RatingDesc">Rating</option>
-        <option value="RelDateDesc">Release Date</option>
-    </select>
-    <button id="sortBtn">Sort</button>
+    <div id="filters">
+        <select id="sortTypes">
+            <option value="NameAsc">Name</option>
+            <option value="RatingDesc">Rating</option>
+            <option value="RelDateDesc">Release Date</option>
+        </select>
+        <button id="sortBtn">Sort</button>
 
-    <div>
-        <input type="range" id="ratingSlider" min="0" max="100" />
-        <span id="ratingSliderText" style="color: white;">Rating</span>
-        <button id="filterBtn">Filter by Rating</button>
-      </div>
+        <div>
+            <input type="range" id="ratingSlider" min="0" max="100" />
+            <span id="ratingSliderText" style="color: white;">Rating</span>
+            <button id="filterBtn">Filter by Rating</button>
+        </div>
+    </div>
     <div class="padding"></div>
 
     <div id="card-container">

@@ -46,6 +46,10 @@ a:active {
     background-color: rgb(106, 106, 106);
 }
 
+#filters {
+    text-align: center;
+}
+
 .title {
     padding-top: 20px;
     padding-bottom: 10px;
