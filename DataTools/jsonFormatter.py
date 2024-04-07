@@ -8,7 +8,7 @@ fileToFormat = open("../GameData/" + fileName + ".txt", "r")
 newFile = open("../GameData/" + fileName + ".json", "w")
 
 for line in fileToFormat.readlines():
-    if line.strip() == "][":
+    if line.startswith("]["):
         newFile.write(",")
     else:
         newFile.write(line)

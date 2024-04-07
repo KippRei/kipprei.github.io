@@ -16,7 +16,7 @@ for game in parsedInfo:
         if game['id'] == cover['game']:
             url = cover['url'][2:]
             url = url.replace("t_thumb", "t_cover_big")
-            game['url'] = url
+            game['cover_url'] = url
             continue
 
 newFile.write(json.dumps(parsedInfo, indent=2))
