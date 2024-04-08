@@ -8,23 +8,25 @@ export class GameInfo {
     #rawRating; // Integer value of rating (for filtering)
     #description;
     #website;
+    #platforms; // Platforms game is available on
 
-    constructor(name, releaseDate, cover, rating, description, website) {
+    constructor(name, releaseDate, cover, rating, description, website, platforms) {
         this.#name = name;
         if (releaseDate != undefined) {
             let date = new Date(releaseDate * 1000);
-            let relDate = "Release Date: " + (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
+            let relDate = (date.getMonth() + 1) + "/" + date.getDate() + "/" + date.getFullYear();
             this.#releaseDate = relDate;
         }
         else {
-            this.#releaseDate = "Release Date: Unknown";
+            this.#releaseDate = "Unknown";
         }
         this.#cover = "https://" + cover;
-        rating != undefined ? this.#rating = "Rating: " + Math.round(rating) : this.#rating = "Rating: N/A";
+        rating != undefined ? this.#rating = Math.round(rating) : this.#rating = "N/A";
         this.#rawRating = Math.round(rating);
         this.#description = description;
         this.#unixRelDate = releaseDate;
         website != undefined ? this.#website = website : this.#website = "-"
+        this.#platforms = platforms;
     }
 
     setName(name) {
@@ -38,11 +40,11 @@ export class GameInfo {
     setReleaseDate(releaseDate) {
         if (releaseDate != undefined) {
             let date = new Date(releaseDate * 1000);
-            let relDate = "Release Date: " + date.getDay() + "/" + date.getDate() + "/" + date.getFullYear();
+            let relDate = date.getDay() + "/" + date.getDate() + "/" + date.getFullYear();
             this.#releaseDate = relDate;
         }
         else {
-            this.#releaseDate = "Release Date: Unknown";
+            this.#releaseDate = "Unknown";
         }
     }
 
@@ -64,7 +66,7 @@ export class GameInfo {
     }
 
     setRating(rating) {
-        rating != undefined ? this.#rating = "Rating: " + rating : this.#rating = "Rating: N/A";
+        rating != undefined ? this.#rating = rating : this.#rating = "N/A";
     }
 
     getRating() {
@@ -90,6 +92,14 @@ export class GameInfo {
 
     getWebsite() {
         return this.#website;
+    }
+
+    setPlatforms(platforms) {
+        this.#platforms = platforms;
+    }
+
+    getPlatforms() {
+        return this.#platforms;
     }
 }
 
@@ -138,7 +148,7 @@ export class GameCatalog {
                 this.#quickSort(arr, 0, arr.length-1);
                 this.#games.reverse();
                 // Moves games with 'N/A' ratings to end of list
-                while (this.#games[0].getRating() == "Rating: N/A") {
+                while (this.#games[0].getRating() == "N/A") {
                     let temp = this.#games.shift();
                     this.#games.push(temp);
                 }
@@ -156,7 +166,7 @@ export class GameCatalog {
                 this.#quickSort(arr, 0, arr.length-1);
                 this.#games.reverse();
                 // Moves games with 'Release Date: Unknown' ratings to end of list
-                while (this.#games[0].getRating() == "Release Date: Unknown") {
+                while (this.#games[0].getRating() == "Unknown") {
                     let temp = this.#games.shift();
                     this.#games.push(temp);
                 }

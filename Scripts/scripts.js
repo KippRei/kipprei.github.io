@@ -1,7 +1,20 @@
 import {GameInfo, GameCatalog} from "./Games.js";
 
+// Changes card display depending on screen size
 window.onresize=checkCardDisplay;
 let screenSize = window.innerWidth > 700 ? "big" : "small";
+
+function checkCardDisplay() {
+    if (window.innerWidth <= 700 && screenSize == "big") {
+        screenSize = "small";
+        showCards(currGameCatalog);
+    }
+    else if (window.innerWidth > 700 && screenSize == "small") {
+        screenSize = "big";
+        showCards(currGameCatalog);
+    }
+}
+
 
 // Create GameCatalog to hold games
 let fullGameCatalog = new GameCatalog();
@@ -18,13 +31,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
     // Set up rating slider (filter)
     let slider = document.getElementById("ratingSlider");
     let sliderValText = document.getElementById("ratingSliderText");
-    sliderValText.innerHTML = slider.value;
+    sliderValText.textContent = slider.value;
     slider.addEventListener("input", (e) => {
         if (slider.value == 0) {
-            sliderValText.innerHTML = "N/A";
+            sliderValText.textContent = "N/A";
         }
         else {
-            sliderValText.innerHTML = slider.value;
+            sliderValText.textContent = slider.value;
         }
     });
 
@@ -37,8 +50,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
 async function populateFullGamesArray() {
     let res = await fetch("../GameData/gamesInfo.json")
     let json = await res.json();
-    json.forEach(elem => {
-        let newGame = new GameInfo(elem.name, elem.first_release_date, elem.cover_url, elem.aggregated_rating, elem.summary, elem.url);
+    json.forEach(e => {
+        let newGame = new GameInfo(e.name, e.first_release_date, e.cover_url, e.aggregated_rating, e.summary, e.url, e.platformsByName);
         fullGameCatalog.addGame(newGame);
     });
     showCards(fullGameCatalog);
@@ -47,28 +60,16 @@ async function populateFullGamesArray() {
 // This function adds cards the page to display the data in the array
 function showCards(catalogToDisp) {
     const cardContainer = document.getElementById("card-container");
-    cardContainer.innerHTML = "";
+    cardContainer.textContent = "";
     const templateCard = document.querySelector(".card");
     
     let games = catalogToDisp.getGames();
     for (let i = 0; i < games.length; i++) {
         let game = games[i];
-
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, game); // Fill in card data
         nextCard.addEventListener("click", (e) => showGameDetails(game));
         cardContainer.appendChild(nextCard); // Add new card to card container
-    }
-}
-
-function checkCardDisplay() {
-    if (window.innerWidth <= 700 && screenSize == "big") {
-        screenSize = "small";
-        showCards(currGameCatalog);
-    }
-    else if (window.innerWidth > 700 && screenSize == "small") {
-        screenSize = "big";
-        showCards(currGameCatalog);
     }
 }
 
@@ -81,10 +82,10 @@ function editCardContent(card, game) {
         cardHeader.textContent = game.getName();
 
         const cardReleaseDate = card.querySelector(".release");
-        cardReleaseDate.textContent = game.getReleaseDate();
+        cardReleaseDate.textContent += game.getReleaseDate();
 
         const cardGameRating = card.querySelector(".rating");
-        cardGameRating.textContent = game.getRating();
+        cardGameRating.textContent += game.getRating();
 
         const cardImage = card.querySelector("img");
         cardImage.src = game.getCover();
@@ -141,13 +142,24 @@ function showGameDetails(game) {
     let description = document.getElementById("m_description");
     let website = document.getElementById("m_website");
     let img = document.getElementById("m_img");
+    let platforms = document.getElementById("m_platforms");
 
     img.src = game.getCover();
-    title.innerHTML = game.getName();
-    rating.innerHTML = game.getRating();
-    relDate.innerHTML = game.getReleaseDate();
-    description.innerHTML = "Summary: " + game.getDescription();
-    website.innerHTML = "IGDB Link: <a href='" + game.getWebsite() + "'>" + game.getWebsite() + "</a>";
+    title.textContent = game.getName();
+    rating.textContent = ": " + game.getRating();
+    relDate.textContent = ": " + game.getReleaseDate();
+    description.textContent = ": " + game.getDescription();
+
+    const platArr = game.getPlatforms();
+    platforms.textContent = ": ";
+    for (let i = 0; i < platArr.length; i++) {
+        platforms.textContent += platArr[i];
+        if (i < platArr.length - 1) {
+            platforms.textContent += ", ";
+        }
+    }
+    website.src = game.getWebsite();
+    website.textContent = game.getWebsite();
 
 }
 

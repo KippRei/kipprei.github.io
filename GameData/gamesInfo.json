@@ -4,34 +4,59 @@
     "aggregated_rating": 55.0,
     "first_release_date": 1652313600,
     "name": "Achilles: Legends Untold",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "Achilles: Legends Untold is an isometric action RPG that draws inspiration from soulslike and hack & slash genres. However, compared to them, the title by Polish studio Dark Point Games has a much lower level of entry. The creators wanted to make a game that would be more accessible to beginners, who are just starting their adventure with this type of gameplay. It doesn\u2019t mean, however, that Achilles: Legends Untold is a title aimed only at newcomers, because it is filled with optional challenging missions, which will certainly also satisfy experienced players.",
     "url": "https://www.igdb.com/games/achilles-legends-untold",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co3i89.jpg"
   },
   {
     "id": 200903,
     "first_release_date": 1714003200,
     "name": "Another Crab's Treasure",
+    "platforms": [
+      6,
+      130,
+      167,
+      169
+    ],
     "summary": "Another Crab\u2019s Treasure is a soulslike adventure set in a crumbling underwater world plagued by a mysterious curse. As Kril the hermit crab, you\u2019ll need to wear the trash around you as shells to withstand attacks from enemies many times your size. Embark on an epic treasure hunt to buy back your repossessed shell, and discover the dark secrets behind the polluted ocean.",
     "url": "https://www.igdb.com/games/another-crabs-treasure",
+    "platformsByName": [
+      "PC",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6mrs.jpg"
-  },
-  {
-    "id": 6259,
-    "aggregated_rating": 80.0,
-    "first_release_date": 1085443200,
-    "name": "Ashen",
-    "summary": "Ashen is a supernatural horror-themed FPS developed exclusively for the N-Gage platform. When Seven River City is plunged into chaos, stricken by storms and overcome with supernatural phenomena, Jacob Ward is filled with dread and despair, like most others. Yet Ward knows more about this catastrophe than most, and as its citizens flee, he must return to Seven River City and work to save it. Somewhere in that half-ruined darkness is his sister, a woman Ward believes is responsible for this disaster; a woman who warned him this would happen.",
-    "url": "https://www.igdb.com/games/ashen",
-    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co3aiw.jpg"
   },
   {
     "id": 17001,
     "aggregated_rating": 82.85714285714286,
     "first_release_date": 1544140800,
     "name": "Ashen",
+    "platforms": [
+      6,
+      48,
+      49,
+      130
+    ],
     "summary": "Set in a sprawling open world, Ashen is a tight, 3rd person, skill-based action RPG about guiding your wanderer through a newly lit world. Fight alongside others, forge friendships and defeat the creatures of shadow determined to cast the world back into darkness.\n\nExplore mysterious dungeons, fight epic bosses and explore diverse regions filled with gorgeous vistas and mythical creatures. Meet characters along the way who will join you on your journey and turn your home into a lively town. In this new era of light, you must protect the Ashen and destroy the hungering shadows once and for all.",
     "url": "https://www.igdb.com/games/ashen--1",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4o0i.jpg"
   },
   {
@@ -39,24 +64,56 @@
     "aggregated_rating": 79.0,
     "first_release_date": 1665446400,
     "name": "Asterigos: Curse of the Stars",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
     "summary": "Embark on a journey full of danger in this action RPG, inspired by Greek and Roman mythologies. Explore the breathtaking city of Aphes and forge your way through legions of unique foes and mythical bosses to discover the truth behind the city\u2019s curse.",
     "url": "https://www.igdb.com/games/asterigos-curse-of-the-stars",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4xlm.jpg"
   },
   {
     "id": 213287,
     "first_release_date": 1712275200,
     "name": "Biomorph",
+    "platforms": [
+      6,
+      14
+    ],
     "summary": "Become Your Enemy in Biomorph, a 2D Dark Metroidvania!\n\nWhen you defeat a monster, the BIOMORPH mechanic allows you to take its shape and power. But beware - biomorphing has a cost as these creatures will now unlock new skills and will use them on the player upon encountering them again!",
     "url": "https://www.igdb.com/games/biomorph",
+    "platformsByName": [
+      "PC",
+      "Mac"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co7ds6.jpg"
   },
   {
     "id": 136879,
     "first_release_date": 1724112000,
     "name": "Black Myth: Wukong",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. The story is based on Journey to the West, one of the Four Great Classical Novels of Chinese literature. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.",
     "url": "https://www.igdb.com/games/black-myth-wukong",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co7pnk.jpg"
   },
   {
@@ -64,8 +121,24 @@
     "aggregated_rating": 78.25,
     "first_release_date": 1568073600,
     "name": "Blasphemous",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
     "summary": "Blasphemous is a punishing action-platformer that combines the fast-paced, skilled combat of a hack-n-slash game with a deep and evocative narrative core. Explore this nightmarish world of twisted religion and discover its many secrets hidden deep inside. Use devastating combos and brutal executions to smite the hordes of grotesque monsters and titanic bosses, who are all ready to rip your limbs off. Locate and equip relics, rosary beads and prayers that call on the powers of the heavens to aid you in your quest to break your eternal damnation.",
     "url": "https://www.igdb.com/games/blasphemous",
+    "platformsByName": [
+      "Linux",
+      "PC",
+      "Mac",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2eyn.jpg"
   },
   {
@@ -73,16 +146,40 @@
     "aggregated_rating": 88.75,
     "first_release_date": 1692835200,
     "name": "Blasphemous II",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
     "summary": "The Penitent One awakens as Blasphemous 2 joins him once again in an endless struggle against The Miracle. Dive into a perilous new world filled with mysteries and secrets to discover, and tear your way through monstrous foes that stand between you and your quest to end the cycle one and for all.",
     "url": "https://www.igdb.com/games/blasphemous-ii",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6ej3.jpg"
   },
   {
     "id": 124400,
     "first_release_date": 1568851200,
     "name": "Bleak Sword",
+    "platforms": [
+      14,
+      39
+    ],
     "summary": "Bleak Sword is a dark fantasy action game tasking players to struggle across compact, cursed diorama battlefields. Through nine tense chapters, heroes must lift the curse of the legendary Bleak Sword by striking down all manner of creatures in every forest, swamp, castle, and dungeon on their journey. Invoke powerful magic, uncover helpful items, and level up your character to upgrade your stats before facing down menacing guardians. Once the curse has been lifted the challenging Arena Mode and thirty unlockable achievements await even the most accomplished warrior.\n\nBleak Sword is designed to be able to play it easily with elegant controls allowing heroes to roll, parry, attack and counter-attack using basic movements on gamepads and touch controls. Scored by award-winning composer Jim Guthrie with sound by famed designer Joonas Turner.",
     "url": "https://www.igdb.com/games/bleak-sword",
+    "platformsByName": [
+      "Mac",
+      "iOS"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4a5c.jpg"
   },
   {
@@ -90,8 +187,14 @@
     "aggregated_rating": 91.11111111111111,
     "first_release_date": 1427155200,
     "name": "Bloodborne",
+    "platforms": [
+      48
+    ],
     "summary": "An action RPG in which the player embodies a Hunter who, after being transfused with the mysterious blood local to the city of Yharnam, sets off into a \"night of the Hunt\", an extended night in which Hunters may phase in and out of dream and reality in order to thin the outbreak of abominable beasts that plague the land and, for the more resilient and insightful Hunters, uncover the answers to the Hunt's many mysteries.",
     "url": "https://www.igdb.com/games/bloodborne",
+    "platformsByName": [
+      "PlayStation 4"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1rba.jpg"
   },
   {
@@ -99,25 +202,31 @@
     "aggregated_rating": 80.0,
     "first_release_date": 1458777600,
     "name": "Chronos",
+    "platforms": [
+      385
+    ],
     "summary": "Chronos is an atmospheric RPG that chronicles one young hero\u2019s lifelong quest to save their homeland from a great evil. Central to this quest is an ancient labyrinth, which holds the secrets necessary to restore life and peace to their home. However, the architects of this labyrinth designed it to open only once a year. The labyrinth is a test, and each time the hero fails they are cast out and must wait one year to return.",
     "url": "https://www.igdb.com/games/chronos--1",
+    "platformsByName": [],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co28of.jpg"
-  },
-  {
-    "id": 13492,
-    "aggregated_rating": 75.0,
-    "first_release_date": 567907200,
-    "name": "Chronos",
-    "url": "https://www.igdb.com/games/chronos",
-    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co5xnm.jpg"
   },
   {
     "id": 28168,
     "aggregated_rating": 72.9090909090909,
     "first_release_date": 1569456000,
     "name": "Code Vein",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
     "summary": "Code Vein is set in the not too distant future where a disaster has brought the world to ruin and vampire-like beings battle for dominance.",
     "url": "https://www.igdb.com/games/code-vein",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1r69.jpg"
   },
   {
@@ -125,8 +234,18 @@
     "aggregated_rating": 90.625,
     "first_release_date": 1316649600,
     "name": "Dark Souls",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
     "summary": "An action RPG and spiritual sequel to Demon's Souls in which the player embodies the Chosen Undead, who is tasked with fulfilling an ancient prophecy by ringing the Bells of Awakening in the dark fantasy setting of Lordran, an open world with intricate areas full of beasts, former humans gone hollow, and magical abominations whom the player must overcome in challenging and unforgiving combat.",
     "url": "https://www.igdb.com/games/dark-souls",
+    "platformsByName": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1x78.jpg"
   },
   {
@@ -134,8 +253,18 @@
     "aggregated_rating": 90.25,
     "first_release_date": 1394496000,
     "name": "Dark Souls II",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
     "summary": "The unique old-school action rpg experience captivated imaginations of gamers worldwide with incredible challenge and intense emotional reward.\nDark Souls II brings the franchise\u2019s renowned difficulty & gripping gameplay innovations to both single and multiplayer experiences.\n\nImmerse yourself into mind-bending environments filled with new twisted monsters and deadly bosses that could only come from the imagination of from software. A wide range of threats will prey on human senses & phobias - auditory hallucinations, vertigo, acrophobia, etc.\n\nFromSoftware announced that online servers would be shut down on March 31st, 2024.",
     "url": "https://www.igdb.com/games/dark-souls-ii",
+    "platformsByName": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2eoo.jpg"
   },
   {
@@ -143,8 +272,18 @@
     "aggregated_rating": 86.07692307692308,
     "first_release_date": 1458777600,
     "name": "Dark Souls III",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
     "summary": "Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and embrace the darkness!",
     "url": "https://www.igdb.com/games/dark-souls-iii",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1vcf.jpg"
   },
   {
@@ -152,16 +291,32 @@
     "aggregated_rating": 90.0,
     "first_release_date": 1345766400,
     "name": "Dark Souls: Artorias of the Abyss",
+    "platforms": [
+      6,
+      9,
+      12
+    ],
     "summary": "Artorias of the Abyss is additional content for the game Dark Souls. It was originally released for PC as part of the Dark Souls: Prepare to Die Edition, and later for consoles as the eponymous DLC. A console version of the Prepare To Die Edition was also released at a later date.",
     "url": "https://www.igdb.com/games/dark-souls-artorias-of-the-abyss",
+    "platformsByName": [
+      "PC",
+      "PlayStation 3",
+      "Xbox 360"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1vv2.jpg"
   },
   {
     "id": 18335,
     "first_release_date": 1453766400,
     "name": "DarkMaus",
+    "platforms": [
+      6
+    ],
     "summary": "\"DarkMaus is an indie action RPG with challenging, skill-based combat that punishes careless play. In DarkMaus, you play a lonely wanderer searching for what\u2019s left in a corrupted world. The odds are against you \u2013 you will certainly perish.\n\nDeath Echo: Each time you die, an ally ghost is summoned that retraces your steps, fighting by your side. With time you can collect multiple ally ghosts and choose their weapons for extra strategy opportunities.\n\nA worthy challenge: Combat in DarkMaus is thoughtful and skill based. Enemies force you to be reactive to survive, and punish any greedy moves or mistakes. You\u2019ll start out swearing that it\u2019s impossible, and end up a god among M\u00e4use.\n\nA dark world to explore: Search for answers and secrets in the desolate land of Hazath, whose inhabitants have gone feral.\n\nCombat style variety: From spears to greatswords and bows to fireballs, DarkMaus has a large number of viable builds and playstyles.\n\nDarkMaus is designed for a controller, and is currently PC only.\"",
     "url": "https://www.igdb.com/games/darkmaus",
+    "platformsByName": [
+      "PC"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1ojx.jpg"
   },
   {
@@ -169,8 +324,22 @@
     "aggregated_rating": 64.9375,
     "first_release_date": 1543276800,
     "name": "Darksiders III",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      170
+    ],
     "summary": "Return to an apocalyptic planet Earth in Darksiders III, a hack-n-slash action adventure where players take on the role of FURY in her quest to hunt down and dispose of the Seven Deadly Sins. The Charred Council calls upon Fury to battle from the heights of heaven down through the depths of hell in a quest to restore humanity and prove that she is the most powerful of the Horsemen. As a mage, FURY relies on her whip and magic to restore the balance between good and evil. The expansive, Darksiders III game world is presented as an open-ended, living, free-form planet Earth that is dilapidated by war and decay, and overrun by nature. FURY will move back and forth between environments to uncover secrets while advancing the Darksiders III story.",
     "url": "https://www.igdb.com/games/darksiders-iii",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Google Stadia"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1qqk.jpg"
   },
   {
@@ -178,8 +347,30 @@
     "aggregated_rating": 90.08333333333333,
     "first_release_date": 1494374400,
     "name": "Dead Cells",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      39,
+      48,
+      49,
+      130,
+      167
+    ],
     "summary": "Dead Cells is a rogue-lite, metroidvania inspired, action-platformer. You'll explore a sprawling, ever-changing castle... assuming you\u2019re able to fight your way past its keepers in 2D souls-lite combat. No checkpoints. Kill, die, learn, repeat.",
     "url": "https://www.igdb.com/games/dead-cells",
+    "platformsByName": [
+      "Linux",
+      "PC",
+      "Mac",
+      "Android",
+      "iOS",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co7jfv.jpg"
   },
   {
@@ -187,8 +378,14 @@
     "aggregated_rating": 88.25,
     "first_release_date": 1233792000,
     "name": "Demon's Souls",
+    "platforms": [
+      9
+    ],
     "summary": "A third-person action RPG with cooperative and competitive multiplayer elements in which the player enters the kingdom of Boletaria as it is being ravaged by a fog that spawns murderous demons. The player has to hunt down the arch demons situated in five disparate areas within the kingdom and partake in punishing combat to reach the Old One, the vengeful being that brought the fog to Boletaria.",
     "url": "https://www.igdb.com/games/demon-s-souls",
+    "platformsByName": [
+      "PlayStation 3"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co27sk.jpg"
   },
   {
@@ -196,8 +393,14 @@
     "aggregated_rating": 92.33333333333333,
     "first_release_date": 1605139200,
     "name": "Demon's Souls",
+    "platforms": [
+      167
+    ],
     "summary": "Entirely rebuilt from the ground up and masterfully enhanced, Demon's Souls is a remake of the 2009 release that introduces the horrors of a fog-laden, dark fantasy land to a whole new generation of gamers. Those who\u2019ve faced its trials and tribulations before, can once again challenge the darkness in stunning visual quality with incredible performance. The remake features improved graphics and animations, sound and lighting tweaks and a reimagining of many of the visual, musical and mechanical aspects of the original game.",
     "url": "https://www.igdb.com/games/demons-souls",
+    "platformsByName": [
+      "PlayStation 5"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2kj9.jpg"
   },
   {
@@ -205,8 +408,22 @@
     "aggregated_rating": 96.9,
     "first_release_date": 1645747200,
     "name": "Elden Ring",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
     "summary": "Elden Ring is a fantasy, action and open world game with RPG elements such as stats, weapons and spells. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.",
     "url": "https://www.igdb.com/games/elden-ring",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4jni.jpg"
   },
   {
@@ -214,8 +431,22 @@
     "aggregated_rating": 79.0,
     "first_release_date": 1611187200,
     "name": "Ender Lilies: Quietus of the Knights",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      169
+    ],
     "summary": "Ender Lilies is a dark fantasy 2D Action RPG about unraveling the mysteries of a nation destroyed by a cataclysmic event. The fallen Kingdom of End is a tragic and beautiful world featuring a majestic castle, submerged forests and forbidden underground areas.\n\nOn this sorrowful journey, encounter horrific enemies against whom a moment of inattention could be fatal. By releasing foes from their undying curse, you may gain their strength. Overcome the hardships of your journey and uncover the truth with the aid of the fallen knights.",
     "url": "https://www.igdb.com/games/ender-lilies-quietus-of-the-knights",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6fy2.jpg"
   },
   {
@@ -223,25 +454,57 @@
     "aggregated_rating": 95.0,
     "first_release_date": 1627862400,
     "name": "Grime",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169,
+      170
+    ],
     "summary": "Explore a surreal world obsessed with proportions and anatomy, in this 2.5D Metroidvania action RPG, where you will find out what you're made of... and break everything else apart.",
     "url": "https://www.igdb.com/games/grime",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S",
+      "Google Stadia"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co3hbp.jpg"
-  },
-  {
-    "id": 260887,
-    "first_release_date": 1676764800,
-    "name": "Grime",
-    "summary": "A set of 5 maps using the Duke 3D texture pack.",
-    "url": "https://www.igdb.com/games/grime--1",
-    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6wwp.jpg"
   },
   {
     "id": 36476,
     "aggregated_rating": 70.0,
     "first_release_date": 1596067200,
     "name": "Hellpoint",
+    "platforms": [
+      3,
+      6,
+      14,
+      48,
+      49,
+      130,
+      167,
+      169,
+      170
+    ],
     "summary": "Hellpoint is a dark sci fi action RPG set in the aftermath of a massive quantum cataclysm. Every living being quickly lost their mind as their memories and bodies were merged with alternate versions of themselves from parallel universes. The accident also attracted entities of immense power that should have been left alone, in the depth of other dimensions.",
     "url": "https://www.igdb.com/games/hellpoint",
+    "platformsByName": [
+      "Linux",
+      "PC",
+      "Mac",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S",
+      "Google Stadia"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2bwn.jpg"
   },
   {
@@ -249,8 +512,22 @@
     "aggregated_rating": 91.25,
     "first_release_date": 1487894400,
     "name": "Hollow Knight",
+    "platforms": [
+      3,
+      6,
+      14,
+      41,
+      130
+    ],
     "summary": "A 2D metroidvania with an emphasis on close combat and exploration in which the player enters the once-prosperous now-bleak insect kingdom of Hallownest, travels through its various districts, meets friendly inhabitants, fights hostile ones and uncovers the kingdom's history while improving their combat abilities and movement arsenal by fighting bosses and accessing out-of-the-way areas.",
     "url": "https://www.igdb.com/games/hollow-knight",
+    "platformsByName": [
+      "Linux",
+      "PC",
+      "Mac",
+      "Wii U",
+      "Nintendo Switch"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1rgi.jpg"
   },
   {
@@ -258,16 +535,42 @@
     "aggregated_rating": 45.33333333333334,
     "first_release_date": 1536278400,
     "name": "Immortal: Unchained",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
     "summary": "Immortal: Unchained is a souls-inspired third-person shooter/action RPG.",
     "url": "https://www.igdb.com/games/immortal-unchained",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1re8.jpg"
   },
   {
     "id": 214707,
     "first_release_date": 1666137600,
     "name": "The Last Hero of Nostalgaia",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
     "summary": "The Last Hero of Nostalgaia is a satirical action-adventure, brought to life by a twisted and wicked tale. Featuring hard but fair combat, *full character customization, unique battle armor and engaging narrative mechanics rich in lore, Nostalgaia plunges you into almost certain death at every turn.",
     "url": "https://www.igdb.com/games/the-last-hero-of-nostalgaia",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co54t3.jpg"
   },
   {
@@ -275,8 +578,18 @@
     "aggregated_rating": 45.0,
     "first_release_date": 1665619200,
     "name": "The Last Oricru",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "The Last Oricru is an action RPG with a strong emphasis on storytelling and player choices. The player is awakening in a sci-fi medieval world at a time of war and starts influencing the destiny of a whole nation. Game is designed as both - single-player and a coop experience.",
     "url": "https://www.igdb.com/games/the-last-oricru",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co392p.jpg"
   },
   {
@@ -284,8 +597,24 @@
     "aggregated_rating": 85.5,
     "first_release_date": 1694995200,
     "name": "Lies of P",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      167,
+      169
+    ],
     "summary": "Inspired by the familiar story of Pinocchio, Lies of P is an action souls-like game set in a dark Belle \u00c9poque world. Guide Pinocchio on his unrelenting journey to become human.",
     "url": "https://www.igdb.com/games/lies-of-p",
+    "platformsByName": [
+      "PC",
+      "Mac",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6lxr.jpg"
   },
   {
@@ -293,8 +622,18 @@
     "aggregated_rating": 70.5,
     "first_release_date": 1592956800,
     "name": "Little Witch Nobeta",
+    "platforms": [
+      6,
+      48,
+      130
+    ],
     "summary": "Control the lovely little witch Nobeta, explore the unknown mysterious castle, and gradually discover the truth!",
     "url": "https://www.igdb.com/games/little-witch-nobeta",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Nintendo Switch"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6y4h.jpg"
   },
   {
@@ -302,8 +641,18 @@
     "aggregated_rating": 72.0,
     "first_release_date": 1697155200,
     "name": "Lords of the Fallen",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "A vast world awaits in all-new, dark fantasy action-RPG, Lords of the Fallen. As one of the fabled Dark Crusaders, embark on an epic quest to overthrow Adyr, the demon God.",
     "url": "https://www.igdb.com/games/lords-of-the-fallen--2",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co72u9.jpg"
   },
   {
@@ -311,25 +660,32 @@
     "aggregated_rating": 69.33333333333333,
     "first_release_date": 1414454400,
     "name": "Lords of the Fallen",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
     "summary": "Lords of the Fallen is a challenging fantasy action RPG set in a harsh world where humanity has defeated its God. When his army starts to re-emerge from its demonic realm, led by the formidable Lords, humanity turns to an unlikely defender for help.\n\nLords of the Fallen offers a deep and satisfying melee combat system with weapons, armour and skills influencing speed, power and agility. Every fight is both a challenge and a meaningful victory. Powerful and spectacular magic complete the arsenal. Embark on an epic journey of combat, exploration and discovery\nto become the world\u2019s salvation\u2026 or doom.\n\nDeveloped by CI Games of Warsaw, in collaboration with Deck 13, a developer based in Germany.",
     "url": "https://www.igdb.com/games/lords-of-the-fallen",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1nzt.jpg"
-  },
-  {
-    "id": 194987,
-    "aggregated_rating": 72.0,
-    "first_release_date": 1486339200,
-    "name": "Lords of the Fallen",
-    "summary": "Lords of the Fallen is a mysterious action game where you battle gothic monsters in a thrilling 1-on-1 combat. Use swipe controls to attack, dodge or parry. But keep in mind that quick wits needs to be combined with the right strategy to defeat enemies.\n\nJump into a brand new mobile experience set in the universe of Lords of the Fallen. Join Harkyn, Yetka and Kaslo as they journey deep into the heart of a forsaken monastery to end the reign of the Demon Queen Akasha once and for all.",
-    "url": "https://www.igdb.com/games/lords-of-the-fallen--1",
-    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co5rl5.jpg"
   },
   {
     "id": 192291,
     "first_release_date": 1647302400,
     "name": "Lunacid",
+    "platforms": [
+      6
+    ],
     "summary": "Lunacid is a first person dungeon crawler inspired by old FROMSOFT games like Shadow Tower and King\u2019s Field.",
     "url": "https://www.igdb.com/games/lunacid",
+    "platformsByName": [
+      "PC"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co7cdv.jpg"
   },
   {
@@ -337,8 +693,24 @@
     "aggregated_rating": 65.66666666666667,
     "first_release_date": 1664236800,
     "name": "Moonscars",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
     "summary": "Push the limits of your combat skills, and master new abilities to progress through an unforgiving nonlinear 2D world. Face off against the relentless darkness that seeks to destroy you. In Moonscars, every death is a lesson learnt\u2014and as you overcome each challenge, new truths will be revealed.",
     "url": "https://www.igdb.com/games/moonscars",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4kle.jpg"
   },
   {
@@ -346,8 +718,20 @@
     "aggregated_rating": 75.25,
     "first_release_date": 1597708800,
     "name": "Mortal Shell",
+    "platforms": [
+      6,
+      48,
+      49,
+      169
+    ],
     "summary": "Mortal Shell is a ruthless and deep action-RPG that tests your sanity and resilience in a shattered world. Your adversaries spare no mercy, with survival demanding superior awareness, precision and instincts. Possess lost warriors, track down hidden sanctums of the devout, and face formidable foes.\n\n\"Awakening as an empty vessel, you will enter into a shattered and twisted world where the remains of humanity wither and rot. Implored to do the bidding of the mysterious \u201cDark Father\u201d, you must traverse this tattered landscape and track down hidden sanctums of devout followers. There, in Mortal Shell\u2019s most hallowed grounds, you must overcome formidable foes and harvest the sacred glands. You won\u2019t be truly alone when the dead litter your path: Scattered across this land are the remnant anima of lost warriors who can be inhabited to gain their unique abilities and knowledge of weapons. The Dark Father is desperate for you to complete your task \u2014 but to what end?\n\nDiscover \u201cShells\u201d to Suit Your Playstyle - The lost remains of defeated warriors are yours to unearth. Awaken these Mortal Shells, occupy their bodies and significantly widen your understanding of different forms of combat. Inhabit a Shell that best fits your style and utilizes their own unique mastery of skills and weapon\nupgrades.\n\nIron Sharpens Iron - Combat is strategic and deliberate. Survival demands superior awareness, precision and instincts. You must commit your sword only when an opportunity opens. Calculate your parries to unleash devastating counterblows.\n\nNon-linear Campaign - Draw your own path across marsh-infested lowlands, through a gargantuan cathedral of obsidian rock, and into an ancient crypt frozen into the crest of a mountain.\n\nDeep Upgrade Paths - The stronger your connection to each Mortal Shell grows, the better you can harness their innate talents. Craft unique upgrades, sharpen your blade with acid, and study dark arcane abilities that imbue your attacks with supernatural devastation.\n\nFace Haunting Foes - Your path is guarded by desperate adversaries, devoted to inscrutable gods. Behold creatures both pitiable and grotesque, but do not let fear halt your journey. Muster your courage and face them down.\n\nDeveloped by AAA Veterans - Mortal Shell has been developed by a coalition of seasoned veterans with an unbridled passion for the soulslike genre.\"",
     "url": "https://www.igdb.com/games/mortal-shell",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co227z.jpg"
   },
   {
@@ -355,8 +739,14 @@
     "aggregated_rating": 87.63636363636364,
     "first_release_date": 1486425600,
     "name": "Nioh",
+    "platforms": [
+      48
+    ],
     "summary": "In Nioh, players will traverse war-torn Japan as William, a blonde-haired swordsman whose background as a fierce warrior and seasoned knowledge of the blade allows him to survive in the demon-plagued land of the samurai. Known as Yokai, these demons inhabit a number of dangerous locations and lie in wait in the shadows to ambush unsuspecting victims. Players will also face off with other samurai in supernatural sword battles and intense, multi-target engagements offering a level of difficulty that will truly test even the most hardened samurai\u2019s skills, patience, and strategy.\n\nOffering a deep and original storyline that takes place during the Warring States Period of Japanese history alongside strategic sword-fighting action, Nioh will challenge players in a way that makes every mission and accomplishment feel earned and worthwhile.",
     "url": "https://www.igdb.com/games/nioh",
+    "platformsByName": [
+      "PlayStation 4"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co20xg.jpg"
   },
   {
@@ -364,32 +754,52 @@
     "aggregated_rating": 84.44444444444444,
     "first_release_date": 1584057600,
     "name": "Nioh 2",
+    "platforms": [
+      6,
+      48,
+      167
+    ],
     "summary": "Master the lethal arts of the samurai as a mysterious half-human, half-supernatural Yokai warrior, in this challenging action RPG sequel. Explore violent Sengoku-era Japan and the deadly Dark Realm, both plagued with grotesque, merciless demons. Unsheathe your deadly weapons and cut down all enemies in your path using a revamped combat system and the ability to transform into a full Yokai to unleash devastating paranormal powers.",
     "url": "https://www.igdb.com/games/nioh-2",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "PlayStation 5"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1sh7.jpg"
   },
   {
     "id": 279627,
     "first_release_date": 1713398400,
     "name": "No Rest for the Wicked",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "From Moon Studios, the award-winning developers of Ori and the Blind Forest and Ori and the Will of the Wisps comes No Rest for the Wicked, a visceral, precision Action RPG set to reinvent the genre.",
     "url": "https://www.igdb.com/games/no-rest-for-the-wicked--1",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co7h9r.jpg"
-  },
-  {
-    "id": 134755,
-    "first_release_date": 1685923200,
-    "name": "No Rest for the Wicked",
-    "summary": "This is a point and click game. Made in 14 days for Adventure Jam 2023.",
-    "url": "https://www.igdb.com/games/no-rest-for-the-wicked",
-    "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co77v3.jpg"
   },
   {
     "id": 125912,
     "first_release_date": 1579132800,
     "name": "Pascal's Wager",
+    "platforms": [
+      34,
+      39
+    ],
     "summary": "Pascal's Wager is an action role playing game with the style of dark fantasy. The game provides its players with top-notch picture quality and a feast for the senses that the mobile platform has never had before. In the game, the world is shrouded by dark mist, where light is dim and mysterious. People there become lunatic, and nobody knows the secrets behind that. \n \nPlayers can play multiple characters to experience the strong storyline and reveal various hidden areas of the map. Along the way, they will fight unbelievable enemies, confront epic bosses, and embrace overwhelming death and truth. All the while, they'll be engrossed by a magnificent soundtrack performed by a world-class orchestra.",
     "url": "https://www.igdb.com/games/pascals-wager",
+    "platformsByName": [
+      "Android",
+      "iOS"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co28ut.jpg"
   },
   {
@@ -397,8 +807,24 @@
     "aggregated_rating": 76.35714285714286,
     "first_release_date": 1566259200,
     "name": "Remnant: From the Ashes",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
     "summary": "The world is in ruins. Only a remnant of mankind remains, hunted to near extinction by horrors from another world. As one of the few survivors left, you will venture into portals to fantastic realms to gather the resources and firepower needed to fight back and retake what was lost.\n\nRemnant: From the Ashes is a third-person survival-action game set in a post-apocalyptic world overrun by mythical creatures. The game provides players and up to three of their friends with a unique, customizable gameplay experience filled with intense shooting and melee combat, gear and weapon crafting, character progression and dynamically-generated levels that offer an infinite number of ways to explore and take on deadly monsters and epic bosses.",
     "url": "https://www.igdb.com/games/remnant-from-the-ashes",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1m4w.jpg"
   },
   {
@@ -406,8 +832,18 @@
     "aggregated_rating": 83.5,
     "first_release_date": 1690243200,
     "name": "Remnant II",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "Remnant II is the sequel to the best-selling game Remnant: From the Ashes that pits survivors of humanity against new deadly creatures and god-like bosses across terrifying worlds. Play solo or co-op with two other friends to explore the depths of the unknown to stop an evil from destroying reality itself. To succeed, players will need to rely on their own skills and those of their team to overcome the toughest challenges and to stave off humanity\u2019s extinction.",
     "url": "https://www.igdb.com/games/remnant-ii",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6lnp.jpg"
   },
   {
@@ -415,8 +851,20 @@
     "aggregated_rating": 77.4,
     "first_release_date": 1652140800,
     "name": "Salt and Sacrifice",
+    "platforms": [
+      6,
+      48,
+      130,
+      167
+    ],
     "summary": "Salt and Sacrifice is the follow-up to the hardcore action RPG platformer, Salt and Sanctuary. Explore a new era and region, as well as a new role: a Marked Inquisitor. A Marked Inquisitor is a criminal condemned, yet spared the hand of justice in exchange for a lifetime of service in the unending war against Mages: twisted, irredeemable creatures of elemental malice.",
     "url": "https://www.igdb.com/games/salt-and-sacrifice",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Nintendo Switch",
+      "PlayStation 5"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co392e.jpg"
   },
   {
@@ -424,8 +872,26 @@
     "aggregated_rating": 85.2,
     "first_release_date": 1458000000,
     "name": "Salt and Sanctuary",
+    "platforms": [
+      3,
+      6,
+      14,
+      46,
+      48,
+      49,
+      130
+    ],
     "summary": "\"Salt and Sanctuary seamlessly combines fast, brutal, and complex 2D combat with richly developed RPG mechanics. Discover, craft, and upgrade over 600 weapons, armor pieces, spells, and items as you explore a cursed realm of forgotten cities, blood-soaked dungeons, desecrated monuments, and the fallen lords they once celebrated.\"",
     "url": "https://www.igdb.com/games/salt-and-sanctuary",
+    "platformsByName": [
+      "Linux",
+      "PC",
+      "Mac",
+      "PlayStation Vita",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/xszzunhatlbhoeznqovc.jpg"
   },
   {
@@ -433,16 +899,44 @@
     "aggregated_rating": 90.0909090909091,
     "first_release_date": 1553212800,
     "name": "Sekiro: Shadows Die Twice",
+    "platforms": [
+      6,
+      48,
+      49,
+      170
+    ],
     "summary": "Enter a dark and brutal new gameplay experience from the creators of Bloodborne and the Dark Souls series. Sekiro: Shadows Die Twice is an intense, third-person, action-adventure set against the bloody backdrop of 14th-century Japan. Step into the role of a disgraced warrior brought back from the brink of death whose mission is to rescue his master and exact revenge on his arch nemesis.\n\nTake Revenge. Restore Your Honor. Kill Ingeniously.",
     "url": "https://www.igdb.com/games/sekiro-shadows-die-twice",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Google Stadia"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2a23.jpg"
   },
   {
     "id": 25555,
     "first_release_date": 1559606400,
     "name": "Shattered: Tale of the Forgotten King",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
     "summary": "Shattered - Tale of the Forgotten King, an adventure game where exploration and boss fights intertwine. In the world of Hypnos, the player gets to roam a vast continent scattered with gigantic fortresses and cities in ruins. Between phases in 2.5D and 3D, they will dive in the history of a forgotten world where savage enemies await. To reach victory, the precision of movement and observation of their opponents will be crucial.",
     "url": "https://www.igdb.com/games/shattered-tale-of-the-forgotten-king",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2rad.jpg"
   },
   {
@@ -450,8 +944,22 @@
     "aggregated_rating": 61.5,
     "first_release_date": 1539820800,
     "name": "Sinner: Sacrifice for Redemption",
+    "platforms": [
+      6,
+      14,
+      48,
+      49,
+      130
+    ],
     "summary": "Sinner: Sacrifice for Redemption is a boss battler action-RPG. Face eight abhorrent bosses, the first seven each based on one of the deadly sins. Before each epic clash, you must sacrifice a stat and level down to enter combat. Each fight will be tougher than the last as you wage war against sin itself.",
     "url": "https://www.igdb.com/games/sinner-sacrifice-for-redemption",
+    "platformsByName": [
+      "PC",
+      "Mac",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2fx7.jpg"
   },
   {
@@ -459,8 +967,24 @@
     "aggregated_rating": 82.84615384615384,
     "first_release_date": 1573776000,
     "name": "Star Wars Jedi: Fallen Order",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169,
+      170
+    ],
     "summary": "Star Wars Jedi: Fallen Order is a narratively driven, single-player game puts you in the role of a Jedi Padawan who narrowly escaped the purge of Order 66 following the events of Episode III: Revenge of the Sith. On a quest to rebuild the Jedi Order, you must pick up the pieces of your shattered past to complete your training, develop new powerful Force abilities and master the art of the iconic lightsaber - all while staying one step ahead of the Empire and its deadly Inquisitors.",
     "url": "https://www.igdb.com/games/star-wars-jedi-fallen-order",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5",
+      "Xbox Series X|S",
+      "Google Stadia"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1rbi.jpg"
   },
   {
@@ -468,8 +992,18 @@
     "aggregated_rating": 76.75,
     "first_release_date": 1662595200,
     "name": "Steelrising",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "Paris, 1789. The French Revolution has been suppressed with bloodshed by Louis XVI and his merciless mechanical army. Aegis, a mysterious automaton masterpiece, must confront the king's army alone to save history in this challenging action-RPG.",
     "url": "https://www.igdb.com/games/steelrising",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4wie.jpg"
   },
   {
@@ -477,8 +1011,22 @@
     "aggregated_rating": 72.25,
     "first_release_date": 1647561600,
     "name": "Stranger of Paradise: Final Fantasy Origin",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
     "summary": "Jack and his allies, Ash and Jed, burn with resolve to defeat Chaos as they throw open the gates to the Chaos Shrine. Yet doubts remain\u2014are they truly the Warriors of Light the prophecy foretold?\nStep into a world of dark fantasy and revel in the exhilarating, action-packed battles!",
     "url": "https://www.igdb.com/games/stranger-of-paradise-final-fantasy-origin",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co4kag.jpg"
   },
   {
@@ -486,8 +1034,18 @@
     "aggregated_rating": 58.0,
     "first_release_date": 1681948800,
     "name": "Stray Blade",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "What is Stray Blade?\n\nStray Blade is an action RPG where you master intense combat while exploring the ancient ruins of a lost civilization with your adventurous companion.\n\nKey Features:\n\n-Fast-paced intense combat with brutal finishing moves\n-Explore towering throne rooms of giant god-kings and long-lost cities\n-Experience death as part of your hero's journey where every time you get revived, something new is waiting for you\n-Every step of your quest to master the Acrean elements brings change to the world.",
     "url": "https://www.igdb.com/games/stray-blade",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co3p78.jpg"
   },
   {
@@ -495,8 +1053,18 @@
     "aggregated_rating": 72.0909090909091,
     "first_release_date": 1494806400,
     "name": "The Surge",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
     "summary": "The Surge is a sci-fi spin on Dark Souls, from the Lords of the Fallen team.\nA catastrophic event has knocked you out during the first day on the job... you wake up equipped with a heavy-grade exoskeleton, in a destroyed section of the complex. Robots gone haywire, insane augmented co-workers and rogue AI - everything wants you dead.\nDefy deadly enemies and huge bosses in tight, visceral melee combat. Target and slice specific limbs off your foes, with a next-gen loot system where you loot what you dismember. Equip, upgrade and craft new weapons and armors sliced from enemies, and make yourself stronger through a fresh take on leveling-up.",
     "url": "https://www.igdb.com/games/the-surge",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1odu.jpg"
   },
   {
@@ -504,8 +1072,18 @@
     "aggregated_rating": 74.0,
     "first_release_date": 1569283200,
     "name": "The Surge 2",
+    "platforms": [
+      6,
+      48,
+      49
+    ],
     "summary": "The Surge 2 keeps what fans and critics loved about the original while also expanding greatly upon the formula. The Surge 2 takes place in a brand new environment: a sprawling, devastated city with larger, more ambitious level design and improved engine. Combat is more brutal and tactical than ever, with even more options thanks to an expanded limb targeting system.",
     "url": "https://www.igdb.com/games/the-surge-2",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co1y0k.jpg"
   },
   {
@@ -513,8 +1091,24 @@
     "aggregated_rating": 90.0,
     "first_release_date": 1631750400,
     "name": "Tails of Iron",
+    "platforms": [
+      6,
+      48,
+      49,
+      130,
+      167,
+      169
+    ],
     "summary": "Tails of Iron is an Adventure RPG-lite game set in a charming and brutal world. Playing as Redgi the Rat, you are heir to the throne when your kingdom is raided by the Iron Frog. Players face challenging, tactical and stunning combat encounters in order to rebuild the Rat Kingdom.",
     "url": "https://www.igdb.com/games/tails-of-iron",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "Nintendo Switch",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co6pae.jpg"
   },
   {
@@ -522,8 +1116,18 @@
     "aggregated_rating": 72.0,
     "first_release_date": 1660780800,
     "name": "Thymesia",
+    "platforms": [
+      6,
+      167,
+      169
+    ],
     "summary": "Thymesia is a grueling action-RPG with fast-paced combat and an intricate plague weapon system. In a kingdom where death spreads, play as a mysterious character known by the code name \"Corvus\". Prey upon your enemies, wield the power of disease and find the truth in your own memories.",
     "url": "https://www.igdb.com/games/thymesia",
+    "platformsByName": [
+      "PC",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2w5c.jpg"
   },
   {
@@ -531,8 +1135,24 @@
     "aggregated_rating": 72.375,
     "first_release_date": 1428969600,
     "name": "Titan Souls",
+    "platforms": [
+      3,
+      6,
+      14,
+      34,
+      46,
+      48
+    ],
     "summary": "Between our world and the world beyond lie the Titan Souls, the spiritual source and sum of all living things. Now scattered amongst the ruins and guarded by the idle titans charged with their care, a solitary hero armed with but a single arrow is once again assembling shards of the Titan Soul in a quest for truth and power.",
     "url": "https://www.igdb.com/games/titan-souls",
+    "platformsByName": [
+      "Linux",
+      "PC",
+      "Mac",
+      "Android",
+      "PlayStation Vita",
+      "PlayStation 4"
+    ],
     "cover_url": "images.igdb.com/igdb/image/upload/t_cover_big/co2xo0.jpg"
   }
 ]
