@@ -30,15 +30,18 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
     // Set up rating slider (filter)
     let slider = document.getElementById("ratingSlider");
-    let sliderValText = document.getElementById("ratingSliderText");
-    sliderValText.textContent = slider.value;
+    let sliderValNum = document.getElementById("ratingSliderNumber");
+    sliderValNum.value = slider.value;
     slider.addEventListener("input", (e) => {
         if (slider.value == 0) {
-            sliderValText.textContent = "N/A";
+            sliderValNum.value = "N/A";
         }
         else {
-            sliderValText.textContent = slider.value;
+            sliderValNum.value = slider.value;
         }
+    });
+    sliderValNum.addEventListener("input", (e) => {
+        slider.value = sliderValNum.value;
     });
 
     // Populates full catalog and displays
@@ -85,7 +88,7 @@ function editCardContent(card, game) {
         cardReleaseDate.textContent += game.getReleaseDate();
 
         const cardGameRating = card.querySelector(".rating");
-        cardGameRating.textContent += game.getRating();
+        cardGameRating.textContent += (game.getRating() != 0 ? game.getRating() : 'N/A');
 
         const cardImage = card.querySelector("img");
         cardImage.src = game.getCover();
@@ -146,7 +149,7 @@ function showGameDetails(game) {
 
     img.src = game.getCover();
     title.textContent = game.getName();
-    rating.textContent = ": " + game.getRating();
+    rating.textContent = ": " + (game.getRating() != 0 ? game.getRating() : 'N/A');
     relDate.textContent = ": " + game.getReleaseDate();
     description.textContent = ": " + game.getDescription();
 
@@ -158,7 +161,7 @@ function showGameDetails(game) {
             platforms.textContent += ", ";
         }
     }
-    website.src = game.getWebsite();
+    website.setAttribute("href", game.getWebsite());
     website.textContent = game.getWebsite();
 
 }
@@ -167,6 +170,7 @@ function showGameDetails(game) {
 function sortBtn() {
     let sortType = document.getElementById("sortTypes").value;
     currGameCatalog.sortGames(sortType);
+    console.log(currGameCatalog);
     showCards(currGameCatalog);
 }
 

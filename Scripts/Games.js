@@ -21,11 +21,11 @@ export class GameInfo {
             this.#releaseDate = "Unknown";
         }
         this.#cover = "https://" + cover;
-        rating != undefined ? this.#rating = Math.round(rating) : this.#rating = "N/A";
+        this.#rating = (rating != undefined ? Math.round(rating) : 0);
         this.#rawRating = Math.round(rating);
         this.#description = description;
         this.#unixRelDate = releaseDate;
-        website != undefined ? this.#website = website : this.#website = "-"
+        this.#website = (website != undefined ? website : "-");
         this.#platforms = platforms;
     }
 
@@ -128,6 +128,7 @@ export class GameCatalog {
                 });
                 this.#quickSort(arr, 0, arr.length-1);
                 break;
+
             case 'NameDesc':
                 this.#games.forEach(e => {
                     arr.push(e.getName());
@@ -135,30 +136,34 @@ export class GameCatalog {
                 this.#quickSort(arr, 0, arr.length-1);
                 this.#games.reverse();
                 break;
+
             case 'RatingAsc':
                 this.#games.forEach(e => {
                     arr.push(e.getRating());
                 });
                 this.#quickSort(arr, 0, arr.length-1);
+                // Moves games with 'N/A' ratings to end of list
+                while (this.#games[0].getRating() == 0) {
+                    let temp = this.#games.shift();
+                    this.#games.push(temp);
+                }
                 break;
+
             case 'RatingDesc':
                 this.#games.forEach(e => {
                     arr.push(e.getRating());
                 });
                 this.#quickSort(arr, 0, arr.length-1);
                 this.#games.reverse();
-                // Moves games with 'N/A' ratings to end of list
-                while (this.#games[0].getRating() == "N/A") {
-                    let temp = this.#games.shift();
-                    this.#games.push(temp);
-                }
                 break;
+
             case 'RelDateAsc':
                 this.#games.forEach(e => {
                     arr.push(e.getUnixReleaseDate());
                 });
                 this.#quickSort(arr, 0, arr.length-1);
                 break;
+
             case 'RelDateDesc':
                 this.#games.forEach(e => {
                     arr.push(e.getUnixReleaseDate());

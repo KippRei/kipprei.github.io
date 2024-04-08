@@ -25,15 +25,20 @@
 
     <div id="filters">
         <select id="sortTypes">
-            <option value="NameAsc">Name</option>
-            <option value="RatingDesc">Rating</option>
-            <option value="RelDateDesc">Release Date</option>
+            <option value="NameAsc">Name (A->Z)</option>
+            <option value="NameDesc">Name (Z->A)</option>
+            <option value="RatingDesc">Rating (High->Low)</option>
+            <option value="RatingAsc">Rating (Low->High)</option>
+            <option value="RelDateDesc">Release Date (Newest->Oldest)</option>
+            <option value="RelDateAsc">Release Date (Oldest->Newest)</option>
         </select>
         <button id="sortBtn">Sort</button>
 
         <div>
             <input type="range" id="ratingSlider" min="0" max="100" />
-            <span id="ratingSliderText" style="color: white;">Rating</span>
+            <span>
+                <input type="number" min="0" max="N/A" maxlength="3" id="ratingSliderNumber"/>
+            </span>
             <button id="filterBtn">Filter by Rating</button>
         </div>
     </div>
