@@ -54,7 +54,7 @@ async function populateFullGamesArray() {
     let res = await fetch("../GameData/gamesInfo.json")
     let json = await res.json();
     json.forEach(e => {
-        let newGame = new GameInfo(e.name, e.first_release_date, e.cover_url, e.aggregated_rating, e.summary, e.url, e.platformsByName);
+        let newGame = new GameInfo(e.name, e.first_release_date, e.cover_url, e.aggregated_rating, e.summary, e.url, e.platformsByName, e.screenshots);
         fullGameCatalog.addGame(newGame);
     });
     showCards(fullGameCatalog);
@@ -128,16 +128,10 @@ function showGameDetails(game) {
     let modal = document.getElementById("detailsModal");
     modal.style.display = "block";
     let closeBtn = document.getElementById("closeModalBtn");
-
-    closeBtn.onclick = function() {
-        modal.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+    let leftImgBtn = document.getElementById("m_leftBtn");
+    let rightImgBtn = document.getElementById("m_rightBtn");
+    let totalImages = game.getScreenshots().length;
+    let currImg = -1;
 
     let title = document.getElementById("m_gameTitle");
     let rating = document.getElementById("m_rating");
@@ -164,6 +158,40 @@ function showGameDetails(game) {
     website.setAttribute("href", game.getWebsite());
     website.textContent = game.getWebsite();
 
+    closeBtn.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+    leftImgBtn.onclick = () => {
+        currImg--;
+        if (currImg == -2) {
+            currImg = totalImages - 1;
+        }
+        
+        if (currImg == -1) {
+            img.src = game.getCover();
+        }
+        else {
+            img.src = "https://" + game.getScreenshots()[currImg];
+        }
+    }
+
+    rightImgBtn.onclick = () => {
+        currImg++;
+        if (currImg == totalImages) {
+            currImg = -1;
+            img.src = game.getCover();
+        }
+        else {
+            img.src = "https://" + game.getScreenshots()[currImg];
+        }
+    }
 }
 
 // Gets user filter selection(s)
@@ -174,6 +202,7 @@ function sortBtn() {
     showCards(currGameCatalog);
 }
 
+// Filters by minimum rating
 function filterByRating() {
     let rating = document.getElementById("ratingSlider").value;
     let newCatalog = new GameCatalog();

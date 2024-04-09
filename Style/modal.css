@@ -52,10 +52,35 @@
   }
 }
 
+#m_imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 352px;
+}
+
 #m_img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#m_LRBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#m_leftBtn {
+  margin: 20px 60px 20px 60px;
+  width: 50px;
+  height: 50px;
+}
+
+#m_rightBtn {
+  float: right;
+  margin: 20px 60px 20px 60px;
+  width: 50px;
+  height: 50px;
 }
 
 #closeModalBtn:hover {

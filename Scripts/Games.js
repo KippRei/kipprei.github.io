@@ -8,9 +8,10 @@ export class GameInfo {
     #rawRating; // Integer value of rating (for filtering)
     #description;
     #website;
+    #screenshots;
     #platforms; // Platforms game is available on
 
-    constructor(name, releaseDate, cover, rating, description, website, platforms) {
+    constructor(name, releaseDate, cover, rating, description, website, platforms, screenshots) {
         this.#name = name;
         if (releaseDate != undefined) {
             let date = new Date(releaseDate * 1000);
@@ -27,6 +28,7 @@ export class GameInfo {
         this.#unixRelDate = releaseDate;
         this.#website = (website != undefined ? website : "-");
         this.#platforms = platforms;
+        this.#screenshots = screenshots;
     }
 
     setName(name) {
@@ -100,6 +102,14 @@ export class GameInfo {
 
     getPlatforms() {
         return this.#platforms;
+    }
+
+    setScreenshots(screenshots) {
+        this.#screenshots = screenshots;
+    }
+
+    getScreenshots() {
+        return this.#screenshots;
     }
 }
 
