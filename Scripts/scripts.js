@@ -149,12 +149,12 @@ function showGameDetails(game) {
 
     img.src = game.getCover();
     title.textContent = game.getName();
-    rating.textContent = ": " + (game.getRating() != 0 ? game.getRating() : 'N/A');
-    relDate.textContent = ": " + game.getReleaseDate();
-    description.textContent = ": " + game.getDescription();
+    rating.textContent = (game.getRating() != 0 ? game.getRating() : 'N/A');
+    relDate.textContent = game.getReleaseDate();
+    description.textContent = game.getDescription();
 
     const platArr = game.getPlatforms();
-    platforms.textContent = ": ";
+    platforms.textContent = "";
     for (let i = 0; i < platArr.length; i++) {
         platforms.textContent += platArr[i];
         if (i < platArr.length - 1) {
