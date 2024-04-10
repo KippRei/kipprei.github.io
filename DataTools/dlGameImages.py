@@ -12,6 +12,8 @@ gamesDataFile = open("../GameData/gamesInfo.json", "r")
 completeGamesData = open("../GameData/completeGamesData.json", "w")
 gf = json.load(gamesDataFile)
 
+print("Downloading game images...")
+
 for game in gf:
     screenshotsFP = []
     

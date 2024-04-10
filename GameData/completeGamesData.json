@@ -79,38 +79,6 @@
     "coverFP": "/GameData/gameImages/200903/cover.jpg"
   },
   {
-    "id": 6259,
-    "aggregated_rating": 80.0,
-    "first_release_date": 1085443200,
-    "name": "Ashen",
-    "platforms": [
-      42
-    ],
-    "screenshots": [
-      "scak6s.jpg",
-      "scak6t.jpg",
-      "scak6u.jpg",
-      "scak6v.jpg",
-      "scak6w.jpg",
-      "scak6x.jpg"
-    ],
-    "summary": "Ashen is a supernatural horror-themed FPS developed exclusively for the N-Gage platform. When Seven River City is plunged into chaos, stricken by storms and overcome with supernatural phenomena, Jacob Ward is filled with dread and despair, like most others. Yet Ward knows more about this catastrophe than most, and as its citizens flee, he must return to Seven River City and work to save it. Somewhere in that half-ruined darkness is his sister, a woman Ward believes is responsible for this disaster; a woman who warned him this would happen.",
-    "url": "https://www.igdb.com/games/ashen",
-    "platformsByName": [
-      "N-Gage"
-    ],
-    "cover_url": "co3aiw.jpg",
-    "screenshotFP": [
-      "/GameData/gameImages/6259/0.jpg",
-      "/GameData/gameImages/6259/1.jpg",
-      "/GameData/gameImages/6259/2.jpg",
-      "/GameData/gameImages/6259/3.jpg",
-      "/GameData/gameImages/6259/4.jpg",
-      "/GameData/gameImages/6259/5.jpg"
-    ],
-    "coverFP": "/GameData/gameImages/6259/cover.jpg"
-  },
-  {
     "id": 17001,
     "aggregated_rating": 82.85714285714286,
     "first_release_date": 1544140800,
@@ -450,39 +418,6 @@
       "/GameData/gameImages/18974/4.jpg"
     ],
     "coverFP": "/GameData/gameImages/18974/cover.jpg"
-  },
-  {
-    "id": 13492,
-    "aggregated_rating": 75.0,
-    "first_release_date": 567907200,
-    "name": "Chronos",
-    "platforms": [
-      6,
-      25,
-      26
-    ],
-    "screenshots": [
-      "sckdtd.jpg",
-      "sckdte.jpg",
-      "sckdtf.jpg",
-      "sckdtg.jpg",
-      "sckdth.jpg"
-    ],
-    "url": "https://www.igdb.com/games/chronos",
-    "platformsByName": [
-      "PC",
-      "Amstrad CPC",
-      "ZX Spectrum"
-    ],
-    "cover_url": "co5xnm.jpg",
-    "screenshotFP": [
-      "/GameData/gameImages/13492/0.jpg",
-      "/GameData/gameImages/13492/1.jpg",
-      "/GameData/gameImages/13492/2.jpg",
-      "/GameData/gameImages/13492/3.jpg",
-      "/GameData/gameImages/13492/4.jpg"
-    ],
-    "coverFP": "/GameData/gameImages/13492/cover.jpg"
   },
   {
     "id": 28168,
@@ -1002,37 +937,6 @@
     "coverFP": "/GameData/gameImages/121295/cover.jpg"
   },
   {
-    "id": 260887,
-    "first_release_date": 1676764800,
-    "name": "Grime",
-    "platforms": [
-      6
-    ],
-    "screenshots": [
-      "scnuz6.jpg",
-      "scnuz7.jpg",
-      "scnuz8.jpg",
-      "scnuz9.jpg",
-      "scnuza.jpg",
-      "scnuzb.jpg"
-    ],
-    "summary": "A set of 5 maps using the Duke 3D texture pack.",
-    "url": "https://www.igdb.com/games/grime--1",
-    "platformsByName": [
-      "PC"
-    ],
-    "cover_url": "co6wwp.jpg",
-    "screenshotFP": [
-      "/GameData/gameImages/260887/0.jpg",
-      "/GameData/gameImages/260887/1.jpg",
-      "/GameData/gameImages/260887/2.jpg",
-      "/GameData/gameImages/260887/3.jpg",
-      "/GameData/gameImages/260887/4.jpg",
-      "/GameData/gameImages/260887/5.jpg"
-    ],
-    "coverFP": "/GameData/gameImages/260887/cover.jpg"
-  },
-  {
     "id": 36476,
     "aggregated_rating": 70.0,
     "first_release_date": 1596067200,
@@ -1344,34 +1248,6 @@
     "coverFP": "/GameData/gameImages/21593/cover.jpg"
   },
   {
-    "id": 194987,
-    "aggregated_rating": 72.0,
-    "first_release_date": 1486339200,
-    "name": "Lords of the Fallen",
-    "platforms": [
-      39
-    ],
-    "screenshots": [
-      "scjtht.jpg",
-      "scmixp.jpg",
-      "scmixq.jpg",
-      "scmixr.jpg"
-    ],
-    "summary": "Lords of the Fallen is a mysterious action game where you battle gothic monsters in a thrilling 1-on-1 combat. Use swipe controls to attack, dodge or parry. But keep in mind that quick wits needs to be combined with the right strategy to defeat enemies.\n\nJump into a brand new mobile experience set in the universe of Lords of the Fallen. Join Harkyn, Yetka and Kaslo as they journey deep into the heart of a forsaken monastery to end the reign of the Demon Queen Akasha once and for all.",
-    "url": "https://www.igdb.com/games/lords-of-the-fallen--1",
-    "platformsByName": [
-      "iOS"
-    ],
-    "cover_url": "co5rl5.jpg",
-    "screenshotFP": [
-      "/GameData/gameImages/194987/0.jpg",
-      "/GameData/gameImages/194987/1.jpg",
-      "/GameData/gameImages/194987/2.jpg",
-      "/GameData/gameImages/194987/3.jpg"
-    ],
-    "coverFP": "/GameData/gameImages/194987/cover.jpg"
-  },
-  {
     "id": 4847,
     "aggregated_rating": 69.33333333333333,
     "first_release_date": 1414454400,
@@ -1603,33 +1479,6 @@
       "/GameData/gameImages/103330/5.jpg"
     ],
     "coverFP": "/GameData/gameImages/103330/cover.jpg"
-  },
-  {
-    "id": 134755,
-    "first_release_date": 1685923200,
-    "name": "No Rest for the Wicked",
-    "platforms": [
-      6
-    ],
-    "screenshots": [
-      "scoykn.jpg",
-      "scoyko.jpg",
-      "scoykp.jpg",
-      "scoykq.jpg"
-    ],
-    "summary": "This is a point and click game. Made in 14 days for Adventure Jam 2023.",
-    "url": "https://www.igdb.com/games/no-rest-for-the-wicked",
-    "platformsByName": [
-      "PC"
-    ],
-    "cover_url": "co77v3.jpg",
-    "screenshotFP": [
-      "/GameData/gameImages/134755/0.jpg",
-      "/GameData/gameImages/134755/1.jpg",
-      "/GameData/gameImages/134755/2.jpg",
-      "/GameData/gameImages/134755/3.jpg"
-    ],
-    "coverFP": "/GameData/gameImages/134755/cover.jpg"
   },
   {
     "id": 279627,
@@ -2399,5 +2248,49 @@
       "/GameData/gameImages/9559/4.jpg"
     ],
     "coverFP": "/GameData/gameImages/9559/cover.jpg"
+  },
+  {
+    "id": 204628,
+    "aggregated_rating": 83.83333333333333,
+    "first_release_date": 1677801600,
+    "name": "Wo Long: Fallen Dynasty",
+    "platforms": [
+      6,
+      48,
+      49,
+      167,
+      169
+    ],
+    "screenshots": [
+      "schdtl.jpg",
+      "schdtm.jpg",
+      "schdtn.jpg",
+      "schdto.jpg",
+      "schdtp.jpg",
+      "scic3l.jpg",
+      "scic3m.jpg",
+      "scic3n.jpg"
+    ],
+    "summary": "Set in the Later Han Dynasty of the Three Kingdoms,\na nameless militia soldier uses the swordplay of the Chinese martial arts to battle demons in a dark fantasy world.",
+    "url": "https://www.igdb.com/games/wo-long-fallen-dynasty",
+    "platformsByName": [
+      "PC",
+      "PlayStation 4",
+      "Xbox One",
+      "PlayStation 5",
+      "Xbox Series X|S"
+    ],
+    "cover_url": "co4v34.jpg",
+    "screenshotFP": [
+      "/GameData/gameImages/204628/0.jpg",
+      "/GameData/gameImages/204628/1.jpg",
+      "/GameData/gameImages/204628/2.jpg",
+      "/GameData/gameImages/204628/3.jpg",
+      "/GameData/gameImages/204628/4.jpg",
+      "/GameData/gameImages/204628/5.jpg",
+      "/GameData/gameImages/204628/6.jpg",
+      "/GameData/gameImages/204628/7.jpg"
+    ],
+    "coverFP": "/GameData/gameImages/204628/cover.jpg"
   }
 ]
