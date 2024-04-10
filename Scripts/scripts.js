@@ -51,10 +51,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 // Reads from json file and adds each game to full games catalog
 async function populateFullGamesArray() {
-    let res = await fetch("../GameData/gamesInfo.json")
+    let res = await fetch("../GameData/completeGamesData.json")
     let json = await res.json();
     json.forEach(e => {
-        let newGame = new GameInfo(e.name, e.first_release_date, e.cover_url, e.aggregated_rating, e.summary, e.url, e.platformsByName, e.screenshots);
+        let newGame = new GameInfo(e.name, e.first_release_date, e.coverFP, e.aggregated_rating, e.summary, e.url, e.platformsByName, e.screenshotFP);
         fullGameCatalog.addGame(newGame);
     });
     showCards(fullGameCatalog);
@@ -91,7 +91,7 @@ function editCardContent(card, game) {
         cardGameRating.textContent += (game.getRating() != 0 ? game.getRating() : 'N/A');
 
         const cardImage = card.querySelector("img");
-        cardImage.src = game.getCover();
+        cardImage.src = window.location.protocol + game.getCover();
         cardImage.alt = game.getName() + " Cover";
     }
     else {
@@ -113,7 +113,7 @@ function editCardContent(card, game) {
         cardImage.style.height = "290px";
         cardImage.style.border = "thick solid rgba(0, 0, 0, .5)";
         cardImage.style.borderRadius = "10px";
-        cardImage.src = game.getCover();
+        cardImage.src = window.location.protocol + game.getCover();
         cardImage.alt = game.getName() + " Cover";
 
         card.style.height = "300px";
@@ -141,7 +141,7 @@ function showGameDetails(game) {
     let img = document.getElementById("m_img");
     let platforms = document.getElementById("m_platforms");
 
-    img.src = game.getCover();
+    img.src = window.location.protocol + game.getCover();
     title.textContent = game.getName();
     rating.textContent = (game.getRating() != 0 ? game.getRating() : 'N/A');
     relDate.textContent = game.getReleaseDate();
@@ -175,10 +175,10 @@ function showGameDetails(game) {
         }
         
         if (currImg == -1) {
-            img.src = game.getCover();
+            img.src = window.location.protocol + game.getCover();
         }
         else {
-            img.src = "https://" + game.getScreenshots()[currImg];
+            img.src = window.location.protocol + game.getScreenshots()[currImg];
         }
     }
 
@@ -186,10 +186,10 @@ function showGameDetails(game) {
         currImg++;
         if (currImg == totalImages) {
             currImg = -1;
-            img.src = game.getCover();
+            img.src = window.location.protocol + game.getCover();
         }
         else {
-            img.src = "https://" + game.getScreenshots()[currImg];
+            img.src = window.location.protocol + game.getScreenshots()[currImg];
         }
     }
 }
@@ -202,7 +202,7 @@ function sortBtn() {
     showCards(currGameCatalog);
 }
 
-// Filters by minimum rating
+// Filters by minimum
 function filterByRating() {
     let rating = document.getElementById("ratingSlider").value;
     let newCatalog = new GameCatalog();

@@ -21,7 +21,7 @@ export class GameInfo {
         else {
             this.#releaseDate = "Unknown";
         }
-        this.#cover = "https://" + cover;
+        this.#cover = cover;
         this.#rating = (rating != undefined ? Math.round(rating) : 0);
         this.#rawRating = Math.round(rating);
         this.#description = description;
