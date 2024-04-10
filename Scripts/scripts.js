@@ -17,7 +17,7 @@ function checkCardDisplay() {
 
 
 // Create GameCatalog to hold games
-let fullGameCatalog = new GameCatalog();
+const fullGameCatalog = new GameCatalog();
 let currGameCatalog = fullGameCatalog;
 
 // On page load
@@ -29,10 +29,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
     document.getElementById("filterBtn").addEventListener("click", filterByRating);
 
     // Set up rating slider (filter)
-    let slider = document.getElementById("ratingSlider");
+    const slider = document.getElementById("ratingSlider");
 
     // Connects rating slider and number input box
-    let sliderValNum = document.getElementById("ratingSliderNumber");
+    const sliderValNum = document.getElementById("ratingSliderNumber");
     slider.value = 0;
     sliderValNum.value = slider.value;
     slider.addEventListener("input", () => {
@@ -49,10 +49,10 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 // Reads from json file and adds each game to full games catalog
 async function populateFullGamesArray() {
-    let res = await fetch("../GameData/completeGamesData.json")
-    let json = await res.json();
+    const res = await fetch("../GameData/completeGamesData.json")
+    const json = await res.json();
     json.forEach(e => {
-        let newGame = new GameInfo(e.name, e.first_release_date, e.coverFP, e.aggregated_rating, e.summary, e.url, e.platformsByName, e.screenshotFP);
+        const newGame = new GameInfo(e.name, e.first_release_date, e.coverFP, e.aggregated_rating, e.summary, e.url, e.platformsByName, e.screenshotFP);
         fullGameCatalog.addGame(newGame);
     });
     showCards(fullGameCatalog);
@@ -64,9 +64,9 @@ function showCards(catalogToDisp) {
     cardContainer.textContent = "";
     const templateCard = document.querySelector(".card");
     
-    let games = catalogToDisp.getGames();
+    const games = catalogToDisp.getGames();
     for (let i = 0; i < games.length; i++) {
-        let game = games[i];
+        const game = games[i];
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, game); // Fill in card data
         nextCard.addEventListener("click", (e) => showGameDetails(game));
@@ -123,22 +123,22 @@ function editCardContent(card, game) {
 
 // When game is clicked, shows game details in a modal/popup
 function showGameDetails(game) {
-    let modal = document.getElementById("detailsModal");
+    const modal = document.getElementById("detailsModal");
     modal.style.display = "block";
-    let closeBtn = document.getElementById("closeModalBtn");
-    let leftImgBtn = document.getElementById("m_leftBtn");
-    let rightImgBtn = document.getElementById("m_rightBtn");
-    let imgCounterText = document.getElementById("m_imgCounter")
-    let totalImages = game.getScreenshots().length;
+    const closeBtn = document.getElementById("closeModalBtn");
+    const leftImgBtn = document.getElementById("m_leftBtn");
+    const rightImgBtn = document.getElementById("m_rightBtn");
+    const imgCounterText = document.getElementById("m_imgCounter")
+    const totalImages = game.getScreenshots().length;
     let currImg = -1;
 
-    let title = document.getElementById("m_gameTitle");
-    let rating = document.getElementById("m_rating");
-    let relDate = document.getElementById("m_release");
-    let description = document.getElementById("m_description");
-    let website = document.getElementById("m_website");
-    let img = document.getElementById("m_img");
-    let platforms = document.getElementById("m_platforms");
+    const title = document.getElementById("m_gameTitle");
+    const rating = document.getElementById("m_rating");
+    const relDate = document.getElementById("m_release");
+    const description = document.getElementById("m_description");
+    const website = document.getElementById("m_website");
+    const img = document.getElementById("m_img");
+    const platforms = document.getElementById("m_platforms");
 
     img.src = window.location.protocol + game.getCover();
     imgCounterText.textContent = (currImg + 2) + "/" + (totalImages + 1);
@@ -200,15 +200,15 @@ function showGameDetails(game) {
 
 // Gets user filter selection(s)
 function sortBtn() {
-    let sortType = document.getElementById("sortTypes").value;
+    const sortType = document.getElementById("sortTypes").value;
     currGameCatalog.sortGames(sortType);
     showCards(currGameCatalog);
 }
 
 // Filters by minimum
 function filterByRating() {
-    let rating = document.getElementById("ratingSlider").value;
-    let newCatalog = new GameCatalog();
+    const rating = document.getElementById("ratingSlider").value;
+    const newCatalog = new GameCatalog();
     if (rating == 0) {
         newCatalog = fullGameCatalog;
     }
