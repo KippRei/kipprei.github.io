@@ -25,22 +25,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
     // Set up sort button
     document.getElementById("sortBtn").addEventListener("click", sortBtn);
 
-    // Set up sort button
+    // Set up filter by rating button
     document.getElementById("filterBtn").addEventListener("click", filterByRating);
 
     // Set up rating slider (filter)
     let slider = document.getElementById("ratingSlider");
+
+    // Connects rating slider and number input box
     let sliderValNum = document.getElementById("ratingSliderNumber");
+    slider.value = 0;
     sliderValNum.value = slider.value;
-    slider.addEventListener("input", (e) => {
-        if (slider.value == 0) {
-            sliderValNum.value = "N/A";
-        }
-        else {
-            sliderValNum.value = slider.value;
-        }
+    slider.addEventListener("input", () => {
+        sliderValNum.value = slider.value
     });
-    sliderValNum.addEventListener("input", (e) => {
+    sliderValNum.addEventListener("input", () => {
         slider.value = sliderValNum.value;
     });
 
@@ -130,6 +128,7 @@ function showGameDetails(game) {
     let closeBtn = document.getElementById("closeModalBtn");
     let leftImgBtn = document.getElementById("m_leftBtn");
     let rightImgBtn = document.getElementById("m_rightBtn");
+    let imgCounterText = document.getElementById("m_imgCounter")
     let totalImages = game.getScreenshots().length;
     let currImg = -1;
 
@@ -142,6 +141,7 @@ function showGameDetails(game) {
     let platforms = document.getElementById("m_platforms");
 
     img.src = window.location.protocol + game.getCover();
+    imgCounterText.textContent = (currImg + 2) + "/" + (totalImages + 1);
     title.textContent = game.getName();
     rating.textContent = (game.getRating() != 0 ? game.getRating() : 'N/A');
     relDate.textContent = game.getReleaseDate();
@@ -158,11 +158,11 @@ function showGameDetails(game) {
     website.setAttribute("href", game.getWebsite());
     website.textContent = game.getWebsite();
 
-    closeBtn.onclick = function() {
+    closeBtn.onclick = () => {
         modal.style.display = "none";
     }
 
-    window.onclick = function(event) {
+    window.onclick = (event) => {
         if (event.target == modal) {
             modal.style.display = "none";
         }
@@ -180,6 +180,8 @@ function showGameDetails(game) {
         else {
             img.src = window.location.protocol + game.getScreenshots()[currImg];
         }
+
+        imgCounterText.textContent = (currImg + 2) + "/" + (totalImages + 1);
     }
 
     rightImgBtn.onclick = () => {
@@ -191,6 +193,8 @@ function showGameDetails(game) {
         else {
             img.src = window.location.protocol + game.getScreenshots()[currImg];
         }
+
+        imgCounterText.textContent = (currImg + 2) + "/" + (totalImages + 1);
     }
 }
 
@@ -198,7 +202,6 @@ function showGameDetails(game) {
 function sortBtn() {
     let sortType = document.getElementById("sortTypes").value;
     currGameCatalog.sortGames(sortType);
-    console.log(currGameCatalog);
     showCards(currGameCatalog);
 }
 
@@ -218,5 +221,5 @@ function filterByRating() {
     }
 
     currGameCatalog = newCatalog;
-    showCards(newCatalog);
+    sortBtn();
 }

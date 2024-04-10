@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Style/modal.css" />
     <script type="module" src="./Scripts/scripts.js"></script>
     <script type="module" src="./Scripts/Games.js"></script>
-    <script src="./Scripts/about.js"></script>
+    <script src="./Scripts/navigation.js"></script>
 </head>
 
 <body>
@@ -32,14 +32,14 @@
             <option value="RelDateDesc">Release Date (Newest->Oldest)</option>
             <option value="RelDateAsc">Release Date (Oldest->Newest)</option>
         </select>
-        <button id="sortBtn">Sort</button>
+        <button id="sortBtn" class="filterBtn">Sort</button>
 
         <div>
-            <input type="range" id="ratingSlider" min="0" max="100" />
+            <input type="range" id="ratingSlider" min="0" max="97" />
             <span>
-                <input type="number" min="0" max="N/A" maxlength="3" id="ratingSliderNumber"/>
+                <input type="number" min="0" max="97" maxlength="3" id="ratingSliderNumber"/>
             </span>
-            <button id="filterBtn">Filter by Rating</button>
+            <button id="filterBtn" class="filterBtn">Filter by Rating</button>
         </div>
     </div>
     <div class="padding"></div>
@@ -67,6 +67,7 @@
             </div>
             <div id="m_LRBtnContainer">
                 <input type="button" id="m_leftBtn" value="<<">
+                <p id="m_imgCounter"></p>
                 <input type="button" id="m_rightBtn" value=">>">
             </div>
             <h2 id="m_gameTitle"></h2>

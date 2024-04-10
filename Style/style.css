@@ -46,10 +46,6 @@ a:active {
     background-color: rgb(106, 106, 106);
 }
 
-#filters {
-    text-align: center;
-}
-
 .title {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -207,7 +203,23 @@ button {
     margin: 5px;
 }
 
+#sortTypes {
+    width: 180px;
+}
+
+#filters {
+    text-align: center;
+}
+
+.filterBtn {
+    font-family: "EdoSZ";
+}
+
 input[type="number"] {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+}
+
+input[type="range"] {
+    accent-color: black;
 }
