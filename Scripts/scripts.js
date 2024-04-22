@@ -209,6 +209,7 @@ function sortBtn() {
 function filterByRating() {
     const rating = document.getElementById("ratingSlider").value;
     let newCatalog = new GameCatalog();
+    
     if (rating == 0) {
         newCatalog = fullGameCatalog;
     }
