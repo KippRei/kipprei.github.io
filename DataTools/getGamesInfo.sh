@@ -5,7 +5,7 @@
 #Gets bearer token from IGDB
 configFP=$1
 mapfile -t credentials <$configFP
-curl -X POST "https://id.twitch.tv/oauth2/token?client_id="nxgh4ecs7n261ig2lbvd8qh7p1mbi1"&client_secret="il4vssdx79avmjnpq0n64b3od2lna3"&grant_type=client_credentials" -o temp.json
+curl -X POST "https://id.twitch.tv/oauth2/token?client_id="${credentials[0]}"&client_secret="${credentials[1]}"&grant_type=client_credentials" -o temp.json
 
 python3 getToken.py temp.json
 
