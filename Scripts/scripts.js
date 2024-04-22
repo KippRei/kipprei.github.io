@@ -208,7 +208,7 @@ function sortBtn() {
 // Filters by minimum
 function filterByRating() {
     const rating = document.getElementById("ratingSlider").value;
-    const newCatalog = new GameCatalog();
+    let newCatalog = new GameCatalog();
     if (rating == 0) {
         newCatalog = fullGameCatalog;
     }

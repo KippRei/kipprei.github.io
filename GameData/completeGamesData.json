@@ -408,7 +408,9 @@
     ],
     "summary": "Chronos is an atmospheric RPG that chronicles one young hero\u2019s lifelong quest to save their homeland from a great evil. Central to this quest is an ancient labyrinth, which holds the secrets necessary to restore life and peace to their home. However, the architects of this labyrinth designed it to open only once a year. The labyrinth is a test, and each time the hero fails they are cast out and must wait one year to return.",
     "url": "https://www.igdb.com/games/chronos--1",
-    "platformsByName": [],
+    "platformsByName": [
+      "Oculus Rift"
+    ],
     "cover_url": "co28of.jpg",
     "screenshotFP": [
       "/GameData/gameImages/18974/0.jpg",

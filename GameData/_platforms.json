@@ -13,7 +13,7 @@
   }
 ,  {
     "id": 6,
-    "name": "PC"
+    "name": "PC (Microsoft Windows)"
   }
 ,  {
     "id": 7,
@@ -606,5 +606,233 @@
 ,  {
     "id": 170,
     "name": "Google Stadia"
+  }
+,  {
+    "id": 203,
+    "name": "DUPLICATE Stadia"
+  }
+,  {
+    "id": 236,
+    "name": "Exidy Sorcerer"
+  }
+,  {
+    "id": 237,
+    "name": "Sol-20"
+  }
+,  {
+    "id": 238,
+    "name": "DVD Player"
+  }
+,  {
+    "id": 239,
+    "name": "Blu-ray Player"
+  }
+,  {
+    "id": 240,
+    "name": "Zeebo"
+  }
+,  {
+    "id": 274,
+    "name": "PC-FX"
+  }
+,  {
+    "id": 306,
+    "name": "Satellaview"
+  }
+,  {
+    "id": 307,
+    "name": "Game \u0026 Watch"
+  }
+,  {
+    "id": 308,
+    "name": "Playdia"
+  }
+,  {
+    "id": 309,
+    "name": "Evercade"
+  }
+,  {
+    "id": 339,
+    "name": "Sega Pico"
+  }
+,  {
+    "id": 372,
+    "name": "OOParts"
+  }
+,  {
+    "id": 373,
+    "name": "Sinclair ZX81"
+  }
+,  {
+    "id": 374,
+    "name": "Sharp MZ-2200"
+  }
+,  {
+    "id": 375,
+    "name": "Epoch Cassette Vision"
+  }
+,  {
+    "id": 376,
+    "name": "Epoch Super Cassette Vision"
+  }
+,  {
+    "id": 377,
+    "name": "Plug \u0026 Play"
+  }
+,  {
+    "id": 378,
+    "name": "Gamate"
+  }
+,  {
+    "id": 379,
+    "name": "Game.com"
+  }
+,  {
+    "id": 380,
+    "name": "Casio Loopy"
+  }
+,  {
+    "id": 381,
+    "name": "Playdate"
+  }
+,  {
+    "id": 382,
+    "name": "Intellivision Amico"
+  }
+,  {
+    "id": 384,
+    "name": "Oculus Quest"
+  }
+,  {
+    "id": 385,
+    "name": "Oculus Rift"
+  }
+,  {
+    "id": 386,
+    "name": "Meta Quest 2"
+  }
+,  {
+    "id": 387,
+    "name": "Oculus Go"
+  }
+,  {
+    "id": 388,
+    "name": "Gear VR"
+  }
+,  {
+    "id": 389,
+    "name": "AirConsole"
+  }
+,  {
+    "id": 390,
+    "name": "PlayStation VR2"
+  }
+,  {
+    "id": 405,
+    "name": "Windows Mobile"
+  }
+,  {
+    "id": 406,
+    "name": "Sinclair QL"
+  }
+,  {
+    "id": 407,
+    "name": "HyperScan"
+  }
+,  {
+    "id": 408,
+    "name": "Mega Duck/Cougar Boy"
+  }
+,  {
+    "id": 409,
+    "name": "Legacy Computer"
+  }
+,  {
+    "id": 410,
+    "name": "Atari Jaguar CD"
+  }
+,  {
+    "id": 411,
+    "name": "Handheld Electronic LCD"
+  }
+,  {
+    "id": 412,
+    "name": "Leapster"
+  }
+,  {
+    "id": 413,
+    "name": "Leapster Explorer/LeadPad Explorer"
+  }
+,  {
+    "id": 414,
+    "name": "LeapTV"
+  }
+,  {
+    "id": 415,
+    "name": "Watara/QuickShot Supervision"
+  }
+,  {
+    "id": 416,
+    "name": "Nintendo 64DD"
+  }
+,  {
+    "id": 417,
+    "name": "Palm OS"
+  }
+,  {
+    "id": 438,
+    "name": "Arduboy"
+  }
+,  {
+    "id": 439,
+    "name": "V.Smile"
+  }
+,  {
+    "id": 440,
+    "name": "Visual Memory Unit / Visual Memory System"
+  }
+,  {
+    "id": 441,
+    "name": "PocketStation"
+  }
+,  {
+    "id": 471,
+    "name": "Meta Quest 3"
+  }
+,  {
+    "id": 472,
+    "name": "visionOS"
+  }
+,  {
+    "id": 473,
+    "name": "Arcadia 2001"
+  }
+,  {
+    "id": 474,
+    "name": "Gizmondo"
+  }
+,  {
+    "id": 475,
+    "name": "R-Zone"
+  }
+,  {
+    "id": 476,
+    "name": "Apple Pippin"
+  }
+,  {
+    "id": 477,
+    "name": "Panasonic Jungle"
+  }
+,  {
+    "id": 478,
+    "name": "Panasonic M2"
+  }
+,  {
+    "id": 479,
+    "name": "Terebikko / See \u0027n Say Video Phone"
+  }
+,  {
+    "id": 480,
+    "name": "Super A\u0027Can"
   }
 ]
